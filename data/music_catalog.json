@@ -1,0 +1,74 @@
+{
+  "generated_from": "assets/music",
+  "albums": [
+    {
+      "slug": "artifacts-of-resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "title": "Artifacts of Resilience",
+      "year": null,
+      "status": "catalogued",
+      "cover": "album_cover.png",
+      "description": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "",
+      "cover_path": null,
+      "track_count": 0,
+      "total_runtime_seconds": null,
+      "total_runtime": null,
+      "tracks": []
+    },
+    {
+      "slug": "core-override",
+      "path": "/music/core-override/",
+      "title": "Core Override",
+      "year": 2026,
+      "status": "released",
+      "cover": "album_cover.png",
+      "description": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency"
+      ],
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "",
+      "cover_path": null,
+      "track_count": 0,
+      "total_runtime_seconds": null,
+      "total_runtime": null,
+      "tracks": []
+    },
+    {
+      "slug": "grounded-fire",
+      "path": "/music/grounded-fire/",
+      "title": "Grounded Fire",
+      "year": null,
+      "status": "catalogued",
+      "cover": "album_cover.png",
+      "description": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "",
+      "cover_path": null,
+      "track_count": 0,
+      "total_runtime_seconds": null,
+      "total_runtime": null,
+      "tracks": []
+    }
+  ]
+}

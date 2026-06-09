@@ -154,3 +154,13 @@ The primary visual motif is **Orbit / Signal**, representing systems, emergence,
 Primary sections: Home, In Motion, Music, Projects, Experiments, Library, Timeline, About, and Contact.
 
 The homepage should answer who this person is—not what services this person sells.
+
+## Music System v1
+
+The filesystem below `assets/music/` is authoritative for published website music data. Every album directory contains `album.json`; numbered WAV, PNG, and LRC files define tracks. Track titles, order, media paths, runtimes, album statistics, and previous/next navigation are generated and must not be duplicated manually in website data or HTML.
+
+Album routes use `/music/<album>/`; track routes use `/music/<album>/<track>/`. Playback uses native HTML5 audio with no autoplay. LRC parsing supports a plain lyric view now and retains timestamps for future synchronized lyrics.
+
+## GitHub integration
+
+The authoritative GitHub username is **`it-timo`**. Public repository data is generated from the GitHub API into `data/projects.json`. Forks and archived repositories are excluded and results are sorted by most recent update. Manually curated highlights live only in `data/project_featured.json`.

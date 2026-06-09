@@ -1,4 +1,4 @@
-const DATA_FILES = ['site', 'profile', 'projects', 'albums', 'songs', 'experiments', 'in-motion', 'library', 'timeline'];
+const DATA_FILES = ['site', 'profile', 'project_context', 'projects', 'music_catalog', 'experiments', 'in-motion', 'library', 'timeline'];
 
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
@@ -50,12 +50,25 @@ function projectCard(project) {
   return linkOrArticle(project, `<div class="card-top"><span class="record-type">${escapeHtml(project.kind)}</span>${status(project.status)}</div><h3>${escapeHtml(project.title)}</h3><p>${escapeHtml(project.summary)}</p>${tagList(project.technologies)}${project.path ? '<span class="quiet-link">Read the project record →</span>' : '<span class="quiet-link">Public record not yet expanded</span>'}`, 'archive-card');
 }
 
+function albumArtwork(album, className = 'album-signal') {
+  return album.cover_path
+    ? `<img class="album-cover" src="${album.cover_path}" alt="${escapeHtml(album.title)} album cover">`
+    : `<div class="${className}" aria-hidden="true"><span></span></div>`;
+}
+
 function albumCard(album) {
-  return `<a class="album-record tone-${escapeHtml(album.tone)}" href="${album.path}"><div class="album-signal" aria-hidden="true"><span></span></div><div class="album-copy"><div class="card-top"><span class="record-type">${escapeHtml(album.format)}</span>${status(album.status)}</div><h3>${escapeHtml(album.title)}</h3><p>${escapeHtml(album.theme)}</p><div class="album-meta"><span>13 tracks</span><span>${album.focus.slice(0, 2).map(escapeHtml).join(' · ')}</span></div></div></a>`;
+  const year = album.year || 'Year not catalogued';
+  const runtime = album.total_runtime || 'Runtime pending audio';
+  return `<a class="album-record" href="${album.path}">${albumArtwork(album)}<div class="album-copy"><div class="card-top"><span class="record-type">Album · ${escapeHtml(year)}</span>${status(album.status)}</div><h3>${escapeHtml(album.title)}</h3><p>${escapeHtml(album.description)}</p><div class="album-meta"><span>${album.track_count} ${album.track_count === 1 ? 'track' : 'tracks'}</span><span>${escapeHtml(runtime)}</span></div></div></a>`;
+}
+
+function repositoryCard(repository) {
+  const languages = repository.languages?.length ? repository.languages : (repository.language ? [repository.language] : []);
+  return `<article class="repository-card ${repository.featured ? 'featured' : ''}"><div class="card-top"><span class="record-type">${repository.featured ? 'Featured repository' : 'GitHub repository'}</span><time datetime="${escapeHtml(repository.updated_at)}">Updated ${escapeHtml(new Date(repository.updated_at).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' }))}</time></div><h3>${escapeHtml(repository.name)}</h3><p>${escapeHtml(repository.description || repository.readme_excerpt || 'No repository description is published.')}</p>${repository.readme_excerpt ? `<blockquote>${escapeHtml(repository.readme_excerpt)}</blockquote>` : ''}<div class="repository-meta"><div><span class="meta-label">Languages</span>${tagList(languages)}</div><div><span class="meta-label">Topics</span>${repository.topics.length ? tagList(repository.topics) : '<span class="small-note">No topics</span>'}</div></div><a class="quiet-link" href="${repository.url}" rel="me noopener" target="_blank">View repository on GitHub ↗</a></article>`;
 }
 
 function renderHome(data) {
-  const primaryProjects = data.projects.filter(item => item.featured);
+  const primaryProjects = data.project_context.filter(item => item.featured);
   return `<section class="home-intro"><div class="wrap home-grid"><div>
       <p class="eyebrow">${escapeHtml(data.site.identity)}</p>
       <h1>Different mediums.<br><em>Same curiosity.</em></h1>
@@ -64,7 +77,7 @@ function renderHome(data) {
     </div><aside class="identity-index"><span>Current role</span><strong>${escapeHtml(data.profile.role)}</strong><span>Primary disciplines</span>${data.profile.disciplines.map(value => `<strong>${escapeHtml(value)}</strong>`).join('')}<a href="/about/">Background and principles →</a></aside></div></section>
     <section class="section"><div class="wrap">${sectionHead('In motion', 'Current attention, without pretending it forms a fixed roadmap.', '<a class="quiet-link" href="/in-motion/">Full current-state record →</a>')}<div class="record-list">${data['in-motion'].map(motionRow).join('')}</div></div></section>
     <section class="section"><div class="wrap">${sectionHead('Engineering records', 'Systems are documented here through their constraints, decisions, and reasons for existing.', '<a class="quiet-link" href="/projects/">All engineering work →</a>')}<div class="archive-grid">${primaryProjects.map(projectCard).join('')}</div></div></section>
-    <section class="section"><div class="wrap">${sectionHead('Music is primary work', 'The same questions about identity, persistence, technology, and connection reappear in lyrical form.', '<a class="quiet-link" href="/music/">Music archive →</a>')}<div class="album-grid">${data.albums.map(albumCard).join('')}</div></div></section>
+    <section class="section"><div class="wrap">${sectionHead('Music is primary work', 'The same questions about identity, persistence, technology, and connection reappear in lyrical form.', '<a class="quiet-link" href="/music/">Music archive →</a>')}<div class="album-grid">${data.music_catalog.albums.map(albumCard).join('')}</div></div></section>
     <section class="section connective"><div class="wrap split"><div><p class="eyebrow">The recurring thread</p><h2>How do complex things emerge, evolve, persist, and connect?</h2></div><div class="question-list">${data.profile.questions.map(question => `<p>${escapeHtml(question)}</p>`).join('')}</div></div></section>`;
 }
 
@@ -75,13 +88,16 @@ function renderInMotion(data) {
 }
 
 function renderProjects(data) {
-  return `${pageHero('Software / automation / architecture', 'Projects', 'Engineering records centered on purpose, constraints, and maintainability—not a grid of technologies.', 'Professional work spans backend engineering, software quality, test automation, architecture, and approximately 5.5 years at Alpha Strike Labs GmbH.')}
-    <section class="section"><div class="wrap"><div class="filter-bar" data-filters>${['ALL', ...new Set(data.projects.map(item => item.status))].map((value, index) => `<button class="filter-button ${index === 0 ? 'active' : ''}" data-filter="${escapeHtml(value)}">${escapeHtml(value)}</button>`).join('')}</div><div class="archive-grid" data-project-grid>${data.projects.map(projectCard).join('')}</div></div></section>
+  const featured = data.projects.filter(item => item.featured);
+  const repositories = [...featured, ...data.projects.filter(item => !item.featured)];
+  return `${pageHero('Software / automation / architecture', 'Projects', 'Documented systems and the current public GitHub record for it-timo.', 'Repository data is generated from GitHub. Forks and archived repositories are excluded; featured repositories are selected in data/project_featured.json.')}
+    <section class="section"><div class="wrap">${sectionHead('Engineering records', 'Long-running systems documented through purpose, constraints, and maintainability.')}<div class="archive-grid">${data.project_context.map(projectCard).join('')}</div></div></section>
+    <section class="section"><div class="wrap">${sectionHead('GitHub repositories', 'Public, non-fork, non-archived repositories sorted by most recent update.')} ${repositories.length ? `<div class="repository-grid">${repositories.map(repositoryCard).join('')}</div>` : '<p class="empty-note">The GitHub catalog has not been generated in this checkout. Run <code>python3 tools/update_github.py</code> with network access.</p>'}</div></section>
     <section class="section"><div class="wrap">${sectionHead('Working principles')}<div class="principle-grid">${data.profile.principles.map((value, index) => `<div><span>0${index + 1}</span><p>${escapeHtml(value)}</p></div>`).join('')}</div></div></section>`;
 }
 
 function renderProject(data, slug) {
-  const project = data.projects.find(item => item.slug === slug);
+  const project = data.project_context.find(item => item.slug === slug);
   if (!project) return renderNotFound();
   return `${pageHero(project.kind, project.title, project.summary, project.purpose)}
     <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">Why it exists</p><p class="large-copy">${escapeHtml(project.purpose)}</p>${project.principle ? `<blockquote class="principle-quote">${escapeHtml(project.principle)}</blockquote>` : ''}</div><aside><span class="meta-label">State</span>${status(project.status)}<span class="meta-label">Technologies</span>${tagList(project.technologies)}${project.technologyNote ? `<p class="small-note">${escapeHtml(project.technologyNote)}</p>` : ''}</aside></div></section>
@@ -90,36 +106,41 @@ function renderProject(data, slug) {
 }
 
 function renderMusic(data) {
-  const song = data.songs[0];
-  return `${pageHero('Albums / songs / visual work', 'Music', 'Music is one of the primary outputs of this archive, not a side category.', 'Identity, resilience, persistence, authenticity, technology and humanity, responsibility, loneliness, connection, and self-reflection recur across the work.')}
-    <section class="section"><div class="wrap">${sectionHead('Album archive', 'Complete themes and tracklists, without invented dates or release metadata.')}<div class="album-grid">${data.albums.map(albumCard).join('')}</div></div></section>
-    <section class="section"><div class="wrap">${sectionHead('Visual work')}<a class="feature-record" href="${song.path}"><div><span class="record-type">Current major video production</span><h2>${escapeHtml(song.title)}</h2><p>${escapeHtml(song.summary)}</p></div><div>${status(song.status)}<span class="quiet-link">Production record →</span></div></a></div></section>`;
+  const albums = data.music_catalog.albums;
+  return `${pageHero('Albums / tracks / lyrics', 'Music', 'The music archive is generated directly from assets/music. Album metadata lives beside the audio; numbered files define the tracklist.', 'Adding a numbered WAV, PNG, and LRC set makes a track appear after running the catalog builder. No tracklist is maintained in JavaScript or HTML.')}
+    <section class="section"><div class="wrap">${sectionHead('Album catalog', 'Track counts and runtime are derived from the media currently present in this checkout.')}<div class="album-grid">${albums.map(albumCard).join('')}</div></div></section>`;
 }
 
 function renderAlbums(data) {
-  return `${pageHero('Music archive', 'Albums', 'Three bodies of work connected by resilience, technology, identity, and reconnection.')}
-    <section class="section"><div class="wrap"><div class="album-grid">${data.albums.map(albumCard).join('')}</div></div></section>`;
+  return renderMusic(data);
+}
+
+function trackRow(track) {
+  return `<a class="track-row" href="${track.path}"><span>${String(track.track).padStart(2, '0')}</span><strong>${escapeHtml(track.title)}</strong><span>${escapeHtml(track.duration || 'Runtime unavailable')}</span></a>`;
 }
 
 function renderAlbum(data, slug) {
-  const album = data.albums.find(item => item.slug === slug);
+  const album = data.music_catalog.albums.find(item => item.slug === slug);
   if (!album) return renderNotFound();
-  return `<section class="album-hero tone-${escapeHtml(album.tone)}"><div class="wrap album-hero-grid"><div class="album-signal large" aria-hidden="true"><span></span></div><div><p class="eyebrow">${escapeHtml(album.format)}</p><h1>${escapeHtml(album.title)}</h1><p class="page-intro">${escapeHtml(album.theme)}</p>${status(album.status)}${tagList(album.focus)}</div></div></section>
-    ${album.acts ? `<section class="act-strip"><div class="wrap">${album.acts.map(act => `<div><span>${escapeHtml(act.range)}</span><strong>${escapeHtml(act.title)}</strong></div>`).join('')}</div></section>` : ''}
-    <section class="section"><div class="wrap detail-grid"><div>${sectionHead('Tracklist')}<ol class="track-list">${album.tracks.map(track => `<li class="${album.notableTracks.includes(track) ? 'notable' : ''}"><span>${escapeHtml(track)}</span>${album.notableTracks.includes(track) ? '<em>Notable track</em>' : ''}</li>`).join('')}</ol></div><aside><span class="meta-label">Focus</span>${list(album.focus)}<span class="meta-label">About this record</span><p class="small-note">This page preserves the known concept and sequence. Dates, credits, lyrics, and listening links will be added only when verified.</p></aside></div></section>`;
+  const year = album.year || 'Not catalogued';
+  return `<section class="album-hero"><div class="wrap album-hero-grid">${albumArtwork(album, 'album-signal large')}<div><p class="eyebrow">Album · ${escapeHtml(year)}</p><h1>${escapeHtml(album.title)}</h1><p class="page-intro">${escapeHtml(album.description)}</p>${status(album.status)}${tagList(album.themes)}<dl class="album-statistics"><div><dt>Tracks</dt><dd>${album.track_count}</dd></div><div><dt>Runtime</dt><dd>${escapeHtml(album.total_runtime || 'Pending audio')}</dd></div><div><dt>Year</dt><dd>${escapeHtml(year)}</dd></div></dl></div></div></section>
+    <section class="section"><div class="wrap">${sectionHead('Tracklist', 'Discovered from numbered files in the album directory.')} ${album.tracks.length ? `<div class="track-table">${album.tracks.map(trackRow).join('')}</div>` : '<p class="empty-note">No numbered track media is present in this checkout yet. Add files such as <code>01_Track_Title.wav</code>, <code>.png</code>, and <code>.lrc</code>, then rebuild the catalog.</p>'}</div></section>`;
 }
 
-function renderSongs(data) {
-  return `${pageHero('Music archive', 'Songs & visual work', 'Individual records hold song context, lyrics when available, credits, and related visual production.')}
-    <section class="section"><div class="wrap"><div class="record-list">${data.songs.map(item => linkOrArticle(item, `<div><span class="record-type">${escapeHtml(item.album)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p></div><div>${status(item.status)}<span class="row-arrow">↗</span></div>`, 'record-row')).join('')}</div></div></section>`;
+function findTrack(data, albumSlug, trackSlug) {
+  const album = data.music_catalog.albums.find(item => item.slug === albumSlug);
+  return { album, track: album?.tracks.find(item => item.slug === trackSlug) };
 }
 
-function renderSong(data, slug) {
-  const song = data.songs.find(item => item.slug === slug);
-  if (!song) return renderNotFound();
-  return `${pageHero(`${song.album} / visual production`, song.title, song.summary, 'This record documents verified creative direction. Lyrics and release links are intentionally absent until ready for publication.')}
-    <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">The Walker</p><h2 class="detail-title">${escapeHtml(song.video.character)}</h2><p class="large-copy">${escapeHtml(song.video.description)}</p></div><aside><span class="meta-label">Production state</span>${status(song.status)}<span class="meta-label">Themes</span>${tagList(song.video.themes)}</aside></div></section>
-    <section class="section memory-section"><div class="wrap narrow"><p class="eyebrow">Visual motif</p><blockquote>${escapeHtml(song.video.motif)}</blockquote></div></section>`;
+function renderTrack(data, albumSlug, trackSlug) {
+  const { album, track } = findTrack(data, albumSlug, trackSlug);
+  if (!album || !track) return renderNotFound();
+  const artwork = track.cover
+    ? `<img class="track-cover" src="${track.cover}" alt="Cover for ${escapeHtml(track.title)}">`
+    : albumArtwork(album, 'album-signal large');
+  return `<section class="track-hero"><div class="wrap track-hero-grid"><div>${artwork}</div><div><p class="eyebrow">Track ${String(track.track).padStart(2, '0')} · ${escapeHtml(album.title)}</p><h1>${escapeHtml(track.title)}</h1><p class="track-runtime">${escapeHtml(track.duration || 'Runtime unavailable')}</p>${track.audio ? `<audio controls preload="metadata" src="${track.audio}">Your browser does not support HTML5 audio.</audio>` : '<p class="empty-note">The WAV file for this track is not present.</p>'}</div></div></section>
+    <section class="section"><div class="wrap narrow">${sectionHead('Lyrics', 'LRC is parsed into a plain lyric view; timestamps are retained for future synchronized playback.')}<div class="lyrics" ${track.lyrics ? `data-lyrics-url="${track.lyrics}"` : ''}>${track.lyrics ? '<p class="small-note">Loading lyrics…</p>' : '<p class="empty-note">No LRC file is present for this track.</p>'}</div></div></section>
+    <nav class="track-navigation wrap" aria-label="Track navigation"><div>${track.previous ? `<span>Previous track</span><a href="${track.previous.path}">${escapeHtml(track.previous.title)}</a>` : ''}</div><a class="back-album" href="${album.path}">Back to album</a><div>${track.next ? `<span>Next track</span><a href="${track.next.path}">${escapeHtml(track.next.title)}</a>` : ''}</div></nav>`;
 }
 
 function renderExperiments(data) {
@@ -165,10 +186,10 @@ function route(data) {
   if (path === '/projects/') return renderProjects(data);
   if (/^\/projects\/[^/]+\.html$/.test(path)) return renderProject(data, path.split('/').pop().replace('.html', ''));
   if (path === '/music/') return renderMusic(data);
-  if (path === '/music/albums/') return renderAlbums(data);
-  if (/^\/music\/albums\/[^/]+\.html$/.test(path)) return renderAlbum(data, path.split('/').pop().replace('.html', ''));
-  if (path === '/music/songs/') return renderSongs(data);
-  if (/^\/music\/songs\/[^/]+\.html$/.test(path)) return renderSong(data, path.split('/').pop().replace('.html', ''));
+  const albumRoute = path.match(/^\/music\/([^/]+)\/$/);
+  if (albumRoute) return renderAlbum(data, albumRoute[1]);
+  const trackRoute = path.match(/^\/music\/([^/]+)\/([^/]+)\/$/);
+  if (trackRoute) return renderTrack(data, trackRoute[1], trackRoute[2]);
   if (path === '/experiments/') return renderExperiments(data);
   if (path === '/library/') return renderLibrary(data);
   const collection = path.match(/^\/library\/(notes|articles|project-journals|music-commentary)\/$/);
@@ -181,24 +202,55 @@ function route(data) {
 
 function updateDocumentTitle(data) {
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
-  const records = [...data.projects, ...data.albums, ...data.songs];
+  const albums = data.music_catalog.albums;
+  const tracks = albums.flatMap(album => album.tracks);
+  const records = [...data.project_context, ...data.projects, ...albums, ...tracks];
   const record = records.find(item => item.path === path);
   const navigationItem = data.site.navigation.find(item => item.path === path);
   const title = record?.title || navigationItem?.label || (path === '/contact/' ? 'Contact' : data.site.name);
   document.title = `${title} — ${data.site.name}`;
 }
 
-function initializeFilters(data) {
-  const filters = document.querySelector('[data-filters]');
-  if (!filters) return;
-  filters.addEventListener('click', event => {
-    const button = event.target.closest('[data-filter]');
-    if (!button) return;
-    filters.querySelectorAll('button').forEach(item => item.classList.toggle('active', item === button));
-    const selected = button.dataset.filter;
-    const projects = selected === 'ALL' ? data.projects : data.projects.filter(item => item.status === selected);
-    document.querySelector('[data-project-grid]').innerHTML = projects.map(projectCard).join('');
-  });
+function parseLrc(source) {
+  const metadata = {};
+  const synced = [];
+  const plain = [];
+  for (const rawLine of source.replace(/\r/g, '').split('\n')) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    const metadataMatch = line.match(/^\[([a-z]+):([^\]]*)\]$/i);
+    if (metadataMatch && !/^\d+$/.test(metadataMatch[1])) {
+      metadata[metadataMatch[1].toLowerCase()] = metadataMatch[2].trim();
+      continue;
+    }
+    const timestamps = [...line.matchAll(/\[(\d{1,3}):(\d{2})(?:[.:](\d{1,3}))?\]/g)];
+    const text = line.replace(/\[(?:\d{1,3}):(?:\d{2})(?:[.:]\d{1,3})?\]/g, '').trim();
+    if (text) plain.push(text);
+    for (const match of timestamps) {
+      const fraction = match[3] ? Number(`0.${match[3]}`) : 0;
+      synced.push({ time: Number(match[1]) * 60 + Number(match[2]) + fraction, text });
+    }
+  }
+  synced.sort((a, b) => a.time - b.time);
+  return { metadata, plain, synced };
+}
+
+async function initializeLyrics() {
+  const container = document.querySelector('[data-lyrics-url]');
+  if (!container) return;
+  try {
+    const response = await fetch(container.dataset.lyricsUrl);
+    if (!response.ok) throw new Error('Lyrics could not be loaded.');
+    const lyrics = parseLrc(await response.text());
+    const lines = lyrics.synced.length
+      ? lyrics.synced
+      : lyrics.plain.map(text => ({ time: null, text }));
+    container.innerHTML = lines.length
+      ? lines.map(line => `<p${line.time === null ? '' : ` data-time="${line.time}"`}>${escapeHtml(line.text)}</p>`).join('')
+      : '<p class="empty-note">The LRC file contains no lyric lines.</p>';
+  } catch (error) {
+    container.innerHTML = `<p class="empty-note">${escapeHtml(error.message)}</p>`;
+  }
 }
 
 async function initialize() {
@@ -212,7 +264,7 @@ async function initialize() {
   updateDocumentTitle(data);
   document.querySelector('[data-page]').innerHTML = route(data);
   renderFooter(data.site);
-  initializeFilters(data);
+  initializeLyrics();
 }
 
 initialize().catch(error => {

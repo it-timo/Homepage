@@ -1,0 +1,232 @@
+{
+  "records": [
+    {
+      "id": "album:artifacts-of-resilience",
+      "type": "album",
+      "title": "Artifacts of Resilience",
+      "summary": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
+      "path": "/music/artifacts-of-resilience/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Maintainability Over Hype",
+        "Maintainability Over Hype"
+      ],
+      "search_text": "artifacts of resilience an album about endurance through difficult periods: resilience, responsibility, persistence, and recovery. resilience responsibility persistence recovery maintainability over hype maintainability over hype"
+    },
+    {
+      "id": "album:core-override",
+      "type": "album",
+      "title": "Core Override",
+      "summary": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
+      "path": "/music/core-override/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Used To Be Easy — Video",
+        "JARVIS",
+        "JARVIS",
+        "Used To Be Easy — Video",
+        "Grounded Fire"
+      ],
+      "search_text": "core override an album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency. technology identity digital life personal agency routine digital relationships used to be easy — video jarvis jarvis used to be easy — video grounded fire"
+    },
+    {
+      "id": "album:grounded-fire",
+      "type": "album",
+      "title": "Grounded Fire",
+      "summary": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
+      "path": "/music/grounded-fire/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "grounded fire a concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity. reconnection technology intensity self-respect core override"
+    },
+    {
+      "id": "article:architecture-is-communication",
+      "type": "article",
+      "title": "Architecture Is Communication",
+      "summary": "Architecture matters when it helps the next person understand why a system is shaped the way it is.",
+      "path": "/library/articles/architecture-is-communication/",
+      "themes": [
+        "architecture",
+        "documentation",
+        "maintainability"
+      ],
+      "related": [
+        "DNS Database",
+        "JARVIS",
+        "DNS Database",
+        "JARVIS"
+      ],
+      "search_text": "architecture is communication architecture matters when it helps the next person understand why a system is shaped the way it is. architecture documentation maintainability dns database jarvis dns database jarvis"
+    },
+    {
+      "id": "milestone:jarvis-alpha",
+      "type": "milestone",
+      "title": "JARVIS Alpha",
+      "summary": "JARVIS reaches its alpha state as a personal orchestration platform.",
+      "path": "/projects/jarvis.html",
+      "themes": [
+        "orchestration",
+        "memory",
+        "human agency"
+      ],
+      "related": [
+        "JARVIS"
+      ],
+      "search_text": "jarvis alpha jarvis reaches its alpha state as a personal orchestration platform. orchestration memory human agency jarvis"
+    },
+    {
+      "id": "milestone:test-generation-platform",
+      "type": "milestone",
+      "title": "Test Generation Platform",
+      "summary": "Human-readable test cases begin moving through a repeatable path into Playwright automation.",
+      "path": "/projects/test-generation-platform.html",
+      "themes": [
+        "quality",
+        "automation",
+        "translation"
+      ],
+      "related": [
+        "Test Generation Platform"
+      ],
+      "search_text": "test generation platform human-readable test cases begin moving through a repeatable path into playwright automation. quality automation translation test generation platform"
+    },
+    {
+      "id": "note:maintainability-over-hype",
+      "type": "note",
+      "title": "Maintainability Over Hype",
+      "summary": "New tools are useful when they make a system easier to understand, operate, or change—not merely newer.",
+      "path": "/library/notes/maintainability-over-hype/",
+      "themes": [
+        "maintainability",
+        "long-term thinking",
+        "engineering"
+      ],
+      "related": [
+        "DNS Database",
+        "Test Generation Platform",
+        "Artifacts of Resilience",
+        "DNS Database",
+        "Test Generation Platform",
+        "Artifacts of Resilience"
+      ],
+      "search_text": "maintainability over hype new tools are useful when they make a system easier to understand, operate, or change—not merely newer. maintainability long-term thinking engineering dns database test generation platform artifacts of resilience dns database test generation platform artifacts of resilience"
+    },
+    {
+      "id": "project:dns-database",
+      "type": "project",
+      "title": "DNS Database",
+      "summary": "A large Go backend shaped around lifecycle design, documentation, and the belief that software should remain understandable years later.",
+      "path": "/projects/dns-database.html",
+      "themes": [
+        "maintainability",
+        "lifecycles",
+        "documentation"
+      ],
+      "related": [
+        "Architecture Is Communication",
+        "Maintainability Over Hype",
+        "Architecture Is Communication",
+        "Maintainability Over Hype"
+      ],
+      "search_text": "dns database a large go backend shaped around lifecycle design, documentation, and the belief that software should remain understandable years later. maintainability lifecycles documentation architecture is communication maintainability over hype architecture is communication maintainability over hype"
+    },
+    {
+      "id": "project:external-playwright-adapter",
+      "type": "project",
+      "title": "External Playwright Adapter",
+      "summary": "Allows external repositories to participate in a larger testing ecosystem.",
+      "path": "/projects/external-playwright-adapter.html",
+      "themes": [
+        "integration",
+        "boundaries",
+        "pragmatism"
+      ],
+      "related": [
+        "Test Generation Platform",
+        "Test Generation Platform"
+      ],
+      "search_text": "external playwright adapter allows external repositories to participate in a larger testing ecosystem. integration boundaries pragmatism test generation platform test generation platform"
+    },
+    {
+      "id": "project:jarvis",
+      "type": "project",
+      "title": "JARVIS",
+      "summary": "A personal system for reducing context switching across projects, memory, documentation, automation, and creative work.",
+      "path": "/projects/jarvis.html",
+      "themes": [
+        "memory",
+        "orchestration",
+        "human agency"
+      ],
+      "related": [
+        "Test Generation Platform",
+        "Architecture Is Communication",
+        "Core Override",
+        "Test Generation Platform",
+        "JARVIS Alpha",
+        "Architecture Is Communication",
+        "Core Override"
+      ],
+      "search_text": "jarvis a personal system for reducing context switching across projects, memory, documentation, automation, and creative work. memory orchestration human agency test generation platform architecture is communication core override test generation platform jarvis alpha architecture is communication core override"
+    },
+    {
+      "id": "project:test-generation-platform",
+      "type": "project",
+      "title": "Test Generation Platform",
+      "summary": "Transforms human-written test cases into executable Playwright automation.",
+      "path": "/projects/test-generation-platform.html",
+      "themes": [
+        "quality",
+        "translation",
+        "automation"
+      ],
+      "related": [
+        "External Playwright Adapter",
+        "Maintainability Over Hype",
+        "JARVIS",
+        "External Playwright Adapter",
+        "JARVIS",
+        "Test Generation Platform",
+        "Maintainability Over Hype"
+      ],
+      "search_text": "test generation platform transforms human-written test cases into executable playwright automation. quality translation automation external playwright adapter maintainability over hype jarvis external playwright adapter jarvis test generation platform maintainability over hype"
+    },
+    {
+      "id": "video:used-to-be-easy",
+      "type": "video",
+      "title": "Used To Be Easy — Video",
+      "summary": "A visual project about memory, nostalgia, distance, connection, and personal history, centered on The Walker and warm memory silhouettes.",
+      "path": "/music/core-override/",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection"
+      ],
+      "related": [
+        "Core Override",
+        "Core Override"
+      ],
+      "search_text": "used to be easy — video a visual project about memory, nostalgia, distance, connection, and personal history, centered on the walker and warm memory silhouettes. memory nostalgia distance connection core override core override"
+    }
+  ]
+}

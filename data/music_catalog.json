@@ -5,7 +5,7 @@
       "slug": "artifacts-of-resilience",
       "path": "/music/artifacts-of-resilience/",
       "title": "Artifacts of Resilience",
-      "year": null,
+      "year": 2025,
       "status": "catalogued",
       "cover": "album_cover.png",
       "description": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
@@ -22,7 +22,15 @@
       "track_count": 0,
       "total_runtime_seconds": null,
       "total_runtime": null,
-      "tracks": []
+      "tracks": [],
+      "id": "album:artifacts-of-resilience",
+      "type": "album",
+      "relationships": [
+        {
+          "type": "shares_theme",
+          "target": "note:maintainability-over-hype"
+        }
+      ]
     },
     {
       "slug": "core-override",
@@ -36,7 +44,9 @@
         "technology",
         "identity",
         "digital life",
-        "personal agency"
+        "personal agency",
+        "routine",
+        "digital relationships"
       ],
       "spotify": "",
       "youtube": "",
@@ -45,7 +55,19 @@
       "track_count": 0,
       "total_runtime_seconds": null,
       "total_runtime": null,
-      "tracks": []
+      "tracks": [],
+      "id": "album:core-override",
+      "type": "album",
+      "relationships": [
+        {
+          "type": "has_visual_project",
+          "target": "video:used-to-be-easy"
+        },
+        {
+          "type": "shares_theme",
+          "target": "project:jarvis"
+        }
+      ]
     },
     {
       "slug": "grounded-fire",
@@ -68,7 +90,21 @@
       "track_count": 0,
       "total_runtime_seconds": null,
       "total_runtime": null,
-      "tracks": []
+      "tracks": [],
+      "id": "album:grounded-fire",
+      "type": "album",
+      "relationships": [
+        {
+          "type": "shares_theme",
+          "target": "album:core-override"
+        }
+      ]
     }
-  ]
+  ],
+  "enrichment": {
+    "source": "metadata/music.json",
+    "unmatched_track_metadata": [
+      "core-override:used-to-be-easy"
+    ]
+  }
 }

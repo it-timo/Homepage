@@ -1,0 +1,889 @@
+{
+  "entities": [
+    {
+      "slug": "more-powerful-passenger",
+      "title": "More Powerful Passenger",
+      "type": "Civilization-scale god simulation",
+      "status": "EXPLORING",
+      "summary": "The player acts as a limited god. Faith is scarce, civilizations evolve autonomously, and influence is always indirect.",
+      "structure": [
+        "No victory condition",
+        "Civilizations evolve autonomously",
+        "Faith is a scarce resource",
+        "The player is powerful but limited"
+      ],
+      "themes": [
+        "emergence",
+        "belief",
+        "interpretation",
+        "responsibility",
+        "indirect influence"
+      ],
+      "id": "experiment:more-powerful-passenger",
+      "relationships": [],
+      "path": "",
+      "incoming_relationships": []
+    },
+    {
+      "slug": "manhwa-concepts",
+      "title": "Manhwa Concepts",
+      "type": "Long-term creative exploration",
+      "status": "EXPLORATORY",
+      "summary": "A developing body of character, system, worldbuilding, and narrative-structure work.",
+      "structure": [
+        "Characters",
+        "Systems",
+        "Worldbuilding",
+        "Narrative structures"
+      ],
+      "themes": [
+        "identity",
+        "worldbuilding",
+        "story structure"
+      ],
+      "id": "experiment:manhwa-concepts",
+      "relationships": [],
+      "path": "",
+      "incoming_relationships": []
+    },
+    {
+      "slug": "narrative-simulation",
+      "title": "Narrative Simulation",
+      "type": "Story systems",
+      "status": "EXPLORATORY",
+      "summary": "An ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences.",
+      "structure": [
+        "Story systems",
+        "Emergent narratives",
+        "Simulation"
+      ],
+      "themes": [
+        "emergence",
+        "narrative",
+        "simulation"
+      ],
+      "id": "experiment:narrative-simulation",
+      "relationships": [],
+      "path": "",
+      "incoming_relationships": []
+    },
+    {
+      "slug": "artifacts-of-resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "title": "Artifacts of Resilience",
+      "year": 2025,
+      "status": "catalogued",
+      "cover": "album_cover.png",
+      "description": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "",
+      "cover_path": null,
+      "track_count": 0,
+      "total_runtime_seconds": null,
+      "total_runtime": null,
+      "id": "album:artifacts-of-resilience",
+      "type": "album",
+      "relationships": [
+        {
+          "type": "shares_theme",
+          "target": "note:maintainability-over-hype",
+          "title": "Maintainability Over Hype",
+          "path": "/library/notes/maintainability-over-hype/",
+          "entity_type": "note"
+        }
+      ],
+      "summary": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "note:maintainability-over-hype",
+          "title": "Maintainability Over Hype",
+          "path": "/library/notes/maintainability-over-hype/",
+          "entity_type": "note"
+        }
+      ]
+    },
+    {
+      "slug": "core-override",
+      "path": "/music/core-override/",
+      "title": "Core Override",
+      "year": 2026,
+      "status": "released",
+      "cover": "album_cover.png",
+      "description": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "",
+      "cover_path": null,
+      "track_count": 0,
+      "total_runtime_seconds": null,
+      "total_runtime": null,
+      "id": "album:core-override",
+      "type": "album",
+      "relationships": [
+        {
+          "type": "has_visual_project",
+          "target": "video:used-to-be-easy",
+          "title": "Used To Be Easy — Video",
+          "path": "/music/core-override/",
+          "entity_type": "video"
+        },
+        {
+          "type": "shares_theme",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        }
+      ],
+      "summary": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "video:used-to-be-easy",
+          "title": "Used To Be Easy — Video",
+          "path": "/music/core-override/",
+          "entity_type": "video"
+        },
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "slug": "grounded-fire",
+      "path": "/music/grounded-fire/",
+      "title": "Grounded Fire",
+      "year": null,
+      "status": "catalogued",
+      "cover": "album_cover.png",
+      "description": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "spotify": "",
+      "youtube": "",
+      "soundcloud": "",
+      "cover_path": null,
+      "track_count": 0,
+      "total_runtime_seconds": null,
+      "total_runtime": null,
+      "id": "album:grounded-fire",
+      "type": "album",
+      "relationships": [
+        {
+          "type": "shares_theme",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
+      "incoming_relationships": []
+    },
+    {
+      "title": "Architecture Is Communication",
+      "slug": "architecture-is-communication",
+      "collection": "articles",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "Architecture matters when it helps the next person understand why a system is shaped the way it is.",
+      "themes": [
+        "architecture",
+        "documentation",
+        "maintainability"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database",
+          "title": "DNS Database",
+          "path": "/projects/dns-database.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "related_to",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        }
+      ],
+      "id": "article:architecture-is-communication",
+      "type": "article",
+      "path": "/library/articles/architecture-is-communication/",
+      "source": "content/articles/architecture-is-communication.md",
+      "body": [
+        "Architecture is not only the arrangement of components. It is the record of what a system believes about change.",
+        "A boundary explains which decisions belong together. A lifecycle explains when a thing may exist. A test explains which behavior the system is unwilling to lose. Documentation explains why those choices were made when the code can only show what they became.",
+        "The useful question is not whether an architecture looks sophisticated. It is whether someone can return years later, understand the constraints, and change the system without first reconstructing its history from accidents."
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "project:dns-database",
+          "title": "DNS Database",
+          "path": "/projects/dns-database.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        }
+      ]
+    },
+    {
+      "id": "milestone:jarvis-alpha",
+      "type": "milestone",
+      "title": "JARVIS Alpha",
+      "status": "alpha",
+      "year": 2026,
+      "date": null,
+      "path": "/projects/jarvis.html",
+      "summary": "JARVIS reaches its alpha state as a personal orchestration platform.",
+      "themes": [
+        "orchestration",
+        "memory",
+        "human agency"
+      ],
+      "relationships": [
+        {
+          "type": "milestone_of",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        }
+      ],
+      "incoming_relationships": []
+    },
+    {
+      "id": "milestone:test-generation-platform",
+      "type": "milestone",
+      "title": "Test Generation Platform",
+      "status": "active",
+      "year": 2025,
+      "date": null,
+      "path": "/projects/test-generation-platform.html",
+      "summary": "Human-readable test cases begin moving through a repeatable path into Playwright automation.",
+      "themes": [
+        "quality",
+        "automation",
+        "translation"
+      ],
+      "relationships": [
+        {
+          "type": "milestone_of",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        }
+      ],
+      "incoming_relationships": []
+    },
+    {
+      "title": "Maintainability Over Hype",
+      "slug": "maintainability-over-hype",
+      "collection": "notes",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "New tools are useful when they make a system easier to understand, operate, or change—not merely newer.",
+      "themes": [
+        "maintainability",
+        "long-term thinking",
+        "engineering"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database",
+          "title": "DNS Database",
+          "path": "/projects/dns-database.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "related_to",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "id": "note:maintainability-over-hype",
+      "type": "note",
+      "path": "/library/notes/maintainability-over-hype/",
+      "source": "content/notes/maintainability-over-hype.md",
+      "body": [
+        "A system accumulates history whether that history is documented or not.",
+        "Choosing maintainability over hype does not mean refusing new tools. It means asking what remains understandable after the novelty has gone: interfaces, failure modes, ownership, tests, and the reasons behind irreversible decisions."
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "project:dns-database",
+          "title": "DNS Database",
+          "path": "/projects/dns-database.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "slug": "dns-database",
+      "path": "/projects/dns-database.html",
+      "title": "DNS Database",
+      "status": "LONG-RUNNING",
+      "kind": "Backend system",
+      "summary": "A large Go backend shaped around lifecycle design, documentation, and the belief that software should remain understandable years later.",
+      "purpose": "Long-term engineering craftsmanship rather than novelty: explicit lifecycles, durable storage, documented decisions, and tests that make change safer.",
+      "facts": [
+        "Approximately 13,000 lines of Go",
+        "Approximately 90% test coverage",
+        "RocksDB-based storage",
+        "Extensive documentation",
+        "Lifecycle-focused design"
+      ],
+      "technologies": [
+        "Go",
+        "RocksDB"
+      ],
+      "themes": [
+        "maintainability",
+        "lifecycles",
+        "documentation"
+      ],
+      "featured": true,
+      "id": "project:dns-database",
+      "type": "project",
+      "relationships": [
+        {
+          "type": "documented_by",
+          "target": "article:architecture-is-communication",
+          "title": "Architecture Is Communication",
+          "path": "/library/articles/architecture-is-communication/",
+          "entity_type": "article"
+        },
+        {
+          "type": "shares_principle",
+          "target": "note:maintainability-over-hype",
+          "title": "Maintainability Over Hype",
+          "path": "/library/notes/maintainability-over-hype/",
+          "entity_type": "note"
+        }
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "article:architecture-is-communication",
+          "title": "Architecture Is Communication",
+          "path": "/library/articles/architecture-is-communication/",
+          "entity_type": "article"
+        },
+        {
+          "type": "referenced_by",
+          "target": "note:maintainability-over-hype",
+          "title": "Maintainability Over Hype",
+          "path": "/library/notes/maintainability-over-hype/",
+          "entity_type": "note"
+        }
+      ]
+    },
+    {
+      "slug": "external-playwright-adapter",
+      "path": "/projects/external-playwright-adapter.html",
+      "title": "External Playwright Adapter",
+      "status": "ACTIVE",
+      "kind": "Integration",
+      "summary": "Allows external repositories to participate in a larger testing ecosystem.",
+      "purpose": "A pragmatic boundary: teams can keep tests near their own code while still taking part in shared execution and reporting workflows.",
+      "facts": [
+        "Designed for external repositories",
+        "Connects independent test suites",
+        "Part of a broader testing ecosystem"
+      ],
+      "technologies": [
+        "Playwright",
+        "TypeScript",
+        "Docker"
+      ],
+      "themes": [
+        "integration",
+        "boundaries",
+        "pragmatism"
+      ],
+      "featured": false,
+      "id": "project:external-playwright-adapter",
+      "type": "project",
+      "relationships": [
+        {
+          "type": "part_of_ecosystem",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        }
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        }
+      ]
+    },
+    {
+      "slug": "goboot",
+      "path": "",
+      "title": "GoBoot",
+      "status": "CURRENT PRIORITY",
+      "kind": "Engineering work",
+      "summary": "A current area of focus. The public archive will expand when there is stable context worth preserving.",
+      "purpose": "Listed honestly as current work without inventing a public specification before one exists.",
+      "facts": [],
+      "technologies": [
+        "Go"
+      ],
+      "themes": [
+        "engineering"
+      ],
+      "featured": false,
+      "id": "project:goboot",
+      "type": "project",
+      "relationships": [],
+      "incoming_relationships": []
+    },
+    {
+      "slug": "jarvis",
+      "path": "/projects/jarvis.html",
+      "title": "JARVIS",
+      "status": "ALPHA",
+      "kind": "Personal orchestration platform",
+      "summary": "A personal system for reducing context switching across projects, memory, documentation, automation, and creative work.",
+      "purpose": "Bring the different parts of long-running work into one understandable context while preserving human control at meaningful decision points.",
+      "principle": "Autonomous Until The Gate",
+      "facts": [
+        "Connect projects, memory, and documentation",
+        "Coordinate automation and creative work",
+        "Reduce context switching",
+        "Keep consequential decisions behind explicit gates"
+      ],
+      "technologies": [
+        "LangGraph",
+        "LiteLLM",
+        "FastAPI",
+        "React",
+        "ChromaDB",
+        "PostgreSQL"
+      ],
+      "technologyNote": "Planned architecture; expected to evolve with the project.",
+      "themes": [
+        "memory",
+        "orchestration",
+        "human agency"
+      ],
+      "featured": true,
+      "id": "project:jarvis",
+      "type": "project",
+      "relationships": [
+        {
+          "type": "related_system",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "documented_by",
+          "target": "article:architecture-is-communication",
+          "title": "Architecture Is Communication",
+          "path": "/library/articles/architecture-is-communication/",
+          "entity_type": "article"
+        },
+        {
+          "type": "shares_theme",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "milestone:jarvis-alpha",
+          "title": "JARVIS Alpha",
+          "path": "/projects/jarvis.html",
+          "entity_type": "milestone"
+        },
+        {
+          "type": "referenced_by",
+          "target": "article:architecture-is-communication",
+          "title": "Architecture Is Communication",
+          "path": "/library/articles/architecture-is-communication/",
+          "entity_type": "article"
+        },
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "slug": "test-generation-platform",
+      "path": "/projects/test-generation-platform.html",
+      "title": "Test Generation Platform",
+      "status": "ACTIVE",
+      "kind": "Test automation",
+      "summary": "Transforms human-written test cases into executable Playwright automation.",
+      "purpose": "Bridge the language people use to describe quality with the automation systems used to verify it, without making either side incidental.",
+      "facts": [
+        "Human-readable cases originate in KiwiTCMS",
+        "Automation is generated for Playwright",
+        "Templates keep generated output understandable",
+        "Docker supports repeatable environments"
+      ],
+      "technologies": [
+        "KiwiTCMS",
+        "Playwright",
+        "Python",
+        "TypeScript",
+        "Docker",
+        "Jinja2"
+      ],
+      "themes": [
+        "quality",
+        "translation",
+        "automation"
+      ],
+      "featured": true,
+      "id": "project:test-generation-platform",
+      "type": "project",
+      "relationships": [
+        {
+          "type": "integrates_with",
+          "target": "project:external-playwright-adapter",
+          "title": "External Playwright Adapter",
+          "path": "/projects/external-playwright-adapter.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "shares_principle",
+          "target": "note:maintainability-over-hype",
+          "title": "Maintainability Over Hype",
+          "path": "/library/notes/maintainability-over-hype/",
+          "entity_type": "note"
+        },
+        {
+          "type": "related_system",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        }
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "project:external-playwright-adapter",
+          "title": "External Playwright Adapter",
+          "path": "/projects/external-playwright-adapter.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "milestone:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "milestone"
+        },
+        {
+          "type": "referenced_by",
+          "target": "note:maintainability-over-hype",
+          "title": "Maintainability Over Hype",
+          "path": "/library/notes/maintainability-over-hype/",
+          "entity_type": "note"
+        }
+      ]
+    },
+    {
+      "id": "video:used-to-be-easy",
+      "slug": "used-to-be-easy",
+      "title": "Used To Be Easy — Video",
+      "type": "video",
+      "status": "in production",
+      "year": 2026,
+      "date": null,
+      "path": "/music/core-override/",
+      "summary": "A visual project about memory, nostalgia, distance, connection, and personal history, centered on The Walker and warm memory silhouettes.",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection"
+      ],
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "project:dns-database",
+      "type": "documented_by",
+      "target": "article:architecture-is-communication",
+      "title": "Architecture Is Communication",
+      "path": "/library/articles/architecture-is-communication/",
+      "entity_type": "article"
+    },
+    {
+      "source": "project:dns-database",
+      "type": "shares_principle",
+      "target": "note:maintainability-over-hype",
+      "title": "Maintainability Over Hype",
+      "path": "/library/notes/maintainability-over-hype/",
+      "entity_type": "note"
+    },
+    {
+      "source": "project:test-generation-platform",
+      "type": "integrates_with",
+      "target": "project:external-playwright-adapter",
+      "title": "External Playwright Adapter",
+      "path": "/projects/external-playwright-adapter.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "project:test-generation-platform",
+      "type": "shares_principle",
+      "target": "note:maintainability-over-hype",
+      "title": "Maintainability Over Hype",
+      "path": "/library/notes/maintainability-over-hype/",
+      "entity_type": "note"
+    },
+    {
+      "source": "project:test-generation-platform",
+      "type": "related_system",
+      "target": "project:jarvis",
+      "title": "JARVIS",
+      "path": "/projects/jarvis.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "project:external-playwright-adapter",
+      "type": "part_of_ecosystem",
+      "target": "project:test-generation-platform",
+      "title": "Test Generation Platform",
+      "path": "/projects/test-generation-platform.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "project:jarvis",
+      "type": "related_system",
+      "target": "project:test-generation-platform",
+      "title": "Test Generation Platform",
+      "path": "/projects/test-generation-platform.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "project:jarvis",
+      "type": "documented_by",
+      "target": "article:architecture-is-communication",
+      "title": "Architecture Is Communication",
+      "path": "/library/articles/architecture-is-communication/",
+      "entity_type": "article"
+    },
+    {
+      "source": "project:jarvis",
+      "type": "shares_theme",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "video:used-to-be-easy",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "milestone:jarvis-alpha",
+      "type": "milestone_of",
+      "target": "project:jarvis",
+      "title": "JARVIS",
+      "path": "/projects/jarvis.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "milestone:test-generation-platform",
+      "type": "milestone_of",
+      "target": "project:test-generation-platform",
+      "title": "Test Generation Platform",
+      "path": "/projects/test-generation-platform.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "article:architecture-is-communication",
+      "type": "related_to",
+      "target": "project:dns-database",
+      "title": "DNS Database",
+      "path": "/projects/dns-database.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "article:architecture-is-communication",
+      "type": "related_to",
+      "target": "project:jarvis",
+      "title": "JARVIS",
+      "path": "/projects/jarvis.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "note:maintainability-over-hype",
+      "type": "related_to",
+      "target": "project:dns-database",
+      "title": "DNS Database",
+      "path": "/projects/dns-database.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "note:maintainability-over-hype",
+      "type": "related_to",
+      "target": "project:test-generation-platform",
+      "title": "Test Generation Platform",
+      "path": "/projects/test-generation-platform.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "note:maintainability-over-hype",
+      "type": "related_to",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "shares_theme",
+      "target": "note:maintainability-over-hype",
+      "title": "Maintainability Over Hype",
+      "path": "/library/notes/maintainability-over-hype/",
+      "entity_type": "note"
+    },
+    {
+      "source": "album:core-override",
+      "type": "has_visual_project",
+      "target": "video:used-to-be-easy",
+      "title": "Used To Be Easy — Video",
+      "path": "/music/core-override/",
+      "entity_type": "video"
+    },
+    {
+      "source": "album:core-override",
+      "type": "shares_theme",
+      "target": "project:jarvis",
+      "title": "JARVIS",
+      "path": "/projects/jarvis.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "shares_theme",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    }
+  ]
+}

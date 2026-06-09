@@ -164,3 +164,11 @@ Album routes use `/music/<album>/`; track routes use `/music/<album>/<track>/`. 
 ## GitHub integration
 
 The authoritative GitHub username is **`it-timo`**. Public repository data is generated from the GitHub API into `data/projects.json`. Forks and archived repositories are excluded and results are sorted by most recent update. Manually curated highlights live only in `data/project_featured.json`.
+
+## Connected Archive Infrastructure
+
+Archive records use stable, namespaced entity IDs and explicit typed relationships. Relationships are validated during the build and resolved in both directions so an album can point to a video while the video is also discoverable from the album's incoming links.
+
+Manual music enrichment belongs in `metadata/music.json`; generated media records remain disposable build output. Long-form knowledge belongs in Markdown under `content/articles/` and `content/notes/`. GitHub facts and manually authored project meaning remain separate and are merged during generation.
+
+The timeline is generated from dated entities and explicit manual history. Search indexes direct metadata together with connected record titles, allowing themes to reveal work across mediums.

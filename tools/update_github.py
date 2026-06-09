@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "projects.json"
 FEATURED = ROOT / "data" / "project_featured.json"
+OVERRIDES = ROOT / "data" / "project_overrides.json"
 DEFAULT_USERNAME = "it-timo"
 API = "https://api.github.com"
 
@@ -49,7 +50,7 @@ def fetch_optional(url: str, token: str | None, fallback):
         raise
 
 
-def build_repository(repo: dict, token: str | None, featured: set[str]) -> dict:
+def build_repository(repo: dict, token: str | None, featured: set[str], overrides: dict) -> dict:
     full_name = repo["full_name"]
     languages_data = fetch_optional(f"{API}/repos/{full_name}/languages", token, {})
     readme_data = fetch_optional(f"{API}/repos/{full_name}/readme", token, None)
@@ -58,17 +59,34 @@ def build_repository(repo: dict, token: str | None, featured: set[str]) -> dict:
         markdown = base64.b64decode(readme_data["content"]).decode("utf-8", errors="replace")
         readme_excerpt = normalize_readme(markdown)
     languages = list(languages_data.keys())
-    return {
+    repository = {
+        "id": f"repo:{repo['owner']['login']}:{repo['name']}",
+        "type": "repository",
         "name": repo["name"],
+        "title": repo["name"],
+        "path": repo["html_url"],
         "description": repo.get("description") or "",
+        "summary": repo.get("description") or readme_excerpt,
         "language": repo.get("language") or "",
         "languages": languages,
         "topics": repo.get("topics") or [],
+        "themes": repo.get("topics") or [],
         "updated_at": repo["updated_at"],
+        "created_at": repo["created_at"],
+        "pushed_at": repo.get("pushed_at"),
         "url": repo["html_url"],
         "readme_excerpt": readme_excerpt,
+        "metrics": {"stars": repo["stargazers_count"], "forks": repo["forks_count"], "open_issues": repo["open_issues_count"], "size_kb": repo["size"]},
         "featured": repo["name"] in featured,
+        "fork": repo["fork"],
+        "archived": repo["archived"],
+        "relationships": [],
     }
+    manual = overrides.get(repo["name"], {})
+    for key, value in manual.items():
+        repository[key] = value
+    repository["featured"] = repository["featured"] or manual.get("featured", False)
+    return repository
 
 
 def main() -> int:
@@ -78,10 +96,11 @@ def main() -> int:
     token = os.environ.get("GITHUB_TOKEN")
     featured_data = json.loads(FEATURED.read_text(encoding="utf-8"))
     featured = set(featured_data.get("repositories", []))
+    overrides = json.loads(OVERRIDES.read_text(encoding="utf-8")).get("repositories", {})
     try:
         repos = request_json(f"{API}/users/{args.username}/repos?per_page=100&type=owner&sort=updated", token)
         selected = [repo for repo in repos if not repo["fork"] and not repo["archived"]]
-        projects = [build_repository(repo, token, featured) for repo in selected]
+        projects = [build_repository(repo, token, featured, overrides) for repo in selected]
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError) as error:
         print(f"GitHub update failed: {error}", file=sys.stderr)
         return 1

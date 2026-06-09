@@ -6,13 +6,41 @@
   "location": "Germany",
   "email": "",
   "navigation": [
-    {"label":"Home","path":"/"},
-    {"label":"In Motion","path":"/in-motion/"},
-    {"label":"Music","path":"/music/"},
-    {"label":"Projects","path":"/projects/"},
-    {"label":"Experiments","path":"/experiments/"},
-    {"label":"Library","path":"/library/"},
-    {"label":"Timeline","path":"/timeline/"},
-    {"label":"About","path":"/about/"}
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "In Motion",
+      "path": "/in-motion/"
+    },
+    {
+      "label": "Music",
+      "path": "/music/"
+    },
+    {
+      "label": "Projects",
+      "path": "/projects/"
+    },
+    {
+      "label": "Experiments",
+      "path": "/experiments/"
+    },
+    {
+      "label": "Library",
+      "path": "/library/"
+    },
+    {
+      "label": "Timeline",
+      "path": "/timeline/"
+    },
+    {
+      "label": "Search",
+      "path": "/search/"
+    },
+    {
+      "label": "About",
+      "path": "/about/"
+    }
   ]
 }

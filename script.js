@@ -1,4 +1,4 @@
-const DATA_FILES = ['site', 'profile', 'project_context', 'projects', 'music_catalog', 'experiments', 'in-motion', 'library', 'timeline'];
+const DATA_FILES = ['site', 'profile', 'project_context', 'projects', 'music_catalog', 'content_catalog', 'entities', 'search_index', 'experiments', 'videos', 'in-motion', 'library', 'timeline'];
 
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
@@ -42,6 +42,16 @@ function renderFooter(site) {
     <p>© ${new Date().getFullYear()} ${escapeHtml(site.name)}</p>`;
 }
 
+
+function relationshipSection(data, entityId) {
+  const entity = data.entities.entities.find(item => item.id === entityId);
+  if (!entity) return '';
+  const relations = [...entity.relationships, ...entity.incoming_relationships]
+    .filter((relation, index, all) => relation.path && all.findIndex(item => item.target === relation.target) === index);
+  if (!relations.length) return '';
+  return `<section class="section related-section"><div class="wrap">${sectionHead('Connected records', 'Follow the relationships around this record.')}<div class="relationship-grid">${relations.map(relation => `<a href="${relation.path}"><span class="record-type">${escapeHtml(relation.type.replaceAll('_', ' '))} · ${escapeHtml(relation.entity_type)}</span><h3>${escapeHtml(relation.title)}</h3><span class="quiet-link">Open connected record →</span></a>`).join('')}</div></div></section>`;
+}
+
 function motionRow(item) {
   return linkOrArticle(item, `<div><span class="record-type">${escapeHtml(item.domain || item.type)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary || item.description)}</p></div><div>${status(item.status)}<span class="row-arrow" aria-hidden="true">↗</span></div>`, 'record-row');
 }
@@ -64,7 +74,7 @@ function albumCard(album) {
 
 function repositoryCard(repository) {
   const languages = repository.languages?.length ? repository.languages : (repository.language ? [repository.language] : []);
-  return `<article class="repository-card ${repository.featured ? 'featured' : ''}"><div class="card-top"><span class="record-type">${repository.featured ? 'Featured repository' : 'GitHub repository'}</span><time datetime="${escapeHtml(repository.updated_at)}">Updated ${escapeHtml(new Date(repository.updated_at).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' }))}</time></div><h3>${escapeHtml(repository.name)}</h3><p>${escapeHtml(repository.description || repository.readme_excerpt || 'No repository description is published.')}</p>${repository.readme_excerpt ? `<blockquote>${escapeHtml(repository.readme_excerpt)}</blockquote>` : ''}<div class="repository-meta"><div><span class="meta-label">Languages</span>${tagList(languages)}</div><div><span class="meta-label">Topics</span>${repository.topics.length ? tagList(repository.topics) : '<span class="small-note">No topics</span>'}</div></div><a class="quiet-link" href="${repository.url}" rel="me noopener" target="_blank">View repository on GitHub ↗</a></article>`;
+  return `<article class="repository-card ${repository.featured ? 'featured' : ''}"><div class="card-top"><span class="record-type">${repository.featured ? 'Featured repository' : 'GitHub repository'}</span><time datetime="${escapeHtml(repository.updated_at)}">Updated ${escapeHtml(new Date(repository.updated_at).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' }))}</time></div><h3>${escapeHtml(repository.name)}</h3><p>${escapeHtml(repository.description || repository.readme_excerpt || 'No repository description is published.')}</p>${repository.readme_excerpt ? `<blockquote>${escapeHtml(repository.readme_excerpt)}</blockquote>` : ''}<div class="repository-meta"><div><span class="meta-label">Languages</span>${tagList(languages)}</div><div><span class="meta-label">Topics</span>${repository.topics.length ? tagList(repository.topics) : '<span class="small-note">No topics</span>'}</div><div><span class="meta-label">Activity</span><span class="small-note">${repository.metrics.stars} stars · ${repository.metrics.forks} forks · ${repository.metrics.open_issues} open issues</span></div></div><a class="quiet-link" href="${repository.url}" rel="me noopener" target="_blank">View repository on GitHub ↗</a></article>`;
 }
 
 function renderHome(data) {
@@ -78,6 +88,7 @@ function renderHome(data) {
     <section class="section"><div class="wrap">${sectionHead('In motion', 'Current attention, without pretending it forms a fixed roadmap.', '<a class="quiet-link" href="/in-motion/">Full current-state record →</a>')}<div class="record-list">${data['in-motion'].map(motionRow).join('')}</div></div></section>
     <section class="section"><div class="wrap">${sectionHead('Engineering records', 'Systems are documented here through their constraints, decisions, and reasons for existing.', '<a class="quiet-link" href="/projects/">All engineering work →</a>')}<div class="archive-grid">${primaryProjects.map(projectCard).join('')}</div></div></section>
     <section class="section"><div class="wrap">${sectionHead('Music is primary work', 'The same questions about identity, persistence, technology, and connection reappear in lyrical form.', '<a class="quiet-link" href="/music/">Music archive →</a>')}<div class="album-grid">${data.music_catalog.albums.map(albumCard).join('')}</div></div></section>
+    <section class="section"><div class="wrap">${sectionHead('From the knowledge base', 'Markdown notes and articles become connected archive records.', '<a class="quiet-link" href="/library/">Open the library →</a>')}<div class="record-list">${data.content_catalog.entries.map(contentRow).join('')}</div></div></section>
     <section class="section connective"><div class="wrap split"><div><p class="eyebrow">The recurring thread</p><h2>How do complex things emerge, evolve, persist, and connect?</h2></div><div class="question-list">${data.profile.questions.map(question => `<p>${escapeHtml(question)}</p>`).join('')}</div></div></section>`;
 }
 
@@ -102,7 +113,7 @@ function renderProject(data, slug) {
   return `${pageHero(project.kind, project.title, project.summary, project.purpose)}
     <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">Why it exists</p><p class="large-copy">${escapeHtml(project.purpose)}</p>${project.principle ? `<blockquote class="principle-quote">${escapeHtml(project.principle)}</blockquote>` : ''}</div><aside><span class="meta-label">State</span>${status(project.status)}<span class="meta-label">Technologies</span>${tagList(project.technologies)}${project.technologyNote ? `<p class="small-note">${escapeHtml(project.technologyNote)}</p>` : ''}</aside></div></section>
     <section class="section"><div class="wrap">${sectionHead('Known characteristics', 'Concrete facts currently preserved in the public record.')} ${project.facts.length ? list(project.facts, 'fact-grid') : '<p class="empty-note">This record will expand when stable public detail is available.</p>'}</div></section>
-    <section class="section"><div class="wrap narrow"><p class="eyebrow">Recurring themes</p>${tagList(project.themes)}</div></section>`;
+    <section class="section"><div class="wrap narrow"><p class="eyebrow">Recurring themes</p>${tagList(project.themes)}</div></section>${relationshipSection(data, project.id)}`;
 }
 
 function renderMusic(data) {
@@ -124,7 +135,7 @@ function renderAlbum(data, slug) {
   if (!album) return renderNotFound();
   const year = album.year || 'Not catalogued';
   return `<section class="album-hero"><div class="wrap album-hero-grid">${albumArtwork(album, 'album-signal large')}<div><p class="eyebrow">Album · ${escapeHtml(year)}</p><h1>${escapeHtml(album.title)}</h1><p class="page-intro">${escapeHtml(album.description)}</p>${status(album.status)}${tagList(album.themes)}<dl class="album-statistics"><div><dt>Tracks</dt><dd>${album.track_count}</dd></div><div><dt>Runtime</dt><dd>${escapeHtml(album.total_runtime || 'Pending audio')}</dd></div><div><dt>Year</dt><dd>${escapeHtml(year)}</dd></div></dl></div></div></section>
-    <section class="section"><div class="wrap">${sectionHead('Tracklist', 'Discovered from numbered files in the album directory.')} ${album.tracks.length ? `<div class="track-table">${album.tracks.map(trackRow).join('')}</div>` : '<p class="empty-note">No numbered track media is present in this checkout yet. Add files such as <code>01_Track_Title.wav</code>, <code>.png</code>, and <code>.lrc</code>, then rebuild the catalog.</p>'}</div></section>`;
+    <section class="section"><div class="wrap">${sectionHead('Tracklist', 'Discovered from numbered files in the album directory.')} ${album.tracks.length ? `<div class="track-table">${album.tracks.map(trackRow).join('')}</div>` : '<p class="empty-note">No numbered track media is present in this checkout yet. Add files such as <code>01_Track_Title.wav</code>, <code>.png</code>, and <code>.lrc</code>, then rebuild the catalog.</p>'}</div></section>${relationshipSection(data, album.id)}`;
 }
 
 function findTrack(data, albumSlug, trackSlug) {
@@ -140,7 +151,7 @@ function renderTrack(data, albumSlug, trackSlug) {
     : albumArtwork(album, 'album-signal large');
   return `<section class="track-hero"><div class="wrap track-hero-grid"><div>${artwork}</div><div><p class="eyebrow">Track ${String(track.track).padStart(2, '0')} · ${escapeHtml(album.title)}</p><h1>${escapeHtml(track.title)}</h1><p class="track-runtime">${escapeHtml(track.duration || 'Runtime unavailable')}</p>${track.audio ? `<audio controls preload="metadata" src="${track.audio}">Your browser does not support HTML5 audio.</audio>` : '<p class="empty-note">The WAV file for this track is not present.</p>'}</div></div></section>
     <section class="section"><div class="wrap narrow">${sectionHead('Lyrics', 'LRC is parsed into a plain lyric view; timestamps are retained for future synchronized playback.')}<div class="lyrics" ${track.lyrics ? `data-lyrics-url="${track.lyrics}"` : ''}>${track.lyrics ? '<p class="small-note">Loading lyrics…</p>' : '<p class="empty-note">No LRC file is present for this track.</p>'}</div></div></section>
-    <nav class="track-navigation wrap" aria-label="Track navigation"><div>${track.previous ? `<span>Previous track</span><a href="${track.previous.path}">${escapeHtml(track.previous.title)}</a>` : ''}</div><a class="back-album" href="${album.path}">Back to album</a><div>${track.next ? `<span>Next track</span><a href="${track.next.path}">${escapeHtml(track.next.title)}</a>` : ''}</div></nav>`;
+    <nav class="track-navigation wrap" aria-label="Track navigation"><div>${track.previous ? `<span>Previous track</span><a href="${track.previous.path}">${escapeHtml(track.previous.title)}</a>` : ''}</div><a class="back-album" href="${album.path}">Back to album</a><div>${track.next ? `<span>Next track</span><a href="${track.next.path}">${escapeHtml(track.next.title)}</a>` : ''}</div></nav>${relationshipSection(data, track.id)}`;
 }
 
 function renderExperiments(data) {
@@ -148,12 +159,29 @@ function renderExperiments(data) {
     <section class="section"><div class="wrap experiment-stack">${data.experiments.map(item => `<article class="experiment-record"><div><span class="record-type">${escapeHtml(item.type)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.summary)}</p>${tagList(item.themes)}</div><aside>${status(item.status)}${list(item.structure)}</aside></article>`).join('')}</div></section>`;
 }
 
+function contentRow(item) {
+  return `<a class="record-row" href="${item.path}"><div><span class="record-type">${escapeHtml(item.collection)} · ${escapeHtml(item.status)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p></div><div>${tagList(item.themes.slice(0, 2))}<span class="row-arrow">↗</span></div></a>`;
+}
+
 function renderLibrary(data, collectionSlug = '') {
   const selected = data.library.collections.find(item => item.slug === collectionSlug);
+  const entries = selected ? data.content_catalog.entries.filter(item => item.collection === collectionSlug) : data.content_catalog.entries;
   const title = selected?.title || 'Library';
-  const intro = selected?.description || 'A durable home for notes, articles, project journals, and music commentary as the archive grows.';
-  return `${pageHero('Writing / documentation / context', title, intro, 'No articles are presented as published before they exist. The shelves are defined; entries will appear when there is something worth preserving.')}
-    <section class="section"><div class="wrap">${selected ? `<a class="quiet-link back-link" href="/library/">← All library collections</a>` : ''}<div class="library-grid">${(selected ? [selected] : data.library.collections).map(item => `<a class="library-record" href="/library/${item.slug}/"><span class="record-type">${escapeHtml(item.status)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.description)}</p><span class="entry-count">0 entries — structure ready</span></a>`).join('')}</div></div></section>`;
+  const intro = selected?.description || 'Markdown notes and articles, ingested into the same relationship graph as music, projects, videos, and experiments.';
+  return `${pageHero('Writing / documentation / context', title, intro, 'Source Markdown remains readable outside the website. The build adds routes, relationships, timeline entries, and search records.')}
+    <section class="section"><div class="wrap">${!selected ? `<div class="library-grid">${data.library.collections.map(item => `<a class="library-record" href="/library/${item.slug}/"><span class="record-type">${escapeHtml(item.status)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.description)}</p><span class="entry-count">${data.content_catalog.entries.filter(entry => entry.collection === item.slug).length} entries</span></a>`).join('')}</div>` : `<a class="quiet-link back-link" href="/library/">← All library collections</a><div class="record-list">${entries.length ? entries.map(contentRow).join('') : '<p class="empty-note">No entries in this collection yet.</p>'}</div>`}</div></section>`;
+}
+
+function renderContent(data, collection, slug) {
+  const item = data.content_catalog.entries.find(entry => entry.collection === collection && entry.slug === slug);
+  if (!item) return renderNotFound();
+  return `${pageHero(`${item.collection} · ${item.status}`, item.title, item.summary, item.year ? `Catalogued ${item.year}` : 'Living archive entry')}
+    <article class="section"><div class="wrap article-layout"><div class="prose">${item.body.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}</div><aside><span class="meta-label">Themes</span>${tagList(item.themes)}<span class="meta-label">Source</span><code>${escapeHtml(item.source)}</code></aside></div></article>${relationshipSection(data, item.id)}`;
+}
+
+function renderSearch(data) {
+  return `${pageHero('Connected archive search', 'Search', 'Find records by title, summary, theme, type, or the names of connected entities.', 'Search is generated from the same validated entity graph that drives cross-links.')}
+    <section class="section"><div class="wrap"><label class="search-box"><span>Search the archive</span><input type="search" data-search-input placeholder="Try resilience, architecture, memory…" autocomplete="off"></label><p class="search-count" data-search-count>${data.search_index.records.length} records indexed</p><div class="search-results record-list" data-search-results></div></div></section>`;
 }
 
 function renderTimeline(data) {
@@ -192,9 +220,12 @@ function route(data) {
   if (trackRoute) return renderTrack(data, trackRoute[1], trackRoute[2]);
   if (path === '/experiments/') return renderExperiments(data);
   if (path === '/library/') return renderLibrary(data);
+  const contentRoute = path.match(/^\/library\/(articles|notes|project-journals|music-commentary)\/([^/]+)\/$/);
+  if (contentRoute) return renderContent(data, contentRoute[1], contentRoute[2]);
   const collection = path.match(/^\/library\/(notes|articles|project-journals|music-commentary)\/$/);
   if (collection) return renderLibrary(data, collection[1]);
   if (path === '/timeline/') return renderTimeline(data);
+  if (path === '/search/') return renderSearch(data);
   if (path === '/about/') return renderAbout(data);
   if (path === '/contact/') return renderContact(data);
   return renderNotFound();
@@ -204,7 +235,7 @@ function updateDocumentTitle(data) {
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const albums = data.music_catalog.albums;
   const tracks = albums.flatMap(album => album.tracks);
-  const records = [...data.project_context, ...data.projects, ...albums, ...tracks];
+  const records = [...data.project_context, ...data.projects, ...albums, ...tracks, ...data.content_catalog.entries];
   const record = records.find(item => item.path === path);
   const navigationItem = data.site.navigation.find(item => item.path === path);
   const title = record?.title || navigationItem?.label || (path === '/contact/' ? 'Contact' : data.site.name);
@@ -253,6 +284,20 @@ async function initializeLyrics() {
   }
 }
 
+function initializeSearch(data) {
+  const input = document.querySelector('[data-search-input]');
+  if (!input) return;
+  const results = document.querySelector('[data-search-results]');
+  const count = document.querySelector('[data-search-count]');
+  const render = () => {
+    const terms = input.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+    const matches = terms.length ? data.search_index.records.filter(record => terms.every(term => record.search_text.includes(term))) : [];
+    count.textContent = terms.length ? `${matches.length} matching records` : `${data.search_index.records.length} records indexed`;
+    results.innerHTML = terms.length ? (matches.length ? matches.map(record => `<a class="record-row" href="${record.path}"><div><span class="record-type">${escapeHtml(record.type)}</span><h3>${escapeHtml(record.title)}</h3><p>${escapeHtml(record.summary)}</p></div><span class="row-arrow">↗</span></a>`).join('') : '<p class="empty-note">No connected records match this search.</p>') : '';
+  };
+  input.addEventListener('input', render);
+}
+
 async function initialize() {
   const entries = await Promise.all(DATA_FILES.map(async name => {
     const response = await fetch(`/data/${name}.json`);
@@ -265,6 +310,7 @@ async function initialize() {
   document.querySelector('[data-page]').innerHTML = route(data);
   renderFooter(data.site);
   initializeLyrics();
+  initializeSearch(data);
 }
 
 initialize().catch(error => {

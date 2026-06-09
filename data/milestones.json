@@ -1,0 +1,30 @@
+[
+  {
+    "id": "milestone:jarvis-alpha",
+    "type": "milestone",
+    "title": "JARVIS Alpha",
+    "status": "alpha",
+    "year": 2026,
+    "date": null,
+    "path": "/projects/jarvis.html",
+    "summary": "JARVIS reaches its alpha state as a personal orchestration platform.",
+    "themes": ["orchestration", "memory", "human agency"],
+    "relationships": [
+      {"type": "milestone_of", "target": "project:jarvis"}
+    ]
+  },
+  {
+    "id": "milestone:test-generation-platform",
+    "type": "milestone",
+    "title": "Test Generation Platform",
+    "status": "active",
+    "year": 2025,
+    "date": null,
+    "path": "/projects/test-generation-platform.html",
+    "summary": "Human-readable test cases begin moving through a repeatable path into Playwright automation.",
+    "themes": ["quality", "automation", "translation"],
+    "relationships": [
+      {"type": "milestone_of", "target": "project:test-generation-platform"}
+    ]
+  }
+]

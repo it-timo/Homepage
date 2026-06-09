@@ -1,41 +1,43 @@
 [
   {
+    "slug": "artifacts-of-resilience",
+    "path": "/music/albums/artifacts-of-resilience.html",
+    "title": "Artifacts of Resilience",
+    "format": "Album",
+    "status": "ARCHIVE ENTRY",
+    "tone": "resilience",
+    "theme": "Endurance through difficult periods.",
+    "focus": ["resilience", "responsibility", "persistence", "recovery"],
+    "tracks": ["I Still Look", "No Echo", "Nineteen And Nowhere", "What Family Means", "No Room", "Where It Lands", "Late Bloom", "Built For More Stuck On Empty", "Loyal To A Fault", "Running On Loops", "Trapped Inside", "It Was Me", "Override"],
+    "notableTracks": ["Loyal To A Fault", "Running On Loops", "It Was Me", "Override"]
+  },
+  {
+    "slug": "core-override",
+    "path": "/music/albums/core-override.html",
+    "title": "Core Override",
+    "format": "Album",
+    "status": "ARCHIVE ENTRY",
+    "tone": "digital",
+    "theme": "Technology, identity, routine, and digital life.",
+    "focus": ["modern communication", "digital relationships", "self-awareness", "rebuilding", "personal agency"],
+    "tracks": ["Used To Be Easy", "Swipe Ghost Repeat", "All The Right Lies", "Say It Or Leave It", "Velvet Lies", "I Am The Voice In Your GPS", "Walls We Built", "System Upgrade", "The Only Worker In The Mainframe", "Nothing Personal Just The Apocalypse", "Static Noise And Cold Coffee", "Burn The Night Into Me", "Built From Scraps"],
+    "notableTracks": ["Used To Be Easy", "Walls We Built", "Built From Scraps", "The Only Worker In The Mainframe"]
+  },
+  {
     "slug": "grounded-fire",
+    "path": "/music/albums/grounded-fire.html",
     "title": "Grounded Fire",
-    "type": "Album",
-    "year": 2025,
-    "status": "RELEASED",
-    "tone": "ember",
-    "catalog": "ORB-001",
-    "description": "An industrial electronic record about friction, momentum, and learning to carry heat without being consumed by it.",
-    "tracks": ["Signal in the Soil", "Used To Be Easy", "Grounded Fire", "Passenger", "After the Static"],
-    "links": ["Spotify", "Bandcamp", "YouTube"],
-    "featured": true
-  },
-  {
-    "slug": "the-shape-of-distance",
-    "title": "The Shape of Distance",
-    "type": "Album",
-    "year": 2026,
-    "status": "IN PRODUCTION",
-    "tone": "signal",
-    "catalog": "ORB-002",
-    "description": "A future record about memory, distance, and the messages that change while they travel.",
-    "tracks": ["Northbound", "Carrier Wave", "No Fixed Address", "The Shape of Distance"],
-    "links": [],
-    "featured": true
-  },
-  {
-    "slug": "unnamed-third-record",
-    "title": "Untitled / III",
-    "type": "Album",
-    "year": "TBA",
-    "status": "CONCEPT",
-    "tone": "void",
-    "catalog": "ORB-003",
-    "description": "Fragments, field recordings, and an empty folder waiting for a reason to exist.",
-    "tracks": [],
-    "links": [],
-    "featured": false
+    "format": "13-track concept album",
+    "status": "ARCHIVE ENTRY",
+    "tone": "fire",
+    "theme": "Reconnection after emotional and technological disconnection.",
+    "focus": ["disconnection", "reactivation", "self-respect", "intensity"],
+    "acts": [
+      {"title":"Act I — Disconnection","range":"01–04"},
+      {"title":"Act II — Reactivation","range":"05–08"},
+      {"title":"Act III — Self Respect Through Intensity","range":"09–13"}
+    ],
+    "tracks": ["Idle State", "Simulated Warmth", "The Distance Between Sparks", "Pulse Detect", "She Glitches Just Right", "No More Careful", "Chemical Voltage", "Too Loud To Fade", "The Cost Of No Mistakes", "Unapologetic Depth", "Grounded Fire", "No Script", "After The Pulse"],
+    "notableTracks": ["Simulated Warmth", "No More Careful", "Chemical Voltage", "Too Loud To Fade", "Grounded Fire"]
   }
 ]

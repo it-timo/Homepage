@@ -1,0 +1,9 @@
+{
+  "collections": [
+    {"slug":"notes","title":"Notes","description":"Short observations, technical findings, and ideas worth retaining before they become essays.","status":"READY FOR ENTRIES"},
+    {"slug":"articles","title":"Articles","description":"Long-form writing about engineering, systems, creative practice, and the recurring questions behind the work.","status":"READY FOR ENTRIES"},
+    {"slug":"project-journals","title":"Project Journals","description":"Decision histories, implementation notes, changed assumptions, and lessons from work that develops over time.","status":"READY FOR ENTRIES"},
+    {"slug":"music-commentary","title":"Music Commentary","description":"Context around albums, songs, themes, visual work, and the process of translating experience into music.","status":"READY FOR ENTRIES"}
+  ],
+  "entries": []
+}

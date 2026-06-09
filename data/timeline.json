@@ -1,9 +1,10 @@
 [
-  {"date":"2026-06","year":2026,"title":"The Shape of Distance","type":"Music","status":"IN PRODUCTION","description":"Production begins on the second album."},
-  {"date":"2026-05","year":2026,"title":"JARVIS Alpha","type":"Project","status":"ALPHA","description":"First connected workflow runs end to end."},
-  {"date":"2026-03","year":2026,"title":"Used To Be Easy — Video","type":"Music","status":"RELEASED","description":"A first visual chapter for Grounded Fire."},
-  {"date":"2025-11","year":2025,"title":"Grounded Fire","type":"Music","status":"RELEASED","description":"First album released into the world."},
-  {"date":"2025-08","year":2025,"title":"Test Generator","type":"Project","status":"ACTIVE","description":"Reporting and execution converge into one workflow."},
-  {"date":"2025-02","year":2025,"title":"DNS Database","type":"Project","status":"ARCHIVED","description":"The experiment is documented and closed."},
-  {"date":"2024-10","year":2024,"title":"Orbit mark","type":"Identity","status":"ACTIVE","description":"The visual system finds its central symbol."}
+  {"period":"Current","order":1,"title":"Music and Used To Be Easy video","type":"Music","status":"IN MOTION","description":"Music remains a primary creative output; the Used To Be Easy video is the current major production.","path":"/music/songs/used-to-be-easy.html"},
+  {"period":"Current","order":2,"title":"JARVIS","type":"Project","status":"ALPHA","description":"A personal orchestration platform growing around projects, memory, documentation, automation, and creative work.","path":"/projects/jarvis.html"},
+  {"period":"Current","order":3,"title":"Test Generation Platform","type":"Project","status":"ACTIVE","description":"Human-written KiwiTCMS cases are being bridged into executable Playwright automation.","path":"/projects/test-generation-platform.html"},
+  {"period":"Current","order":4,"title":"GoBoot","type":"Project","status":"CURRENT PRIORITY","description":"A current engineering focus; details remain intentionally open until stable enough to document.","path":"/projects/"},
+  {"period":"Long-running","order":5,"title":"Alpha Strike Labs GmbH","type":"Professional","status":"ONGOING","description":"Approximately 5.5 years across OSINT systems, backend work, test automation, CI/CD, Docker, VPN testing, and mentoring.","path":"/about/"},
+  {"period":"Long-running","order":6,"title":"DNS Database","type":"Project","status":"DOCUMENTED","description":"A substantial Go and RocksDB backend with lifecycle-focused design, extensive documentation, and approximately 90% test coverage.","path":"/projects/dns-database.html"},
+  {"period":"Open exploration","order":7,"title":"More Powerful Passenger","type":"Experiment","status":"EXPLORING","description":"A civilization-scale god simulation about belief, responsibility, and indirect influence.","path":"/experiments/"},
+  {"period":"Open exploration","order":8,"title":"Narrative Simulation and Manhwa Concepts","type":"Experiment","status":"EXPLORATORY","description":"Long-term work on characters, worlds, story systems, and emergent narrative structures.","path":"/experiments/"}
 ]

@@ -1,0 +1,23 @@
+{
+  "role": "Software Quality Engineer",
+  "company": "Alpha Strike Labs GmbH",
+  "tenure": "Approximately 5.5 years",
+  "disciplines": ["Backend Engineering", "Software Quality Engineering", "Test Automation", "Architecture"],
+  "languages": ["Go", "Python", "TypeScript", "Bash"],
+  "experience": ["OSINT systems", "Backend development", "Test automation", "CI/CD improvements", "Docker environments", "VPN testing", "Mentoring interns"],
+  "principles": [
+    "Maintainability over hype",
+    "Documentation matters",
+    "Long-term thinking matters",
+    "Systems should remain understandable years later",
+    "Architecture is communication",
+    "Quality is designed, not inspected"
+  ],
+  "questions": [
+    "How do complex things emerge?",
+    "How do systems evolve?",
+    "How does identity persist through change?",
+    "How do people find meaning?",
+    "How do simple rules create unexpected outcomes?"
+  ]
+}

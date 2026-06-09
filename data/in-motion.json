@@ -1,0 +1,6 @@
+[
+  {"title":"Music","status":"CURRENT","domain":"Creative work","summary":"Developing music as a primary body of work, including the Used To Be Easy video production.","path":"/music/"},
+  {"title":"Professional engineering work","status":"ONGOING","domain":"Engineering","summary":"Backend engineering, software quality, test automation, architecture, and the daily work of keeping systems understandable.","path":"/about/"},
+  {"title":"GoBoot","status":"CURRENT","domain":"Engineering","summary":"A present focus intentionally listed without a fabricated roadmap or premature public specification.","path":"/projects/"},
+  {"title":"JARVIS","status":"ALPHA","domain":"Systems","summary":"Connecting projects, memory, documentation, automation, and creative work while reducing context switching.","path":"/projects/jarvis.html"}
+]

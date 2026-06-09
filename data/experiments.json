@@ -1,5 +1,29 @@
 [
-  {"title":"More Powerful Passenger","type":"World","status":"EXPLORING","description":"A systems-first game concept about power, responsibility, and the cost of being carried."},
-  {"title":"The City Below Noon","type":"Story","status":"CONCEPT","description":"A manhwa-shaped world where every district experiences a different hour of the same day."},
-  {"title":"Emergence Atlas","type":"Simulation","status":"EXPLORING","description":"Tiny rule sets, long timelines, and a visual record of unexpected behavior."}
+  {
+    "slug":"more-powerful-passenger",
+    "title":"More Powerful Passenger",
+    "type":"Civilization-scale god simulation",
+    "status":"EXPLORING",
+    "summary":"The player acts as a limited god. Faith is scarce, civilizations evolve autonomously, and influence is always indirect.",
+    "structure":["No victory condition", "Civilizations evolve autonomously", "Faith is a scarce resource", "The player is powerful but limited"],
+    "themes":["emergence", "belief", "interpretation", "responsibility", "indirect influence"]
+  },
+  {
+    "slug":"narrative-simulation",
+    "title":"Narrative Simulation",
+    "type":"Story systems",
+    "status":"EXPLORATORY",
+    "summary":"An ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences.",
+    "structure":["Story systems", "Emergent narratives", "Simulation"],
+    "themes":["emergence", "narrative", "simulation"]
+  },
+  {
+    "slug":"manhwa-concepts",
+    "title":"Manhwa Concepts",
+    "type":"Long-term creative exploration",
+    "status":"EXPLORATORY",
+    "summary":"A developing body of character, system, worldbuilding, and narrative-structure work.",
+    "structure":["Characters", "Systems", "Worldbuilding", "Narrative structures"],
+    "themes":["identity", "worldbuilding", "story structure"]
+  }
 ]

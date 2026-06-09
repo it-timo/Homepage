@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "building-to-understand",
+    "title": "Building to Understand",
+    "collection": "Articles",
+    "date": "2026-05-18",
+    "readTime": "6 min",
+    "summary": "The most useful prototypes do not prove that an idea works. They reveal what the idea actually is.",
+    "tags": ["process", "systems"],
+    "body": ["Some things cannot be understood from the outside. You have to build a small version, push on its edges, and watch which assumptions collapse.", "This is why the work collected here is allowed to remain unfinished. A prototype can succeed by producing a better question."]
+  },
+  {
+    "slug": "interfaces-for-long-projects",
+    "title": "Interfaces for Long Projects",
+    "collection": "Project Journals",
+    "date": "2026-04-02",
+    "readTime": "4 min",
+    "summary": "A project that may last ten years needs different interfaces than one shipping next Friday.",
+    "tags": ["design", "maintenance"],
+    "body": ["Long projects need room for uncertainty, graceful archives, and a visible history of changed minds."]
+  },
+  {
+    "slug": "notes-on-creative-friction",
+    "title": "Notes on Creative Friction",
+    "collection": "Notes",
+    "date": "2026-02-11",
+    "readTime": "2 min",
+    "summary": "Constraints are only useful when they resist in the right direction.",
+    "tags": ["creativity", "notes"],
+    "body": ["The goal is not to remove every obstacle. It is to distinguish useful resistance from accidental drag."]
+  },
+  {
+    "slug": "why-albums-still-matter",
+    "title": "Why Albums Still Matter",
+    "collection": "Music Commentary",
+    "date": "2025-12-07",
+    "readTime": "5 min",
+    "summary": "An album is not a container for tracks. It is a designed period of attention.",
+    "tags": ["music", "format"],
+    "body": ["Sequence creates meaning. The space between songs is part of the composition, and an ending changes everything that came before it."]
+  }
+]

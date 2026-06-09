@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "grounded-fire",
+    "title": "Grounded Fire",
+    "type": "Album",
+    "year": 2025,
+    "status": "RELEASED",
+    "tone": "ember",
+    "catalog": "ORB-001",
+    "description": "An industrial electronic record about friction, momentum, and learning to carry heat without being consumed by it.",
+    "tracks": ["Signal in the Soil", "Used To Be Easy", "Grounded Fire", "Passenger", "After the Static"],
+    "links": ["Spotify", "Bandcamp", "YouTube"],
+    "featured": true
+  },
+  {
+    "slug": "the-shape-of-distance",
+    "title": "The Shape of Distance",
+    "type": "Album",
+    "year": 2026,
+    "status": "IN PRODUCTION",
+    "tone": "signal",
+    "catalog": "ORB-002",
+    "description": "A future record about memory, distance, and the messages that change while they travel.",
+    "tracks": ["Northbound", "Carrier Wave", "No Fixed Address", "The Shape of Distance"],
+    "links": [],
+    "featured": true
+  },
+  {
+    "slug": "unnamed-third-record",
+    "title": "Untitled / III",
+    "type": "Album",
+    "year": "TBA",
+    "status": "CONCEPT",
+    "tone": "void",
+    "catalog": "ORB-003",
+    "description": "Fragments, field recordings, and an empty folder waiting for a reason to exist.",
+    "tracks": [],
+    "links": [],
+    "featured": false
+  }
+]

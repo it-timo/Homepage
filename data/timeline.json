@@ -1,0 +1,9 @@
+[
+  {"date":"2026-06","year":2026,"title":"The Shape of Distance","type":"Music","status":"IN PRODUCTION","description":"Production begins on the second album."},
+  {"date":"2026-05","year":2026,"title":"JARVIS Alpha","type":"Project","status":"ALPHA","description":"First connected workflow runs end to end."},
+  {"date":"2026-03","year":2026,"title":"Used To Be Easy — Video","type":"Music","status":"RELEASED","description":"A first visual chapter for Grounded Fire."},
+  {"date":"2025-11","year":2025,"title":"Grounded Fire","type":"Music","status":"RELEASED","description":"First album released into the world."},
+  {"date":"2025-08","year":2025,"title":"Test Generator","type":"Project","status":"ACTIVE","description":"Reporting and execution converge into one workflow."},
+  {"date":"2025-02","year":2025,"title":"DNS Database","type":"Project","status":"ARCHIVED","description":"The experiment is documented and closed."},
+  {"date":"2024-10","year":2024,"title":"Orbit mark","type":"Identity","status":"ACTIVE","description":"The visual system finds its central symbol."}
+]

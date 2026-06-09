@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "used-to-be-easy",
+    "title": "Used To Be Easy",
+    "album": "Grounded Fire",
+    "year": 2025,
+    "status": "RELEASED",
+    "duration": "04:18",
+    "description": "A song about outgrowing the shortcuts that once kept everything moving.",
+    "video": true,
+    "lyrics": ["The full lyrics will live here when they are ready for publication.", "Until then, this page holds the song's credits, context, visuals, and listening links."],
+    "credits": ["Written and produced by Timo Schmidt", "Visual direction by Timo Schmidt"]
+  },
+  {
+    "slug": "carrier-wave",
+    "title": "Carrier Wave",
+    "album": "The Shape of Distance",
+    "year": 2026,
+    "status": "WRITING",
+    "duration": "—",
+    "description": "A transmission still finding its final form.",
+    "video": false,
+    "lyrics": ["Lyrics in progress."],
+    "credits": ["Written by Timo Schmidt"]
+  }
+]

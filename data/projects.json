@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "jarvis-alpha",
+    "title": "JARVIS",
+    "status": "ALPHA",
+    "year": 2026,
+    "kind": "System",
+    "description": "A personal orchestration layer connecting tools, context, and focused agents into one coherent workspace.",
+    "summary": "One place for tools, context, and intent.",
+    "tags": ["AI orchestration", "automation", "interfaces"],
+    "timeline": ["Context engine", "Tool registry", "Private alpha"],
+    "featured": true
+  },
+  {
+    "slug": "test-generator",
+    "title": "Test Generator",
+    "status": "ACTIVE",
+    "year": 2025,
+    "kind": "Software",
+    "description": "An evolving toolkit for generating, executing, and understanding tests at scale.",
+    "summary": "Making confidence repeatable.",
+    "tags": ["testing", "developer tools", "automation"],
+    "timeline": ["Prototype", "Execution engine", "Reporting system"],
+    "featured": true
+  },
+  {
+    "slug": "dns-database",
+    "title": "DNS Database",
+    "status": "ARCHIVED",
+    "year": 2025,
+    "kind": "Infrastructure",
+    "description": "A compact experiment in collecting, normalizing, and querying DNS records.",
+    "summary": "A small map of a very large network.",
+    "tags": ["DNS", "data", "infrastructure"],
+    "timeline": ["Research", "Data model", "Archive"],
+    "featured": false
+  },
+  {
+    "slug": "quiet-systems",
+    "title": "Quiet Systems",
+    "status": "CONCEPT",
+    "year": 2026,
+    "kind": "Research",
+    "description": "Notes and prototypes for software that recedes into the background until it is genuinely useful.",
+    "summary": "Technology that knows when to disappear.",
+    "tags": ["calm technology", "product", "research"],
+    "timeline": ["Principles", "Interface studies", "Prototype"],
+    "featured": false
+  }
+]

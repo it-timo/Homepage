@@ -389,3 +389,23 @@ audio { width: min(100%, 680px); margin-top: 30px; accent-color: var(--accent); 
 .experiment-connections .meta-label { display: block; margin-bottom: 9px; }
 .experiment-connections a { display: block; padding: 4px 0; color: var(--muted); font-size: 12px; }
 .experiment-connections a:hover { color: var(--accent); }
+
+/* Project records favor concrete structure and readable engineering context. */
+.project-signals { margin: 22px 0 4px; padding: 12px 0; border-block: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.project-signals span { color: var(--faint); font: 9px var(--mono); letter-spacing: .05em; text-transform: uppercase; }
+.project-overview .large-copy + .large-copy { margin-top: 20px; color: var(--muted); font-size: clamp(18px, 2vw, 25px); }
+.project-overview aside .meta-label:not(:first-child) { display: block; margin-top: 30px; }
+.architecture-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.architecture-grid article { min-height: 190px; padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: linear-gradient(145deg, rgba(255,255,255,.018), transparent); }
+.architecture-grid article span { color: var(--accent); font: 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.architecture-grid article p { max-width: 520px; margin: 32px 0 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.project-evidence { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .5fr); gap: 70px; }
+.project-evidence aside { padding: 30px; border: 1px solid var(--line); align-self: start; background: var(--panel); }
+.concern-list { margin: 20px 0 0; padding: 0; list-style: none; }
+.concern-list li { padding: 13px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.concern-list li::before { content: '—'; margin-right: 10px; color: var(--accent); }
+.project-meaning { background: linear-gradient(90deg, rgba(224,112,54,.04), transparent 60%); }
+@media (max-width: 850px) {
+  .architecture-grid, .project-evidence { grid-template-columns: 1fr; }
+  .project-evidence { gap: 40px; }
+}

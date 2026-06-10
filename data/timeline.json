@@ -17,6 +17,40 @@
     ]
   },
   {
+    "id": "timeline:music-commentary:used-to-be-easy-memory-not-ghosts",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Used To Be Easy — Memory, Not Ghosts",
+    "type": "music-commentary",
+    "status": "video commentary",
+    "description": "The Walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect.",
+    "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "music-commentary:used-to-be-easy-memory-not-ghosts"
+      }
+    ]
+  },
+  {
+    "id": "timeline:article:systems-stories-and-the-same-curiosity",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Systems, Stories, and the Same Curiosity",
+    "type": "article",
+    "status": "living essay",
+    "description": "Software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection.",
+    "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "article:systems-stories-and-the-same-curiosity"
+      }
+    ]
+  },
+  {
     "id": "timeline:note:quality-is-designed",
     "date": null,
     "year": 2026,
@@ -115,6 +149,23 @@
       {
         "type": "timeline_of",
         "target": "project-journal:test-cases-to-playwright"
+      }
+    ]
+  },
+  {
+    "id": "timeline:project-journal:external-repositories-in-a-testing-ecosystem",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "External Repositories in a Testing Ecosystem",
+    "type": "project-journal",
+    "status": "project record",
+    "description": "The External Playwright Adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove.",
+    "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "project-journal:external-repositories-in-a-testing-ecosystem"
       }
     ]
   },

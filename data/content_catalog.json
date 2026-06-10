@@ -34,6 +34,50 @@
       ]
     },
     {
+      "title": "Systems, Stories, and the Same Curiosity",
+      "slug": "systems-stories-and-the-same-curiosity",
+      "collection": "articles",
+      "status": "living essay",
+      "year": 2026,
+      "date": null,
+      "summary": "Software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection.",
+      "themes": [
+        "systems",
+        "stories",
+        "emergence",
+        "identity",
+        "connection"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:jarvis"
+        },
+        {
+          "type": "related_to",
+          "target": "album:grounded-fire"
+        },
+        {
+          "type": "related_to",
+          "target": "experiment:more-powerful-passenger"
+        },
+        {
+          "type": "related_to",
+          "target": "experiment:narrative-simulation"
+        }
+      ],
+      "id": "article:systems-stories-and-the-same-curiosity",
+      "type": "article",
+      "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+      "source": "content/articles/systems-stories-and-the-same-curiosity.md",
+      "body": [
+        "Software, music, and worldbuilding can look like unrelated bodies of work when they are arranged by medium. The connection becomes clearer when they are arranged by question.",
+        "How do complex things emerge from simple rules? How does identity persist while a system changes? What does responsibility mean when influence is indirect? How do people and systems retain context, recover from disruption, and reconnect?",
+        "DNS Database approaches persistence through storage lifecycles, tests, and documentation. JARVIS approaches it through memory and orchestration. More Powerful Passenger turns emergence and indirect responsibility into a civilization-scale simulation. Grounded Fire explores reconnection after emotional and technological distance.",
+        "The mediums are different because the questions need different forms. The archive exists to preserve those connections rather than flattening the work into one category."
+      ]
+    },
+    {
       "title": "Artifacts of Resilience — Endurance as a Record",
       "slug": "artifacts-of-resilience-endurance",
       "collection": "music-commentary",
@@ -134,6 +178,45 @@
       "body": [
         "Grounded Fire is a thirteen-track concept album structured in three acts: Disconnection, Reactivation, and Self Respect Through Intensity.",
         "The sequence begins in an idle state and moves through simulated warmth, distance, pulse, voltage, and the cost of refusing mistakes. By the title track and No Script, reconnection is no longer passive. It becomes a choice to be present without reducing depth to make it easier for someone else to accept."
+      ]
+    },
+    {
+      "title": "Used To Be Easy — Memory, Not Ghosts",
+      "slug": "used-to-be-easy-memory-not-ghosts",
+      "collection": "music-commentary",
+      "status": "video commentary",
+      "year": 2026,
+      "date": null,
+      "summary": "The Walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect.",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "visual language"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "track:core-override:used-to-be-easy"
+        },
+        {
+          "type": "related_to",
+          "target": "video:used-to-be-easy"
+        },
+        {
+          "type": "related_to",
+          "target": "album:core-override"
+        }
+      ],
+      "id": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "music-commentary",
+      "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+      "source": "content/music-commentary/used-to-be-easy-memory-not-ghosts.md",
+      "body": [
+        "Used To Be Easy centers on the Walker: a 36-year-old man with dark hair, light stubble, and an emotionally restrained presence. The character carries memory through observation rather than performance.",
+        "The warm silhouettes around him are memories of human connection. They are not ghosts. That distinction matters because the visual idea is about distance from a lived relationship, not a supernatural visitation.",
+        "Warmth belongs to remembered connection; restraint belongs to the present. The contrast gives nostalgia a physical language without making it sentimental or visually loud."
       ]
     },
     {
@@ -278,6 +361,44 @@
       "body": [
         "DNS Database is a large Go backend built around RocksDB storage, extensive documentation, and roughly ninety percent test coverage. Its importance in this archive is not the line count alone. It is the sustained attention paid to the lifecycle of data and to making the system understandable after the initial implementation period.",
         "The project represents a recurring engineering standard: architecture should communicate intent, tests should preserve behavior, and documentation should reduce the amount of history a future maintainer has to reconstruct."
+      ]
+    },
+    {
+      "title": "External Repositories in a Testing Ecosystem",
+      "slug": "external-repositories-in-a-testing-ecosystem",
+      "collection": "project-journals",
+      "status": "project record",
+      "year": 2026,
+      "date": null,
+      "summary": "The External Playwright Adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove.",
+      "themes": [
+        "Playwright",
+        "integration",
+        "repository boundaries",
+        "test automation"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:external-playwright-adapter"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "note:quality-is-designed"
+        }
+      ],
+      "id": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "project-journal",
+      "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+      "source": "content/project-journals/external-repositories-in-a-testing-ecosystem.md",
+      "body": [
+        "A shared testing ecosystem does not require every test to live in one repository. External codebases have their own ownership, release rhythm, and context. An integration is more useful when it acknowledges those boundaries instead of hiding them.",
+        "The External Playwright Adapter gives independent repositories a way to participate in the broader automation system. Its role is intentionally pragmatic: connect external Playwright work to shared execution and reporting while allowing tests to remain close to the code and people responsible for them.",
+        "This is also a quality decision. A boundary that remains explicit is easier to document, test, and change than an integration that relies on invisible coupling."
       ]
     },
     {

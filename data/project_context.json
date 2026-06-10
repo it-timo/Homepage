@@ -35,7 +35,32 @@
         "type": "shares_principle",
         "target": "note:maintainability-over-hype"
       }
-    ]
+    ],
+    "overview": [
+      "DNS Database is the clearest engineering record of sustained work in this archive: a Go backend of approximately 13,000 lines, backed by RocksDB and supported by extensive documentation and roughly 90 percent test coverage.",
+      "Its defining concern is lifecycle design. Storage, behavior, tests, and documentation are treated as parts of one system that must remain understandable after the original implementation context has faded."
+    ],
+    "architecture": [
+      {
+        "label": "Application core",
+        "detail": "A substantial Go backend organized around explicit, lifecycle-focused behavior."
+      },
+      {
+        "label": "Persistence",
+        "detail": "RocksDB provides the storage foundation and makes data lifecycle decisions a first-class architectural concern."
+      },
+      {
+        "label": "Confidence",
+        "detail": "Approximately 90% test coverage supports change, while extensive documentation preserves intent beyond the code."
+      }
+    ],
+    "concerns": [
+      "Data lifecycle and persistence",
+      "Safe change over a long project life",
+      "Documentation as part of architecture",
+      "Tests as maintained design knowledge"
+    ],
+    "represents": "Long-term engineering craftsmanship: not only making a backend work, but making its behavior and history possible to understand years later."
   },
   {
     "slug": "test-generation-platform",
@@ -80,7 +105,36 @@
         "type": "related_system",
         "target": "project:jarvis"
       }
-    ]
+    ],
+    "overview": [
+      "The Test Generation Platform addresses the distance between a test case written for people and automation written for execution. Human-readable cases originate in KiwiTCMS and are transformed toward executable Playwright tests.",
+      "The work combines Python, TypeScript, Docker, Jinja2, KiwiTCMS, and Playwright. The central challenge is preserving test intent while moving between human and executable representations."
+    ],
+    "architecture": [
+      {
+        "label": "Human source",
+        "detail": "KiwiTCMS keeps test intent in a form that remains readable and maintainable by people."
+      },
+      {
+        "label": "Transformation",
+        "detail": "Python and Jinja2 participate in producing understandable automation rather than opaque generated output."
+      },
+      {
+        "label": "Execution",
+        "detail": "Playwright and TypeScript provide the browser-automation target; Docker supports repeatable environments."
+      },
+      {
+        "label": "Extension boundary",
+        "detail": "The External Playwright Adapter lets independent repositories participate without erasing their ownership boundaries."
+      }
+    ],
+    "concerns": [
+      "Preserving intent during generation",
+      "Readable generated automation",
+      "Repeatable execution environments",
+      "Integration without unnecessary coupling"
+    ],
+    "represents": "A bridge between how people describe quality and how systems execute it."
   },
   {
     "slug": "external-playwright-adapter",
@@ -113,7 +167,32 @@
         "type": "part_of_ecosystem",
         "target": "project:test-generation-platform"
       }
-    ]
+    ],
+    "overview": [
+      "The External Playwright Adapter is the pragmatic edge of the larger test-generation ecosystem. It exists so repositories outside the central system can participate in shared testing workflows.",
+      "Its significance is architectural rather than visual: integration should respect the boundary of the external repository instead of forcing every test suite into one ownership model."
+    ],
+    "architecture": [
+      {
+        "label": "External ownership",
+        "detail": "Tests can remain close to the repositories and teams responsible for them."
+      },
+      {
+        "label": "Shared participation",
+        "detail": "Independent Playwright suites can take part in the broader execution and reporting ecosystem."
+      },
+      {
+        "label": "Repeatability",
+        "detail": "TypeScript, Playwright, and Docker form the known technical context for the adapter."
+      }
+    ],
+    "concerns": [
+      "Repository boundaries",
+      "Pragmatic interoperability",
+      "Independent test suites",
+      "Shared execution without centralizing everything"
+    ],
+    "represents": "Pragmatic integration: a small boundary component that makes a larger system usable in the real world."
   },
   {
     "slug": "jarvis",
@@ -160,6 +239,35 @@
         "type": "shares_theme",
         "target": "album:core-override"
       }
-    ]
+    ],
+    "overview": [
+      "JARVIS is a personal orchestration platform for reducing context switching across software projects, memory, documentation, automation, and creative work.",
+      "The project is where several recurring concerns converge: preserving context, connecting records, letting automation carry work forward, and keeping human responsibility visible at consequential decisions."
+    ],
+    "architecture": [
+      {
+        "label": "Orchestration",
+        "detail": "LangGraph and LiteLLM are part of the planned foundation for coordinated workflows and model access."
+      },
+      {
+        "label": "Service and interface",
+        "detail": "FastAPI and React are planned as the service and interaction layers."
+      },
+      {
+        "label": "Memory and durable data",
+        "detail": "ChromaDB and PostgreSQL are planned for retrieval-oriented memory and structured persistence."
+      },
+      {
+        "label": "Control principle",
+        "detail": "Autonomous Until The Gate allows routine work to advance while explicit human gates protect consequential choices."
+      }
+    ],
+    "concerns": [
+      "Reducing context switching",
+      "Connecting memory and documentation",
+      "Useful autonomy with visible limits",
+      "Keeping creative and engineering work in one understandable context"
+    ],
+    "represents": "The convergence of systems thinking across domains, with autonomy treated as a responsibility and architecture problem rather than a novelty."
   }
 ]

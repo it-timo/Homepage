@@ -14,9 +14,10 @@
         "indirect influence"
       ],
       "related": [
-        "Narrative Simulation"
+        "Narrative Simulation",
+        "Systems, Stories, and the Same Curiosity"
       ],
-      "search_text": "more powerful passenger the player acts as a limited god. faith is scarce, civilizations evolve autonomously, and influence is always indirect. emergence belief interpretation responsibility indirect influence narrative simulation"
+      "search_text": "more powerful passenger the player acts as a limited god. faith is scarce, civilizations evolve autonomously, and influence is always indirect. emergence belief interpretation responsibility indirect influence narrative simulation systems, stories, and the same curiosity"
     },
     {
       "id": "experiment:manhwa-concepts",
@@ -47,9 +48,10 @@
       ],
       "related": [
         "Manhwa Concepts",
-        "More Powerful Passenger"
+        "More Powerful Passenger",
+        "Systems, Stories, and the Same Curiosity"
       ],
-      "search_text": "narrative simulation an ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences. emergence narrative simulation manhwa concepts more powerful passenger"
+      "search_text": "narrative simulation an ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences. emergence narrative simulation manhwa concepts more powerful passenger systems, stories, and the same curiosity"
     },
     {
       "id": "album:artifacts-of-resilience",
@@ -113,9 +115,10 @@
         "Built From Scraps",
         "Core Override — Identity in Digital Life",
         "Grounded Fire in Three Acts",
+        "Used To Be Easy — Memory, Not Ghosts",
         "Grounded Fire"
       ],
-      "search_text": "core override an album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency. technology identity digital life personal agency routine digital relationships jarvis used to be easy swipe ghost repeat all the right lies say it or leave it velvet lies i am the voice in your gps walls we built system upgrade the only worker in the mainframe nothing personal just the apocalypse static noise and cold coffee burn the night into me built from scraps core override — identity in digital life grounded fire in three acts grounded fire"
+      "search_text": "core override an album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency. technology identity digital life personal agency routine digital relationships jarvis used to be easy swipe ghost repeat all the right lies say it or leave it velvet lies i am the voice in your gps walls we built system upgrade the only worker in the mainframe nothing personal just the apocalypse static noise and cold coffee burn the night into me built from scraps core override — identity in digital life grounded fire in three acts used to be easy — memory, not ghosts grounded fire"
     },
     {
       "id": "album:grounded-fire",
@@ -144,9 +147,10 @@
         "Grounded Fire",
         "No Script",
         "After The Pulse",
+        "Systems, Stories, and the Same Curiosity",
         "Grounded Fire in Three Acts"
       ],
-      "search_text": "grounded fire a concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity. reconnection technology intensity self-respect core override idle state simulated warmth the distance between sparks pulse detect she glitches just right no more careful chemical voltage too loud to fade the cost of no mistakes unapologetic depth grounded fire no script after the pulse grounded fire in three acts"
+      "search_text": "grounded fire a concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity. reconnection technology intensity self-respect core override idle state simulated warmth the distance between sparks pulse detect she glitches just right no more careful chemical voltage too loud to fade the cost of no mistakes unapologetic depth grounded fire no script after the pulse systems, stories, and the same curiosity grounded fire in three acts"
     },
     {
       "id": "article:architecture-is-communication",
@@ -166,6 +170,27 @@
         "DNS Database and Lifecycle-Focused Design"
       ],
       "search_text": "architecture is communication architecture matters when it helps the next person understand why a system is shaped the way it is. architecture documentation maintainability dns database jarvis autonomous until the gate dns database and lifecycle-focused design"
+    },
+    {
+      "id": "article:systems-stories-and-the-same-curiosity",
+      "type": "article",
+      "title": "Systems, Stories, and the Same Curiosity",
+      "summary": "Software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection.",
+      "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+      "themes": [
+        "systems",
+        "stories",
+        "emergence",
+        "identity",
+        "connection"
+      ],
+      "related": [
+        "JARVIS",
+        "Grounded Fire",
+        "More Powerful Passenger",
+        "Narrative Simulation"
+      ],
+      "search_text": "systems, stories, and the same curiosity software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection. systems stories emergence identity connection jarvis grounded fire more powerful passenger narrative simulation"
     },
     {
       "id": "music-commentary:artifacts-of-resilience-endurance",
@@ -223,6 +248,26 @@
       "search_text": "grounded fire in three acts grounded fire moves from disconnection through reactivation toward self-respect expressed with intensity rather than apology. reconnection disconnection intensity self-respect grounded fire core override"
     },
     {
+      "id": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "music-commentary",
+      "title": "Used To Be Easy — Memory, Not Ghosts",
+      "summary": "The Walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect.",
+      "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "visual language"
+      ],
+      "related": [
+        "Used To Be Easy",
+        "Used To Be Easy — Video",
+        "Core Override"
+      ],
+      "search_text": "used to be easy — memory, not ghosts the walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect. memory nostalgia distance connection visual language used to be easy used to be easy — video core override"
+    },
+    {
       "id": "note:maintainability-over-hype",
       "type": "note",
       "title": "Maintainability Over Hype",
@@ -257,9 +302,10 @@
       "related": [
         "Test Generation Platform",
         "DNS Database",
+        "External Repositories in a Testing Ecosystem",
         "From Human Test Cases to Playwright"
       ],
-      "search_text": "quality is designed, not inspected quality begins in architecture, interfaces, feedback loops, and documentation—before a final test run can inspect the result. software quality test automation architecture maintainability test generation platform dns database from human test cases to playwright"
+      "search_text": "quality is designed, not inspected quality begins in architecture, interfaces, feedback loops, and documentation—before a final test run can inspect the result. software quality test automation architecture maintainability test generation platform dns database external repositories in a testing ecosystem from human test cases to playwright"
     },
     {
       "id": "project:dns-database",
@@ -293,9 +339,10 @@
       ],
       "related": [
         "Test Generation Platform",
+        "External Repositories in a Testing Ecosystem",
         "From Human Test Cases to Playwright"
       ],
-      "search_text": "external playwright adapter allows external repositories to participate in a larger testing ecosystem. integration boundaries pragmatism test generation platform from human test cases to playwright"
+      "search_text": "external playwright adapter allows external repositories to participate in a larger testing ecosystem. integration boundaries pragmatism test generation platform external repositories in a testing ecosystem from human test cases to playwright"
     },
     {
       "id": "project:jarvis",
@@ -312,10 +359,11 @@
         "Test Generation Platform",
         "Architecture Is Communication",
         "Core Override",
+        "Systems, Stories, and the Same Curiosity",
         "Core Override — Identity in Digital Life",
         "Autonomous Until the Gate"
       ],
-      "search_text": "jarvis a personal system for reducing context switching across projects, memory, documentation, automation, and creative work. memory orchestration human agency test generation platform architecture is communication core override core override — identity in digital life autonomous until the gate"
+      "search_text": "jarvis a personal system for reducing context switching across projects, memory, documentation, automation, and creative work. memory orchestration human agency test generation platform architecture is communication core override systems, stories, and the same curiosity core override — identity in digital life autonomous until the gate"
     },
     {
       "id": "project:test-generation-platform",
@@ -334,9 +382,10 @@
         "JARVIS",
         "Quality Is Designed, Not Inspected",
         "Autonomous Until the Gate",
+        "External Repositories in a Testing Ecosystem",
         "From Human Test Cases to Playwright"
       ],
-      "search_text": "test generation platform transforms human-written test cases into executable playwright automation. quality translation automation external playwright adapter maintainability over hype jarvis quality is designed, not inspected autonomous until the gate from human test cases to playwright"
+      "search_text": "test generation platform transforms human-written test cases into executable playwright automation. quality translation automation external playwright adapter maintainability over hype jarvis quality is designed, not inspected autonomous until the gate external repositories in a testing ecosystem from human test cases to playwright"
     },
     {
       "id": "project-journal:autonomous-until-the-gate",
@@ -376,6 +425,25 @@
         "Maintainability Over Hype"
       ],
       "search_text": "dns database and lifecycle-focused design what a large go backend taught me about tests, documentation, storage lifecycles, and engineering for the person who returns later. go lifecycle design testing documentation long-term engineering dns database architecture is communication maintainability over hype"
+    },
+    {
+      "id": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "project-journal",
+      "title": "External Repositories in a Testing Ecosystem",
+      "summary": "The External Playwright Adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove.",
+      "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+      "themes": [
+        "Playwright",
+        "integration",
+        "repository boundaries",
+        "test automation"
+      ],
+      "related": [
+        "External Playwright Adapter",
+        "Test Generation Platform",
+        "Quality Is Designed, Not Inspected"
+      ],
+      "search_text": "external repositories in a testing ecosystem the external playwright adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove. playwright integration repository boundaries test automation external playwright adapter test generation platform quality is designed, not inspected"
     },
     {
       "id": "project-journal:test-cases-to-playwright",
@@ -1010,9 +1078,10 @@
       ],
       "related": [
         "Used To Be Easy — Video",
-        "Core Override"
+        "Core Override",
+        "Used To Be Easy — Memory, Not Ghosts"
       ],
-      "search_text": "used to be easy  memory nostalgia distance connection personal history used to be easy — video core override"
+      "search_text": "used to be easy  memory nostalgia distance connection personal history used to be easy — video core override used to be easy — memory, not ghosts"
     },
     {
       "id": "track:core-override:velvet-lies",

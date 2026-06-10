@@ -30,7 +30,15 @@
         }
       ],
       "path": "/experiments/#more-powerful-passenger",
-      "incoming_relationships": []
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "article:systems-stories-and-the-same-curiosity",
+          "title": "Systems, Stories, and the Same Curiosity",
+          "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+          "entity_type": "article"
+        }
+      ]
     },
     {
       "slug": "manhwa-concepts",
@@ -111,6 +119,13 @@
           "title": "Manhwa Concepts",
           "path": "/experiments/#manhwa-concepts",
           "entity_type": "Long-term creative exploration"
+        },
+        {
+          "type": "referenced_by",
+          "target": "article:systems-stories-and-the-same-curiosity",
+          "title": "Systems, Stories, and the Same Curiosity",
+          "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+          "entity_type": "article"
         }
       ]
     },
@@ -512,6 +527,13 @@
         },
         {
           "type": "referenced_by",
+          "target": "music-commentary:used-to-be-easy-memory-not-ghosts",
+          "title": "Used To Be Easy — Memory, Not Ghosts",
+          "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+          "entity_type": "music-commentary"
+        },
+        {
+          "type": "referenced_by",
           "target": "track:core-override:used-to-be-easy",
           "title": "Used To Be Easy",
           "path": "/music/core-override/used-to-be-easy/",
@@ -738,6 +760,13 @@
       "incoming_relationships": [
         {
           "type": "referenced_by",
+          "target": "article:systems-stories-and-the-same-curiosity",
+          "title": "Systems, Stories, and the Same Curiosity",
+          "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+          "entity_type": "article"
+        },
+        {
+          "type": "referenced_by",
           "target": "music-commentary:grounded-fire-three-acts",
           "title": "Grounded Fire in Three Acts",
           "path": "/library/music-commentary/grounded-fire-three-acts/",
@@ -904,6 +933,63 @@
           "entity_type": "project-journal"
         }
       ]
+    },
+    {
+      "title": "Systems, Stories, and the Same Curiosity",
+      "slug": "systems-stories-and-the-same-curiosity",
+      "collection": "articles",
+      "status": "living essay",
+      "year": 2026,
+      "date": null,
+      "summary": "Software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection.",
+      "themes": [
+        "systems",
+        "stories",
+        "emergence",
+        "identity",
+        "connection"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:jarvis",
+          "title": "JARVIS",
+          "path": "/projects/jarvis.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "related_to",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        },
+        {
+          "type": "related_to",
+          "target": "experiment:more-powerful-passenger",
+          "title": "More Powerful Passenger",
+          "path": "/experiments/#more-powerful-passenger",
+          "entity_type": "Civilization-scale god simulation"
+        },
+        {
+          "type": "related_to",
+          "target": "experiment:narrative-simulation",
+          "title": "Narrative Simulation",
+          "path": "/experiments/#narrative-simulation",
+          "entity_type": "Story systems"
+        }
+      ],
+      "id": "article:systems-stories-and-the-same-curiosity",
+      "type": "article",
+      "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+      "source": "content/articles/systems-stories-and-the-same-curiosity.md",
+      "body": [
+        "Software, music, and worldbuilding can look like unrelated bodies of work when they are arranged by medium. The connection becomes clearer when they are arranged by question.",
+        "How do complex things emerge from simple rules? How does identity persist while a system changes? What does responsibility mean when influence is indirect? How do people and systems retain context, recover from disruption, and reconnect?",
+        "DNS Database approaches persistence through storage lifecycles, tests, and documentation. JARVIS approaches it through memory and orchestration. More Powerful Passenger turns emergence and indirect responsibility into a civilization-scale simulation. Grounded Fire explores reconnection after emotional and technological distance.",
+        "The mediums are different because the questions need different forms. The archive exists to preserve those connections rather than flattening the work into one category."
+      ],
+      "incoming_relationships": []
     },
     {
       "id": "milestone:jarvis-alpha",
@@ -1083,6 +1169,55 @@
       "incoming_relationships": []
     },
     {
+      "title": "Used To Be Easy — Memory, Not Ghosts",
+      "slug": "used-to-be-easy-memory-not-ghosts",
+      "collection": "music-commentary",
+      "status": "video commentary",
+      "year": 2026,
+      "date": null,
+      "summary": "The Walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect.",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "visual language"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "track:core-override:used-to-be-easy",
+          "title": "Used To Be Easy",
+          "path": "/music/core-override/used-to-be-easy/",
+          "entity_type": "track"
+        },
+        {
+          "type": "related_to",
+          "target": "video:used-to-be-easy",
+          "title": "Used To Be Easy — Video",
+          "path": "/music/core-override/",
+          "entity_type": "video"
+        },
+        {
+          "type": "related_to",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "id": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "music-commentary",
+      "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+      "source": "content/music-commentary/used-to-be-easy-memory-not-ghosts.md",
+      "body": [
+        "Used To Be Easy centers on the Walker: a 36-year-old man with dark hair, light stubble, and an emotionally restrained presence. The character carries memory through observation rather than performance.",
+        "The warm silhouettes around him are memories of human connection. They are not ghosts. That distinction matters because the visual idea is about distance from a lived relationship, not a supernatural visitation.",
+        "Warmth belongs to remembered connection; restraint belongs to the present. The contrast gives nostalgia a physical language without making it sentimental or visually loud."
+      ],
+      "incoming_relationships": []
+    },
+    {
       "title": "Maintainability Over Hype",
       "slug": "maintainability-over-hype",
       "collection": "notes",
@@ -1205,6 +1340,13 @@
       "incoming_relationships": [
         {
           "type": "referenced_by",
+          "target": "project-journal:external-repositories-in-a-testing-ecosystem",
+          "title": "External Repositories in a Testing Ecosystem",
+          "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+          "entity_type": "project-journal"
+        },
+        {
+          "type": "referenced_by",
           "target": "project-journal:test-cases-to-playwright",
           "title": "From Human Test Cases to Playwright",
           "path": "/library/project-journals/test-cases-to-playwright/",
@@ -1255,6 +1397,31 @@
           "entity_type": "note"
         }
       ],
+      "overview": [
+        "DNS Database is the clearest engineering record of sustained work in this archive: a Go backend of approximately 13,000 lines, backed by RocksDB and supported by extensive documentation and roughly 90 percent test coverage.",
+        "Its defining concern is lifecycle design. Storage, behavior, tests, and documentation are treated as parts of one system that must remain understandable after the original implementation context has faded."
+      ],
+      "architecture": [
+        {
+          "label": "Application core",
+          "detail": "A substantial Go backend organized around explicit, lifecycle-focused behavior."
+        },
+        {
+          "label": "Persistence",
+          "detail": "RocksDB provides the storage foundation and makes data lifecycle decisions a first-class architectural concern."
+        },
+        {
+          "label": "Confidence",
+          "detail": "Approximately 90% test coverage supports change, while extensive documentation preserves intent beyond the code."
+        }
+      ],
+      "concerns": [
+        "Data lifecycle and persistence",
+        "Safe change over a long project life",
+        "Documentation as part of architecture",
+        "Tests as maintained design knowledge"
+      ],
+      "represents": "Long-term engineering craftsmanship: not only making a backend work, but making its behavior and history possible to understand years later.",
       "incoming_relationships": [
         {
           "type": "referenced_by",
@@ -1321,6 +1488,31 @@
           "entity_type": "project"
         }
       ],
+      "overview": [
+        "The External Playwright Adapter is the pragmatic edge of the larger test-generation ecosystem. It exists so repositories outside the central system can participate in shared testing workflows.",
+        "Its significance is architectural rather than visual: integration should respect the boundary of the external repository instead of forcing every test suite into one ownership model."
+      ],
+      "architecture": [
+        {
+          "label": "External ownership",
+          "detail": "Tests can remain close to the repositories and teams responsible for them."
+        },
+        {
+          "label": "Shared participation",
+          "detail": "Independent Playwright suites can take part in the broader execution and reporting ecosystem."
+        },
+        {
+          "label": "Repeatability",
+          "detail": "TypeScript, Playwright, and Docker form the known technical context for the adapter."
+        }
+      ],
+      "concerns": [
+        "Repository boundaries",
+        "Pragmatic interoperability",
+        "Independent test suites",
+        "Shared execution without centralizing everything"
+      ],
+      "represents": "Pragmatic integration: a small boundary component that makes a larger system usable in the real world.",
       "incoming_relationships": [
         {
           "type": "referenced_by",
@@ -1328,6 +1520,13 @@
           "title": "Test Generation Platform",
           "path": "/projects/test-generation-platform.html",
           "entity_type": "project"
+        },
+        {
+          "type": "referenced_by",
+          "target": "project-journal:external-repositories-in-a-testing-ecosystem",
+          "title": "External Repositories in a Testing Ecosystem",
+          "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+          "entity_type": "project-journal"
         },
         {
           "type": "referenced_by",
@@ -1393,6 +1592,35 @@
           "entity_type": "album"
         }
       ],
+      "overview": [
+        "JARVIS is a personal orchestration platform for reducing context switching across software projects, memory, documentation, automation, and creative work.",
+        "The project is where several recurring concerns converge: preserving context, connecting records, letting automation carry work forward, and keeping human responsibility visible at consequential decisions."
+      ],
+      "architecture": [
+        {
+          "label": "Orchestration",
+          "detail": "LangGraph and LiteLLM are part of the planned foundation for coordinated workflows and model access."
+        },
+        {
+          "label": "Service and interface",
+          "detail": "FastAPI and React are planned as the service and interaction layers."
+        },
+        {
+          "label": "Memory and durable data",
+          "detail": "ChromaDB and PostgreSQL are planned for retrieval-oriented memory and structured persistence."
+        },
+        {
+          "label": "Control principle",
+          "detail": "Autonomous Until The Gate allows routine work to advance while explicit human gates protect consequential choices."
+        }
+      ],
+      "concerns": [
+        "Reducing context switching",
+        "Connecting memory and documentation",
+        "Useful autonomy with visible limits",
+        "Keeping creative and engineering work in one understandable context"
+      ],
+      "represents": "The convergence of systems thinking across domains, with autonomy treated as a responsibility and architecture problem rather than a novelty.",
       "incoming_relationships": [
         {
           "type": "referenced_by",
@@ -1413,6 +1641,13 @@
           "target": "article:architecture-is-communication",
           "title": "Architecture Is Communication",
           "path": "/library/articles/architecture-is-communication/",
+          "entity_type": "article"
+        },
+        {
+          "type": "referenced_by",
+          "target": "article:systems-stories-and-the-same-curiosity",
+          "title": "Systems, Stories, and the Same Curiosity",
+          "path": "/library/articles/systems-stories-and-the-same-curiosity/",
           "entity_type": "article"
         },
         {
@@ -1491,6 +1726,35 @@
           "entity_type": "project"
         }
       ],
+      "overview": [
+        "The Test Generation Platform addresses the distance between a test case written for people and automation written for execution. Human-readable cases originate in KiwiTCMS and are transformed toward executable Playwright tests.",
+        "The work combines Python, TypeScript, Docker, Jinja2, KiwiTCMS, and Playwright. The central challenge is preserving test intent while moving between human and executable representations."
+      ],
+      "architecture": [
+        {
+          "label": "Human source",
+          "detail": "KiwiTCMS keeps test intent in a form that remains readable and maintainable by people."
+        },
+        {
+          "label": "Transformation",
+          "detail": "Python and Jinja2 participate in producing understandable automation rather than opaque generated output."
+        },
+        {
+          "label": "Execution",
+          "detail": "Playwright and TypeScript provide the browser-automation target; Docker supports repeatable environments."
+        },
+        {
+          "label": "Extension boundary",
+          "detail": "The External Playwright Adapter lets independent repositories participate without erasing their ownership boundaries."
+        }
+      ],
+      "concerns": [
+        "Preserving intent during generation",
+        "Readable generated automation",
+        "Repeatable execution environments",
+        "Integration without unnecessary coupling"
+      ],
+      "represents": "A bridge between how people describe quality and how systems execute it.",
       "incoming_relationships": [
         {
           "type": "referenced_by",
@@ -1532,6 +1796,13 @@
           "target": "project-journal:autonomous-until-the-gate",
           "title": "Autonomous Until the Gate",
           "path": "/library/project-journals/autonomous-until-the-gate/",
+          "entity_type": "project-journal"
+        },
+        {
+          "type": "referenced_by",
+          "target": "project-journal:external-repositories-in-a-testing-ecosystem",
+          "title": "External Repositories in a Testing Ecosystem",
+          "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
           "entity_type": "project-journal"
         },
         {
@@ -1635,6 +1906,54 @@
       "body": [
         "DNS Database is a large Go backend built around RocksDB storage, extensive documentation, and roughly ninety percent test coverage. Its importance in this archive is not the line count alone. It is the sustained attention paid to the lifecycle of data and to making the system understandable after the initial implementation period.",
         "The project represents a recurring engineering standard: architecture should communicate intent, tests should preserve behavior, and documentation should reduce the amount of history a future maintainer has to reconstruct."
+      ],
+      "incoming_relationships": []
+    },
+    {
+      "title": "External Repositories in a Testing Ecosystem",
+      "slug": "external-repositories-in-a-testing-ecosystem",
+      "collection": "project-journals",
+      "status": "project record",
+      "year": 2026,
+      "date": null,
+      "summary": "The External Playwright Adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove.",
+      "themes": [
+        "Playwright",
+        "integration",
+        "repository boundaries",
+        "test automation"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:external-playwright-adapter",
+          "title": "External Playwright Adapter",
+          "path": "/projects/external-playwright-adapter.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform",
+          "title": "Test Generation Platform",
+          "path": "/projects/test-generation-platform.html",
+          "entity_type": "project"
+        },
+        {
+          "type": "related_to",
+          "target": "note:quality-is-designed",
+          "title": "Quality Is Designed, Not Inspected",
+          "path": "/library/notes/quality-is-designed/",
+          "entity_type": "note"
+        }
+      ],
+      "id": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "project-journal",
+      "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+      "source": "content/project-journals/external-repositories-in-a-testing-ecosystem.md",
+      "body": [
+        "A shared testing ecosystem does not require every test to live in one repository. External codebases have their own ownership, release rhythm, and context. An integration is more useful when it acknowledges those boundaries instead of hiding them.",
+        "The External Playwright Adapter gives independent repositories a way to participate in the broader automation system. Its role is intentionally pragmatic: connect external Playwright work to shared execution and reporting while allowing tests to remain close to the code and people responsible for them.",
+        "This is also a quality decision. A boundary that remains explicit is easier to document, test, and change than an integration that relies on invisible coupling."
       ],
       "incoming_relationships": []
     },
@@ -3446,6 +3765,13 @@
         },
         {
           "type": "referenced_by",
+          "target": "music-commentary:used-to-be-easy-memory-not-ghosts",
+          "title": "Used To Be Easy — Memory, Not Ghosts",
+          "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+          "entity_type": "music-commentary"
+        },
+        {
+          "type": "referenced_by",
           "target": "album:core-override",
           "title": "Core Override",
           "path": "/music/core-override/",
@@ -3699,6 +4025,13 @@
         },
         {
           "type": "referenced_by",
+          "target": "music-commentary:used-to-be-easy-memory-not-ghosts",
+          "title": "Used To Be Easy — Memory, Not Ghosts",
+          "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+          "entity_type": "music-commentary"
+        },
+        {
+          "type": "referenced_by",
           "target": "album:core-override",
           "title": "Core Override",
           "path": "/music/core-override/",
@@ -3860,6 +4193,38 @@
       "entity_type": "project"
     },
     {
+      "source": "article:systems-stories-and-the-same-curiosity",
+      "type": "related_to",
+      "target": "project:jarvis",
+      "title": "JARVIS",
+      "path": "/projects/jarvis.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "article:systems-stories-and-the-same-curiosity",
+      "type": "related_to",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "article:systems-stories-and-the-same-curiosity",
+      "type": "related_to",
+      "target": "experiment:more-powerful-passenger",
+      "title": "More Powerful Passenger",
+      "path": "/experiments/#more-powerful-passenger",
+      "entity_type": "Civilization-scale god simulation"
+    },
+    {
+      "source": "article:systems-stories-and-the-same-curiosity",
+      "type": "related_to",
+      "target": "experiment:narrative-simulation",
+      "title": "Narrative Simulation",
+      "path": "/experiments/#narrative-simulation",
+      "entity_type": "Story systems"
+    },
+    {
       "source": "music-commentary:artifacts-of-resilience-endurance",
       "type": "related_to",
       "target": "album:artifacts-of-resilience",
@@ -3916,6 +4281,30 @@
       "entity_type": "album"
     },
     {
+      "source": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "related_to",
+      "target": "track:core-override:used-to-be-easy",
+      "title": "Used To Be Easy",
+      "path": "/music/core-override/used-to-be-easy/",
+      "entity_type": "track"
+    },
+    {
+      "source": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "related_to",
+      "target": "video:used-to-be-easy",
+      "title": "Used To Be Easy — Video",
+      "path": "/music/core-override/",
+      "entity_type": "video"
+    },
+    {
+      "source": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "related_to",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
       "source": "note:maintainability-over-hype",
       "type": "related_to",
       "target": "project:dns-database",
@@ -4001,6 +4390,30 @@
       "target": "note:maintainability-over-hype",
       "title": "Maintainability Over Hype",
       "path": "/library/notes/maintainability-over-hype/",
+      "entity_type": "note"
+    },
+    {
+      "source": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "related_to",
+      "target": "project:external-playwright-adapter",
+      "title": "External Playwright Adapter",
+      "path": "/projects/external-playwright-adapter.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "related_to",
+      "target": "project:test-generation-platform",
+      "title": "Test Generation Platform",
+      "path": "/projects/test-generation-platform.html",
+      "entity_type": "project"
+    },
+    {
+      "source": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "related_to",
+      "target": "note:quality-is-designed",
+      "title": "Quality Is Designed, Not Inspected",
+      "path": "/library/notes/quality-is-designed/",
       "entity_type": "note"
     },
     {

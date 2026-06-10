@@ -9,7 +9,7 @@ const required=(record,fields,collection)=>fields.forEach(field=>assert(record[f
 const unique=(records,field,collection)=>{const values=records.map(record=>record[field]).filter(Boolean);assert(new Set(values).size===values.length,`${collection}: duplicate ${field}`)};
 const routeFile=path=>{const clean=path.split('#')[0];return clean.endsWith('/')?`${clean.slice(1)}index.html`:clean.slice(1)};
 
-context.forEach(record=>required(record,['id','slug','title','status','kind','summary','purpose','technologies','themes','relationships'],'project_context'));
+context.forEach(record=>required(record,['id','slug','title','status','kind','summary','purpose','overview','facts','technologies','architecture','concerns','represents','themes','relationships'],'project_context'));
 repositories.forEach(record=>required(record,['id','name','description','language','languages','topics','updated_at','url','readme_excerpt','featured','metrics','relationships'],'projects'));
 music.albums.forEach(album=>{
   required(album,['id','slug','path','title','year','status','description','themes','track_count','total_runtime','tracks','relationships'],'music_catalog');

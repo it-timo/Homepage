@@ -57,7 +57,16 @@ function motionRow(item) {
 }
 
 function projectCard(project) {
-  return linkOrArticle(project, `<div class="card-top"><span class="record-type">${escapeHtml(project.kind)}</span>${status(project.status)}</div><h3>${escapeHtml(project.title)}</h3><p>${escapeHtml(project.summary)}</p>${tagList(project.technologies)}${project.path ? '<span class="quiet-link">Read the project record →</span>' : '<span class="quiet-link">Public record not yet expanded</span>'}`, 'archive-card');
+  const signals = [
+    `${project.facts.length} known characteristics`,
+    `${project.architecture.length} system views`,
+    `${project.relationships.length} source connections`,
+  ];
+  return linkOrArticle(project, `<div class="card-top"><span class="record-type">${escapeHtml(project.kind)}</span>${status(project.status)}</div><h3>${escapeHtml(project.title)}</h3><p>${escapeHtml(project.summary)}</p><div class="project-signals">${signals.map(value => `<span>${escapeHtml(value)}</span>`).join('')}</div>${tagList(project.technologies)}${project.path ? '<span class="quiet-link">Open the full project record →</span>' : '<span class="quiet-link">Public record not yet expanded</span>'}`, 'archive-card');
+}
+
+function architectureGrid(items) {
+  return `<div class="architecture-grid">${items.map(item => `<article><span>${escapeHtml(item.label)}</span><p>${escapeHtml(item.detail)}</p></article>`).join('')}</div>`;
 }
 
 function albumArtwork(album, className = 'album-signal') {
@@ -111,9 +120,10 @@ function renderProject(data, slug) {
   const project = data.project_context.find(item => item.slug === slug);
   if (!project) return renderNotFound();
   return `${pageHero(project.kind, project.title, project.summary, project.purpose)}
-    <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">Why it exists</p><p class="large-copy">${escapeHtml(project.purpose)}</p>${project.principle ? `<blockquote class="principle-quote">${escapeHtml(project.principle)}</blockquote>` : ''}</div><aside><span class="meta-label">State</span>${status(project.status)}<span class="meta-label">Technologies</span>${tagList(project.technologies)}${project.technologyNote ? `<p class="small-note">${escapeHtml(project.technologyNote)}</p>` : ''}</aside></div></section>
-    <section class="section"><div class="wrap">${sectionHead('Known characteristics', 'Concrete facts currently preserved in the public record.')} ${project.facts.length ? list(project.facts, 'fact-grid') : '<p class="empty-note">This record will expand when stable public detail is available.</p>'}</div></section>
-    <section class="section"><div class="wrap narrow"><p class="eyebrow">Recurring themes</p>${tagList(project.themes)}</div></section>${relationshipSection(data, project.id)}`;
+    <section class="section project-overview"><div class="wrap detail-grid"><div><p class="eyebrow">Project record</p>${project.overview.map(paragraph => `<p class="large-copy">${escapeHtml(paragraph)}</p>`).join('')}${project.principle ? `<blockquote class="principle-quote">${escapeHtml(project.principle)}</blockquote>` : ''}</div><aside><span class="meta-label">State</span>${status(project.status)}<span class="meta-label">Technologies</span>${tagList(project.technologies)}${project.technologyNote ? `<p class="small-note">${escapeHtml(project.technologyNote)}</p>` : ''}<span class="meta-label">Recurring themes</span>${tagList(project.themes)}</aside></div></section>
+    <section class="section"><div class="wrap">${sectionHead('How the system is shaped', 'A durable view of responsibilities and boundaries, without pretending unfinished decisions are settled.')} ${architectureGrid(project.architecture)}</div></section>
+    <section class="section"><div class="wrap project-evidence"><div>${sectionHead('Known characteristics', 'Concrete facts currently preserved in the public record.')} ${list(project.facts, 'fact-grid')}</div><aside><span class="meta-label">Engineering concerns</span>${list(project.concerns, 'concern-list')}</aside></div></section>
+    <section class="section project-meaning"><div class="wrap narrow"><p class="eyebrow">What this work represents</p><p class="large-copy">${escapeHtml(project.represents)}</p></div></section>${relationshipSection(data, project.id)}`;
 }
 
 function renderMusic(data) {

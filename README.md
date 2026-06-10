@@ -95,6 +95,7 @@ The authoritative account is **`it-timo`**. `tools/update_github.py` excludes fo
 - `data/project_featured.json` contains manually featured repository names.
 - `data/project_overrides.json` adds narrative summaries, themes, relationships, or other manual corrections by repository name.
 - `data/project_context.json` holds non-GitHub engineering records and is not overwritten.
+  These records preserve an overview, known facts, technologies, architectural responsibilities, engineering concerns, meaning, and relationships; project pages render the full record rather than reducing it to a summary card.
 - `data/projects.json` is generated and should not be hand-edited.
 
 Set `GITHUB_TOKEN` for higher API limits.

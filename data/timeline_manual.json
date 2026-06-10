@@ -1,0 +1,14 @@
+[
+  {
+    "id": "timeline:professional-alpha-strike-labs",
+    "date": null,
+    "year": null,
+    "period": "Long-running",
+    "title": "Alpha Strike Labs GmbH",
+    "type": "professional",
+    "status": "ongoing",
+    "description": "Approximately 5.5 years across concurrent Go backend systems, DNS data processing, test-platform architecture, Playwright automation, CI/CD, Docker, technical documentation, and mentoring.",
+    "path": "/about/",
+    "relationships": []
+  }
+]

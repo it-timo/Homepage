@@ -1,0 +1,255 @@
+[
+  {
+    "slug": "dns-database",
+    "path": "/projects/dns-database.html",
+    "title": "DNS Database",
+    "status": "LONG-RUNNING",
+    "kind": "Backend system",
+    "summary": "A production Go service for ingesting, resolving, storing, and querying domain, IP, CNAME, and reverse-DNS relationships.",
+    "purpose": "Maintain a durable DNS intelligence store that can absorb large file-based inputs, refresh stale records, expose predictable query interfaces, and remain operable under sustained workloads.",
+    "facts": [
+      "Modular Go service with 50+ tracked test files",
+      "RocksDB-backed persistent storage",
+      "Domain and reverse-DNS file ingestion",
+      "A, AAAA, and CNAME resolution workflows",
+      "Unix-socket and REST query interfaces",
+      "Prometheus monitoring and profiling support"
+    ],
+    "ownership": "Created and architected nearly the entire DNS Database system, including its core package structure, storage model, ingestion and resolution flows, transport interfaces, lifecycle behavior, documentation, and test strategy. Later commits and maintenance by other contributors do not represent shared creation of the underlying system.",
+    "architecture": [
+      "Directory watchers turn domain and reverse-DNS files into bounded processing flows.",
+      "Resolver workers enrich records through DNS lookups with configurable retries and backoff.",
+      "RocksDB stores bidirectional domain, IP, CNAME, blacklist, and TLD relationships.",
+      "REST and Unix-socket servers expose the same query model to different consumers.",
+      "Configuration controls worker counts, channel buffers, retention, freshness, storage tuning, and shutdown behavior."
+    ],
+    "engineeringFocus": [
+      "Coordinate high-volume concurrent work without leaking goroutines or losing completion signals.",
+      "Keep related indexes consistent when records are updated, merged, deleted, or refreshed.",
+      "Separate ingestion, resolution, persistence, transport, and monitoring into testable packages.",
+      "Make long-lived operations observable and safely stoppable.",
+      "Document architecture and operating constraints so the system remains maintainable beyond its original implementation."
+    ],
+    "evidence": [
+      "More than 130 tracked source and support files across server, client, storage, resolver, watcher, monitoring, and configuration packages.",
+      "Unit, integration, race-oriented, and stress-oriented test suites.",
+      "Module-level architecture documentation and a detailed operator README.",
+      "Containerized build and validation flow with linting, security checks, race detection, coverage, and profiling."
+    ],
+    "disclosure": "Source code, internal package names, infrastructure addresses, production sizing, and organization-specific operating details are intentionally not published.",
+    "technologies": [
+      "Go",
+      "RocksDB"
+    ],
+    "themes": [
+      "maintainability",
+      "lifecycles",
+      "documentation"
+    ],
+    "featured": true,
+    "id": "project:dns-database",
+    "type": "project",
+    "relationships": [
+      {
+        "type": "documented_by",
+        "target": "article:architecture-is-communication"
+      },
+      {
+        "type": "shares_principle",
+        "target": "note:maintainability-over-hype"
+      }
+    ]
+  },
+  {
+    "slug": "test-generation-platform",
+    "path": "/projects/test-generation-platform.html",
+    "title": "Test Generation Platform",
+    "status": "ACTIVE",
+    "kind": "Test automation",
+    "summary": "A company-wide QA platform that turns reviewable test contracts into deterministic Playwright execution and evidence.",
+    "purpose": "Make release-gate intent understandable to humans while keeping generation, execution, scheduling, and result reporting repeatable enough for CI.",
+    "facts": [
+      "KiwiTCMS to DSL to IR to Playwright pipeline",
+      "Schema-driven command contracts and selector profiles",
+      "Deterministic TypeScript generation with Jinja2",
+      "Lane-aware parallel execution",
+      "JUnit, HTML, trace, and per-case video evidence",
+      "Shared Docker runtime for local, CI, and interactive use"
+    ],
+    "ownership": "Sole creator and architect of the Playwright QA platform. Designed and implemented the generator, runtime orchestration, KiwiTCMS integration, DSL and selector contracts, CI behavior, evidence handling, scheduling, documentation, and external-case integration.",
+    "architecture": [
+      "KiwiTCMS holds intended coverage and human-readable case contracts.",
+      "Normalization and schema-driven mapping translate case text into an explicit intermediate representation.",
+      "Jinja2 templates render understandable Playwright TypeScript rather than opaque runtime instructions.",
+      "Profile inheritance composes shared, product-specific, and legacy DSL, selector, and runtime layers.",
+      "A single containerized entrypoint coordinates export, lint, generation, execution, reporting, traces, and interactive debugging."
+    ],
+    "engineeringFocus": [
+      "Keep the same input deterministic across normalization, mapping, rendering, and execution.",
+      "Reject ambiguous test language through lint modes, typed selector semantics, and contract tests.",
+      "Support multiple products without copying the generator or weakening the shared schema.",
+      "Schedule shared-user cases safely while preserving parallelism for independent cases.",
+      "Preserve useful evidence and map terminal test outcomes back into the test-management system."
+    ],
+    "evidence": [
+      "Roughly 14,000 lines across Python, TypeScript, shell orchestration, templates, and integration tooling.",
+      "More than 20 focused generator contract-test modules plus integration-library tests.",
+      "Dedicated documentation for operators, stakeholders, DSL authors, schema contracts, selectors, troubleshooting, and adapters.",
+      "Dry-run and strict lint paths allow case authors and CI to validate contracts before execution."
+    ],
+    "disclosure": "The implementation, product-specific selectors, test cases, internal endpoints, and organization-specific CI configuration remain private. The architecture and engineering principles are described at a system level.",
+    "technologies": [
+      "KiwiTCMS",
+      "Playwright",
+      "Python",
+      "TypeScript",
+      "Docker",
+      "Jinja2"
+    ],
+    "themes": [
+      "quality",
+      "translation",
+      "automation"
+    ],
+    "featured": true,
+    "id": "project:test-generation-platform",
+    "type": "project",
+    "relationships": [
+      {
+        "type": "integrates_with",
+        "target": "project:external-playwright-adapter"
+      },
+      {
+        "type": "shares_principle",
+        "target": "note:maintainability-over-hype"
+      },
+      {
+        "type": "related_system",
+        "target": "project:jarvis"
+      }
+    ]
+  },
+  {
+    "slug": "external-playwright-adapter",
+    "path": "/projects/external-playwright-adapter.html",
+    "title": "External Playwright Adapter",
+    "status": "ACTIVE",
+    "kind": "Integration",
+    "summary": "An isolated adapter that lets independently owned Playwright suites participate in shared execution, evidence, and test-management workflows.",
+    "purpose": "Let teams keep specialized tests beside their own code without importing framework internals or weakening the canonical DSL-based release gate.",
+    "facts": [
+      "One governed source directory maps to one managed test case",
+      "Repository, ref, and path validation before execution",
+      "Aggregates multiple Playwright specs into one managed result",
+      "Synthetic JUnit output carries source revision and authority metadata",
+      "Dry-run-first synchronization for case metadata"
+    ],
+    "ownership": "Sole designer and implementer of the external Playwright adapter, including repository synchronization, path validation, isolated dependency installation, execution aggregation, result mapping, and CI-safe source references.",
+    "architecture": [
+      "External cases are separated before canonical DSL generation begins.",
+      "The runtime validates a governed repository, revision, relative path, and required spec files.",
+      "External suites install and use their own dependencies instead of importing framework internals.",
+      "Multiple contained Playwright tests are reduced to one authoritative managed-case outcome.",
+      "Synthetic JUnit records preserve source path, revision, commit, and execution authority."
+    ],
+    "engineeringFocus": [
+      "Create a removable integration boundary that does not contaminate the core generator.",
+      "Prevent test-management content from selecting arbitrary repositories or escaping configured roots.",
+      "Define deterministic semantics for failed, errored, skipped, and empty external suites.",
+      "Keep metadata synchronization reviewable through dry-run, strict validation, and explicit apply modes."
+    ],
+    "evidence": [
+      "Dedicated adapter documentation and focused automated tests.",
+      "Explicit isolation and removal contracts.",
+      "Source revision metadata travels with generated execution evidence.",
+      "CI and local execution use the same orchestration path."
+    ],
+    "disclosure": "Repository addresses, branch policies, job-token configuration, case metadata, and product-specific tests are private.",
+    "technologies": [
+      "Playwright",
+      "TypeScript",
+      "Docker"
+    ],
+    "themes": [
+      "integration",
+      "boundaries",
+      "pragmatism"
+    ],
+    "featured": false,
+    "id": "project:external-playwright-adapter",
+    "type": "project",
+    "relationships": [
+      {
+        "type": "part_of_ecosystem",
+        "target": "project:test-generation-platform"
+      }
+    ]
+  },
+  {
+    "slug": "jarvis",
+    "path": "/projects/jarvis.html",
+    "title": "JARVIS",
+    "status": "ALPHA",
+    "kind": "Personal orchestration platform",
+    "summary": "A personal system for reducing context switching across projects, memory, documentation, automation, and creative work.",
+    "purpose": "Bring the different parts of long-running work into one understandable context while preserving human control at meaningful decision points.",
+    "principle": "Autonomous Until The Gate",
+    "facts": [
+      "Connect projects, memory, and documentation",
+      "Coordinate automation and creative work",
+      "Reduce context switching",
+      "Keep consequential decisions behind explicit gates"
+    ],
+    "technologies": [
+      "LangGraph",
+      "LiteLLM",
+      "FastAPI",
+      "React",
+      "ChromaDB",
+      "PostgreSQL"
+    ],
+    "technologyNote": "Planned architecture; expected to evolve with the project.",
+    "themes": [
+      "memory",
+      "orchestration",
+      "human agency"
+    ],
+    "featured": true,
+    "id": "project:jarvis",
+    "type": "project",
+    "relationships": [
+      {
+        "type": "related_system",
+        "target": "project:test-generation-platform"
+      },
+      {
+        "type": "documented_by",
+        "target": "article:architecture-is-communication"
+      },
+      {
+        "type": "shares_theme",
+        "target": "album:core-override"
+      }
+    ]
+  },
+  {
+    "slug": "goboot",
+    "path": "",
+    "title": "GoBoot",
+    "status": "CURRENT PRIORITY",
+    "kind": "Engineering work",
+    "summary": "A current area of focus. The public archive will expand when there is stable context worth preserving.",
+    "purpose": "Listed honestly as current work without inventing a public specification before one exists.",
+    "facts": [],
+    "technologies": [
+      "Go"
+    ],
+    "themes": [
+      "engineering"
+    ],
+    "featured": false,
+    "id": "project:goboot",
+    "type": "project",
+    "relationships": []
+  }
+]

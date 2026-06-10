@@ -1,0 +1,49 @@
+{
+  "role": "Software Quality Engineer",
+  "company": "Alpha Strike Labs GmbH",
+  "tenure": "Approximately 5.5 years",
+  "professionalSummary": "Approximately 5.5 years designing and building production engineering systems: concurrent Go backends for DNS intelligence and durable data processing, plus a company-wide Playwright QA platform that translates human-readable test contracts into deterministic CI execution and evidence.",
+  "disciplines": [
+    "Backend and Systems Engineering",
+    "Software Quality Engineering",
+    "Test Platform Architecture",
+    "Automation and CI/CD"
+  ],
+  "languages": ["Go", "Python", "TypeScript", "Bash"],
+  "technologies": [
+    "Playwright",
+    "Docker",
+    "GitLab CI/CD",
+    "KiwiTCMS",
+    "RocksDB",
+    "Jinja2",
+    "Prometheus",
+    "YAML"
+  ],
+  "experience": [
+    "Architecting concurrent Go services with worker pools, bounded processing, lifecycle management, and graceful shutdown",
+    "Designing durable DNS data ingestion, resolution, indexing, and query workflows",
+    "Building REST and Unix-socket interfaces for backend systems",
+    "Creating a schema-driven test generation platform from DSL contracts to Playwright TypeScript",
+    "Integrating test management, CI execution, scheduling, reporting, traces, and video evidence",
+    "Building reproducible Docker environments and GitLab CI/CD workflows",
+    "Designing monitoring, profiling, validation, and automated test strategies",
+    "Writing architecture, operator, troubleshooting, and authoring documentation",
+    "Mentoring interns and supporting maintainable engineering practices"
+  ],
+  "principles": [
+    "Maintainability over hype",
+    "Documentation matters",
+    "Long-term thinking matters",
+    "Systems should remain understandable years later",
+    "Architecture is communication",
+    "Quality is designed, not inspected"
+  ],
+  "questions": [
+    "How do complex things emerge?",
+    "How do systems evolve?",
+    "How does identity persist through change?",
+    "How do people find meaning?",
+    "How do simple rules create unexpected outcomes?"
+  ]
+}

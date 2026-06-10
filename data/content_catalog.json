@@ -1,0 +1,73 @@
+{
+  "entries": [
+    {
+      "title": "Architecture Is Communication",
+      "slug": "architecture-is-communication",
+      "collection": "articles",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "Architecture matters when it helps the next person understand why a system is shaped the way it is.",
+      "themes": [
+        "architecture",
+        "documentation",
+        "maintainability"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database"
+        },
+        {
+          "type": "related_to",
+          "target": "project:jarvis"
+        }
+      ],
+      "id": "article:architecture-is-communication",
+      "type": "article",
+      "path": "/library/articles/architecture-is-communication/",
+      "source": "content/articles/architecture-is-communication.md",
+      "body": [
+        "Architecture is not only the arrangement of components. It is the record of what a system believes about change.",
+        "A boundary explains which decisions belong together. A lifecycle explains when a thing may exist. A test explains which behavior the system is unwilling to lose. Documentation explains why those choices were made when the code can only show what they became.",
+        "The useful question is not whether an architecture looks sophisticated. It is whether someone can return years later, understand the constraints, and change the system without first reconstructing its history from accidents."
+      ]
+    },
+    {
+      "title": "Maintainability Over Hype",
+      "slug": "maintainability-over-hype",
+      "collection": "notes",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "New tools are useful when they make a system easier to understand, operate, or change—not merely newer.",
+      "themes": [
+        "maintainability",
+        "long-term thinking",
+        "engineering"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "album:artifacts-of-resilience"
+        }
+      ],
+      "id": "note:maintainability-over-hype",
+      "type": "note",
+      "path": "/library/notes/maintainability-over-hype/",
+      "source": "content/notes/maintainability-over-hype.md",
+      "body": [
+        "A system accumulates history whether that history is documented or not.",
+        "Choosing maintainability over hype does not mean refusing new tools. It means asking what remains understandable after the novelty has gone: interfaces, failure modes, ownership, tests, and the reasons behind irreversible decisions."
+      ]
+    }
+  ]
+}

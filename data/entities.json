@@ -84,8 +84,8 @@
       "spotify": "",
       "youtube": "",
       "soundcloud": "",
-      "cover_path": null,
-      "track_count": 0,
+      "cover_path": "/assets/music/artifacts-of-resilience/album_cover.png",
+      "track_count": 13,
       "total_runtime_seconds": null,
       "total_runtime": null,
       "id": "album:artifacts-of-resilience",
@@ -97,6 +97,97 @@
           "title": "Maintainability Over Hype",
           "path": "/library/notes/maintainability-over-hype/",
           "entity_type": "note"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:i-still-look",
+          "title": "I Still Look",
+          "path": "/music/artifacts-of-resilience/i-still-look/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:no-echo",
+          "title": "No Echo",
+          "path": "/music/artifacts-of-resilience/no-echo/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:nineteen-and-nowhere",
+          "title": "Nineteen And Nowhere",
+          "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:what-family-means",
+          "title": "What Family Means",
+          "path": "/music/artifacts-of-resilience/what-family-means/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:no-room",
+          "title": "No Room",
+          "path": "/music/artifacts-of-resilience/no-room/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:where-it-lands",
+          "title": "Where It Lands",
+          "path": "/music/artifacts-of-resilience/where-it-lands/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:late-bloom",
+          "title": "Late Bloom",
+          "path": "/music/artifacts-of-resilience/late-bloom/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+          "title": "Built For More Stuck On Empty",
+          "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:loyal-to-a-fault",
+          "title": "Loyal To A Fault",
+          "path": "/music/artifacts-of-resilience/loyal-to-a-fault/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:running-on-loops",
+          "title": "Running On Loops",
+          "path": "/music/artifacts-of-resilience/running-on-loops/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:trapped-inside",
+          "title": "Trapped Inside",
+          "path": "/music/artifacts-of-resilience/trapped-inside/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:it-was-me",
+          "title": "It Was Me",
+          "path": "/music/artifacts-of-resilience/it-was-me/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:artifacts-of-resilience:override",
+          "title": "Override",
+          "path": "/music/artifacts-of-resilience/override/",
+          "entity_type": "track"
         }
       ],
       "summary": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
@@ -107,6 +198,97 @@
           "title": "Maintainability Over Hype",
           "path": "/library/notes/maintainability-over-hype/",
           "entity_type": "note"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:i-still-look",
+          "title": "I Still Look",
+          "path": "/music/artifacts-of-resilience/i-still-look/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:no-echo",
+          "title": "No Echo",
+          "path": "/music/artifacts-of-resilience/no-echo/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:nineteen-and-nowhere",
+          "title": "Nineteen And Nowhere",
+          "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:what-family-means",
+          "title": "What Family Means",
+          "path": "/music/artifacts-of-resilience/what-family-means/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:no-room",
+          "title": "No Room",
+          "path": "/music/artifacts-of-resilience/no-room/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:where-it-lands",
+          "title": "Where It Lands",
+          "path": "/music/artifacts-of-resilience/where-it-lands/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:late-bloom",
+          "title": "Late Bloom",
+          "path": "/music/artifacts-of-resilience/late-bloom/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+          "title": "Built For More Stuck On Empty",
+          "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:loyal-to-a-fault",
+          "title": "Loyal To A Fault",
+          "path": "/music/artifacts-of-resilience/loyal-to-a-fault/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:running-on-loops",
+          "title": "Running On Loops",
+          "path": "/music/artifacts-of-resilience/running-on-loops/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:trapped-inside",
+          "title": "Trapped Inside",
+          "path": "/music/artifacts-of-resilience/trapped-inside/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:it-was-me",
+          "title": "It Was Me",
+          "path": "/music/artifacts-of-resilience/it-was-me/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:artifacts-of-resilience:override",
+          "title": "Override",
+          "path": "/music/artifacts-of-resilience/override/",
+          "entity_type": "track"
         }
       ]
     },
@@ -129,8 +311,8 @@
       "spotify": "",
       "youtube": "",
       "soundcloud": "",
-      "cover_path": null,
-      "track_count": 0,
+      "cover_path": "/assets/music/core-override/album_cover.png",
+      "track_count": 13,
       "total_runtime_seconds": null,
       "total_runtime": null,
       "id": "album:core-override",
@@ -149,6 +331,97 @@
           "title": "JARVIS",
           "path": "/projects/jarvis.html",
           "entity_type": "project"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:used-to-be-easy",
+          "title": "Used To Be Easy",
+          "path": "/music/core-override/used-to-be-easy/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:swipe-ghost-repeat",
+          "title": "Swipe Ghost Repeat",
+          "path": "/music/core-override/swipe-ghost-repeat/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:all-the-right-lies",
+          "title": "All The Right Lies",
+          "path": "/music/core-override/all-the-right-lies/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:say-it-or-leave-it",
+          "title": "Say It Or Leave It",
+          "path": "/music/core-override/say-it-or-leave-it/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:velvet-lies",
+          "title": "Velvet Lies",
+          "path": "/music/core-override/velvet-lies/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:i-am-the-voice-in-your-gps",
+          "title": "I Am The Voice In Your GPS",
+          "path": "/music/core-override/i-am-the-voice-in-your-gps/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:walls-we-built",
+          "title": "Walls We Built",
+          "path": "/music/core-override/walls-we-built/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:system-upgrade",
+          "title": "System Upgrade",
+          "path": "/music/core-override/system-upgrade/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:the-only-worker-in-the-mainframe",
+          "title": "The Only Worker In The Mainframe",
+          "path": "/music/core-override/the-only-worker-in-the-mainframe/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:nothing-personal-just-the-apocalypse",
+          "title": "Nothing Personal Just The Apocalypse",
+          "path": "/music/core-override/nothing-personal-just-the-apocalypse/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:static-noise-and-cold-coffee",
+          "title": "Static Noise And Cold Coffee",
+          "path": "/music/core-override/static-noise-and-cold-coffee/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:burn-the-night-into-me",
+          "title": "Burn The Night Into Me",
+          "path": "/music/core-override/burn-the-night-into-me/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:core-override:built-from-scraps",
+          "title": "Built From Scraps",
+          "path": "/music/core-override/built-from-scraps/",
+          "entity_type": "track"
         }
       ],
       "summary": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
@@ -166,6 +439,97 @@
           "title": "Used To Be Easy — Video",
           "path": "/music/core-override/",
           "entity_type": "video"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:used-to-be-easy",
+          "title": "Used To Be Easy",
+          "path": "/music/core-override/used-to-be-easy/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:swipe-ghost-repeat",
+          "title": "Swipe Ghost Repeat",
+          "path": "/music/core-override/swipe-ghost-repeat/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:all-the-right-lies",
+          "title": "All The Right Lies",
+          "path": "/music/core-override/all-the-right-lies/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:say-it-or-leave-it",
+          "title": "Say It Or Leave It",
+          "path": "/music/core-override/say-it-or-leave-it/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:velvet-lies",
+          "title": "Velvet Lies",
+          "path": "/music/core-override/velvet-lies/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:i-am-the-voice-in-your-gps",
+          "title": "I Am The Voice In Your GPS",
+          "path": "/music/core-override/i-am-the-voice-in-your-gps/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:walls-we-built",
+          "title": "Walls We Built",
+          "path": "/music/core-override/walls-we-built/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:system-upgrade",
+          "title": "System Upgrade",
+          "path": "/music/core-override/system-upgrade/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:the-only-worker-in-the-mainframe",
+          "title": "The Only Worker In The Mainframe",
+          "path": "/music/core-override/the-only-worker-in-the-mainframe/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:nothing-personal-just-the-apocalypse",
+          "title": "Nothing Personal Just The Apocalypse",
+          "path": "/music/core-override/nothing-personal-just-the-apocalypse/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:static-noise-and-cold-coffee",
+          "title": "Static Noise And Cold Coffee",
+          "path": "/music/core-override/static-noise-and-cold-coffee/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:burn-the-night-into-me",
+          "title": "Burn The Night Into Me",
+          "path": "/music/core-override/burn-the-night-into-me/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:built-from-scraps",
+          "title": "Built From Scraps",
+          "path": "/music/core-override/built-from-scraps/",
+          "entity_type": "track"
         },
         {
           "type": "referenced_by",
@@ -193,8 +557,8 @@
       "spotify": "",
       "youtube": "",
       "soundcloud": "",
-      "cover_path": null,
-      "track_count": 0,
+      "cover_path": "/assets/music/grounded-fire/album_cover.png",
+      "track_count": 13,
       "total_runtime_seconds": null,
       "total_runtime": null,
       "id": "album:grounded-fire",
@@ -206,10 +570,193 @@
           "title": "Core Override",
           "path": "/music/core-override/",
           "entity_type": "album"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:idle-state",
+          "title": "Idle State",
+          "path": "/music/grounded-fire/idle-state/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:simulated-warmth",
+          "title": "Simulated Warmth",
+          "path": "/music/grounded-fire/simulated-warmth/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:the-distance-between-sparks",
+          "title": "The Distance Between Sparks",
+          "path": "/music/grounded-fire/the-distance-between-sparks/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:pulse-detect",
+          "title": "Pulse Detect",
+          "path": "/music/grounded-fire/pulse-detect/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:she-glitches-just-right",
+          "title": "She Glitches Just Right",
+          "path": "/music/grounded-fire/she-glitches-just-right/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:no-more-careful",
+          "title": "No More Careful",
+          "path": "/music/grounded-fire/no-more-careful/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:chemical-voltage",
+          "title": "Chemical Voltage",
+          "path": "/music/grounded-fire/chemical-voltage/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:too-loud-to-fade",
+          "title": "Too Loud To Fade",
+          "path": "/music/grounded-fire/too-loud-to-fade/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:the-cost-of-no-mistakes",
+          "title": "The Cost Of No Mistakes",
+          "path": "/music/grounded-fire/the-cost-of-no-mistakes/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:unapologetic-depth",
+          "title": "Unapologetic Depth",
+          "path": "/music/grounded-fire/unapologetic-depth/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/grounded-fire/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:no-script",
+          "title": "No Script",
+          "path": "/music/grounded-fire/no-script/",
+          "entity_type": "track"
+        },
+        {
+          "type": "contains",
+          "target": "track:grounded-fire:after-the-pulse",
+          "title": "After The Pulse",
+          "path": "/music/grounded-fire/after-the-pulse/",
+          "entity_type": "track"
         }
       ],
       "summary": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
-      "incoming_relationships": []
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:idle-state",
+          "title": "Idle State",
+          "path": "/music/grounded-fire/idle-state/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:simulated-warmth",
+          "title": "Simulated Warmth",
+          "path": "/music/grounded-fire/simulated-warmth/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:the-distance-between-sparks",
+          "title": "The Distance Between Sparks",
+          "path": "/music/grounded-fire/the-distance-between-sparks/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:pulse-detect",
+          "title": "Pulse Detect",
+          "path": "/music/grounded-fire/pulse-detect/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:she-glitches-just-right",
+          "title": "She Glitches Just Right",
+          "path": "/music/grounded-fire/she-glitches-just-right/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:no-more-careful",
+          "title": "No More Careful",
+          "path": "/music/grounded-fire/no-more-careful/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:chemical-voltage",
+          "title": "Chemical Voltage",
+          "path": "/music/grounded-fire/chemical-voltage/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:too-loud-to-fade",
+          "title": "Too Loud To Fade",
+          "path": "/music/grounded-fire/too-loud-to-fade/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:the-cost-of-no-mistakes",
+          "title": "The Cost Of No Mistakes",
+          "path": "/music/grounded-fire/the-cost-of-no-mistakes/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:unapologetic-depth",
+          "title": "Unapologetic Depth",
+          "path": "/music/grounded-fire/unapologetic-depth/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/grounded-fire/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:no-script",
+          "title": "No Script",
+          "path": "/music/grounded-fire/no-script/",
+          "entity_type": "track"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:grounded-fire:after-the-pulse",
+          "title": "After The Pulse",
+          "path": "/music/grounded-fire/after-the-pulse/",
+          "entity_type": "track"
+        }
+      ]
     },
     {
       "title": "Architecture Is Communication",
@@ -390,15 +937,38 @@
       "title": "DNS Database",
       "status": "LONG-RUNNING",
       "kind": "Backend system",
-      "summary": "A large Go backend shaped around lifecycle design, documentation, and the belief that software should remain understandable years later.",
-      "purpose": "Long-term engineering craftsmanship rather than novelty: explicit lifecycles, durable storage, documented decisions, and tests that make change safer.",
+      "summary": "A production Go service for ingesting, resolving, storing, and querying domain, IP, CNAME, and reverse-DNS relationships.",
+      "purpose": "Maintain a durable DNS intelligence store that can absorb large file-based inputs, refresh stale records, expose predictable query interfaces, and remain operable under sustained workloads.",
       "facts": [
-        "Approximately 13,000 lines of Go",
-        "Approximately 90% test coverage",
-        "RocksDB-based storage",
-        "Extensive documentation",
-        "Lifecycle-focused design"
+        "Modular Go service with 50+ tracked test files",
+        "RocksDB-backed persistent storage",
+        "Domain and reverse-DNS file ingestion",
+        "A, AAAA, and CNAME resolution workflows",
+        "Unix-socket and REST query interfaces",
+        "Prometheus monitoring and profiling support"
       ],
+      "ownership": "Created and architected nearly the entire DNS Database system, including its core package structure, storage model, ingestion and resolution flows, transport interfaces, lifecycle behavior, documentation, and test strategy. Later commits and maintenance by other contributors do not represent shared creation of the underlying system.",
+      "architecture": [
+        "Directory watchers turn domain and reverse-DNS files into bounded processing flows.",
+        "Resolver workers enrich records through DNS lookups with configurable retries and backoff.",
+        "RocksDB stores bidirectional domain, IP, CNAME, blacklist, and TLD relationships.",
+        "REST and Unix-socket servers expose the same query model to different consumers.",
+        "Configuration controls worker counts, channel buffers, retention, freshness, storage tuning, and shutdown behavior."
+      ],
+      "engineeringFocus": [
+        "Coordinate high-volume concurrent work without leaking goroutines or losing completion signals.",
+        "Keep related indexes consistent when records are updated, merged, deleted, or refreshed.",
+        "Separate ingestion, resolution, persistence, transport, and monitoring into testable packages.",
+        "Make long-lived operations observable and safely stoppable.",
+        "Document architecture and operating constraints so the system remains maintainable beyond its original implementation."
+      ],
+      "evidence": [
+        "More than 130 tracked source and support files across server, client, storage, resolver, watcher, monitoring, and configuration packages.",
+        "Unit, integration, race-oriented, and stress-oriented test suites.",
+        "Module-level architecture documentation and a detailed operator README.",
+        "Containerized build and validation flow with linting, security checks, race detection, coverage, and profiling."
+      ],
+      "disclosure": "Source code, internal package names, infrastructure addresses, production sizing, and organization-specific operating details are intentionally not published.",
       "technologies": [
         "Go",
         "RocksDB"
@@ -450,13 +1020,36 @@
       "title": "External Playwright Adapter",
       "status": "ACTIVE",
       "kind": "Integration",
-      "summary": "Allows external repositories to participate in a larger testing ecosystem.",
-      "purpose": "A pragmatic boundary: teams can keep tests near their own code while still taking part in shared execution and reporting workflows.",
+      "summary": "An isolated adapter that lets independently owned Playwright suites participate in shared execution, evidence, and test-management workflows.",
+      "purpose": "Let teams keep specialized tests beside their own code without importing framework internals or weakening the canonical DSL-based release gate.",
       "facts": [
-        "Designed for external repositories",
-        "Connects independent test suites",
-        "Part of a broader testing ecosystem"
+        "One governed source directory maps to one managed test case",
+        "Repository, ref, and path validation before execution",
+        "Aggregates multiple Playwright specs into one managed result",
+        "Synthetic JUnit output carries source revision and authority metadata",
+        "Dry-run-first synchronization for case metadata"
       ],
+      "ownership": "Sole designer and implementer of the external Playwright adapter, including repository synchronization, path validation, isolated dependency installation, execution aggregation, result mapping, and CI-safe source references.",
+      "architecture": [
+        "External cases are separated before canonical DSL generation begins.",
+        "The runtime validates a governed repository, revision, relative path, and required spec files.",
+        "External suites install and use their own dependencies instead of importing framework internals.",
+        "Multiple contained Playwright tests are reduced to one authoritative managed-case outcome.",
+        "Synthetic JUnit records preserve source path, revision, commit, and execution authority."
+      ],
+      "engineeringFocus": [
+        "Create a removable integration boundary that does not contaminate the core generator.",
+        "Prevent test-management content from selecting arbitrary repositories or escaping configured roots.",
+        "Define deterministic semantics for failed, errored, skipped, and empty external suites.",
+        "Keep metadata synchronization reviewable through dry-run, strict validation, and explicit apply modes."
+      ],
+      "evidence": [
+        "Dedicated adapter documentation and focused automated tests.",
+        "Explicit isolation and removal contracts.",
+        "Source revision metadata travels with generated execution evidence.",
+        "CI and local execution use the same orchestration path."
+      ],
+      "disclosure": "Repository addresses, branch policies, job-token configuration, case metadata, and product-specific tests are private.",
       "technologies": [
         "Playwright",
         "TypeScript",
@@ -602,14 +1195,38 @@
       "title": "Test Generation Platform",
       "status": "ACTIVE",
       "kind": "Test automation",
-      "summary": "Transforms human-written test cases into executable Playwright automation.",
-      "purpose": "Bridge the language people use to describe quality with the automation systems used to verify it, without making either side incidental.",
+      "summary": "A company-wide QA platform that turns reviewable test contracts into deterministic Playwright execution and evidence.",
+      "purpose": "Make release-gate intent understandable to humans while keeping generation, execution, scheduling, and result reporting repeatable enough for CI.",
       "facts": [
-        "Human-readable cases originate in KiwiTCMS",
-        "Automation is generated for Playwright",
-        "Templates keep generated output understandable",
-        "Docker supports repeatable environments"
+        "KiwiTCMS to DSL to IR to Playwright pipeline",
+        "Schema-driven command contracts and selector profiles",
+        "Deterministic TypeScript generation with Jinja2",
+        "Lane-aware parallel execution",
+        "JUnit, HTML, trace, and per-case video evidence",
+        "Shared Docker runtime for local, CI, and interactive use"
       ],
+      "ownership": "Sole creator and architect of the Playwright QA platform. Designed and implemented the generator, runtime orchestration, KiwiTCMS integration, DSL and selector contracts, CI behavior, evidence handling, scheduling, documentation, and external-case integration.",
+      "architecture": [
+        "KiwiTCMS holds intended coverage and human-readable case contracts.",
+        "Normalization and schema-driven mapping translate case text into an explicit intermediate representation.",
+        "Jinja2 templates render understandable Playwright TypeScript rather than opaque runtime instructions.",
+        "Profile inheritance composes shared, product-specific, and legacy DSL, selector, and runtime layers.",
+        "A single containerized entrypoint coordinates export, lint, generation, execution, reporting, traces, and interactive debugging."
+      ],
+      "engineeringFocus": [
+        "Keep the same input deterministic across normalization, mapping, rendering, and execution.",
+        "Reject ambiguous test language through lint modes, typed selector semantics, and contract tests.",
+        "Support multiple products without copying the generator or weakening the shared schema.",
+        "Schedule shared-user cases safely while preserving parallelism for independent cases.",
+        "Preserve useful evidence and map terminal test outcomes back into the test-management system."
+      ],
+      "evidence": [
+        "Roughly 14,000 lines across Python, TypeScript, shell orchestration, templates, and integration tooling.",
+        "More than 20 focused generator contract-test modules plus integration-library tests.",
+        "Dedicated documentation for operators, stakeholders, DSL authors, schema contracts, selectors, troubleshooting, and adapters.",
+        "Dry-run and strict lint paths allow case authors and CI to validate contracts before execution."
+      ],
+      "disclosure": "The implementation, product-specific selectors, test cases, internal endpoints, and organization-specific CI configuration remain private. The architecture and engineering principles are described at a system level.",
       "technologies": [
         "KiwiTCMS",
         "Playwright",
@@ -681,6 +1298,2065 @@
       ]
     },
     {
+      "id": "repo:it-timo:goboot",
+      "type": "repository",
+      "name": "goboot",
+      "title": "goboot",
+      "path": "https://github.com/it-timo/goboot",
+      "description": "Modern Go project generator for CLI, REST, and backend tools. Batteries included: clean structure, Docker, CI, and editor presets — ready in seconds.",
+      "summary": "Modern Go project generator for CLI, REST, and backend tools. Batteries included: clean structure, Docker, CI, and editor presets — ready in seconds.",
+      "language": "Go",
+      "languages": [
+        "Go",
+        "Go Template",
+        "Shell",
+        "Makefile",
+        "Dockerfile"
+      ],
+      "topics": [
+        "boilerplate",
+        "ci-template",
+        "clean-architecture",
+        "cli",
+        "codegen",
+        "go",
+        "go-cli",
+        "goboot",
+        "golang",
+        "golang-template",
+        "linting",
+        "makefile",
+        "modular",
+        "precommit",
+        "project-generator",
+        "scaffolding",
+        "scripts",
+        "taskfile"
+      ],
+      "themes": [
+        "boilerplate",
+        "ci-template",
+        "clean-architecture",
+        "cli",
+        "codegen",
+        "go",
+        "go-cli",
+        "goboot",
+        "golang",
+        "golang-template",
+        "linting",
+        "makefile",
+        "modular",
+        "precommit",
+        "project-generator",
+        "scaffolding",
+        "scripts",
+        "taskfile"
+      ],
+      "updated_at": "2026-05-25T20:38:45Z",
+      "created_at": "2025-05-21T19:58:58Z",
+      "pushed_at": "2026-05-25T20:42:47Z",
+      "url": "https://github.com/it-timo/goboot",
+      "readme_excerpt": "goboot A modular, versioned scaffold for reproducible Go project generation. 📦 What is goboot? goboot is a deterministic scaffolding tool for Go repositories. It focuses on explicit, layered project setup that stays maintainable as projects grow. It is not a framework or IDE. It targets teams that want reproducible output, clear service boundaries, and auditable generation behavior. 📁 Current State v0.2.0 is the…",
+      "metrics": {
+        "stars": 5,
+        "forks": 0,
+        "open_issues": 0,
+        "size_kb": 734
+      },
+      "featured": false,
+      "fork": false,
+      "archived": false,
+      "relationships": [],
+      "incoming_relationships": []
+    },
+    {
+      "id": "repo:it-timo:Homepage",
+      "type": "repository",
+      "name": "Homepage",
+      "title": "Homepage",
+      "path": "https://github.com/it-timo/Homepage",
+      "description": "",
+      "summary": "Homepage",
+      "language": "HTML",
+      "languages": [
+        "HTML",
+        "JavaScript"
+      ],
+      "topics": [],
+      "themes": [],
+      "updated_at": "2026-06-09T18:55:52Z",
+      "created_at": "2026-06-09T18:46:01Z",
+      "pushed_at": "2026-06-09T22:47:08Z",
+      "url": "https://github.com/it-timo/Homepage",
+      "readme_excerpt": "Homepage",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "open_issues": 1,
+        "size_kb": 135
+      },
+      "featured": false,
+      "fork": false,
+      "archived": false,
+      "relationships": [],
+      "incoming_relationships": []
+    },
+    {
+      "id": "repo:it-timo:it-timo.github.io",
+      "type": "repository",
+      "name": "it-timo.github.io",
+      "title": "it-timo.github.io",
+      "path": "https://github.com/it-timo/it-timo.github.io",
+      "description": "",
+      "summary": "it-timo.github.io",
+      "language": "",
+      "languages": [],
+      "topics": [],
+      "themes": [],
+      "updated_at": "2020-12-15T09:51:01Z",
+      "created_at": "2020-12-15T09:50:56Z",
+      "pushed_at": "2020-12-15T09:50:59Z",
+      "url": "https://github.com/it-timo/it-timo.github.io",
+      "readme_excerpt": "it-timo.github.io",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "open_issues": 0,
+        "size_kb": 0
+      },
+      "featured": false,
+      "fork": false,
+      "archived": false,
+      "relationships": [],
+      "incoming_relationships": []
+    },
+    {
+      "track": 13,
+      "slug": "after-the-pulse",
+      "title": "After The Pulse",
+      "path": "/music/grounded-fire/after-the-pulse/",
+      "audio": "/assets/music/grounded-fire/13_After_the_Pulse.flac",
+      "cover": "/assets/music/grounded-fire/13_After_the_Pulse.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "No Script",
+        "path": "/music/grounded-fire/no-script/"
+      },
+      "next": null,
+      "id": "track:grounded-fire:after-the-pulse",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 3,
+      "slug": "all-the-right-lies",
+      "title": "All The Right Lies",
+      "path": "/music/core-override/all-the-right-lies/",
+      "audio": "/assets/music/core-override/03_All_the_right_lies.flac",
+      "cover": "/assets/music/core-override/03_All_the_right_lies.png",
+      "lyrics": "/assets/music/core-override/03_All_The_Right_Lies.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Swipe Ghost Repeat",
+        "path": "/music/core-override/swipe-ghost-repeat/"
+      },
+      "next": {
+        "title": "Say It Or Leave It",
+        "path": "/music/core-override/say-it-or-leave-it/"
+      },
+      "id": "track:core-override:all-the-right-lies",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 8,
+      "slug": "built-for-more-stuck-on-empty",
+      "title": "Built For More Stuck On Empty",
+      "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/",
+      "audio": "/assets/music/artifacts-of-resilience/08_Built_for_More_Stuck_on_Empty.flac",
+      "cover": "/assets/music/artifacts-of-resilience/08_Built_for_More_Stuck_on_Empty.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Late Bloom",
+        "path": "/music/artifacts-of-resilience/late-bloom/"
+      },
+      "next": {
+        "title": "Loyal To A Fault",
+        "path": "/music/artifacts-of-resilience/loyal-to-a-fault/"
+      },
+      "id": "track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 13,
+      "slug": "built-from-scraps",
+      "title": "Built From Scraps",
+      "path": "/music/core-override/built-from-scraps/",
+      "audio": "/assets/music/core-override/13_Built_from_scraps.flac",
+      "cover": "/assets/music/core-override/13_Built_from_scraps.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Burn The Night Into Me",
+        "path": "/music/core-override/burn-the-night-into-me/"
+      },
+      "next": null,
+      "id": "track:core-override:built-from-scraps",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 12,
+      "slug": "burn-the-night-into-me",
+      "title": "Burn The Night Into Me",
+      "path": "/music/core-override/burn-the-night-into-me/",
+      "audio": "/assets/music/core-override/12_Burn_the_night_into_me.flac",
+      "cover": "/assets/music/core-override/12_Burn_the_night_into_me.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Static Noise And Cold Coffee",
+        "path": "/music/core-override/static-noise-and-cold-coffee/"
+      },
+      "next": {
+        "title": "Built From Scraps",
+        "path": "/music/core-override/built-from-scraps/"
+      },
+      "id": "track:core-override:burn-the-night-into-me",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 7,
+      "slug": "chemical-voltage",
+      "title": "Chemical Voltage",
+      "path": "/music/grounded-fire/chemical-voltage/",
+      "audio": "/assets/music/grounded-fire/07_Chemical_Voltage.flac",
+      "cover": "/assets/music/grounded-fire/07_Chemical_Voltage.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "No More Careful",
+        "path": "/music/grounded-fire/no-more-careful/"
+      },
+      "next": {
+        "title": "Too Loud To Fade",
+        "path": "/music/grounded-fire/too-loud-to-fade/"
+      },
+      "id": "track:grounded-fire:chemical-voltage",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 11,
+      "slug": "grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/grounded-fire/",
+      "audio": "/assets/music/grounded-fire/11_Grounded_Fire.flac",
+      "cover": "/assets/music/grounded-fire/11_Grounded_Fire.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Unapologetic Depth",
+        "path": "/music/grounded-fire/unapologetic-depth/"
+      },
+      "next": {
+        "title": "No Script",
+        "path": "/music/grounded-fire/no-script/"
+      },
+      "id": "track:grounded-fire:grounded-fire",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 6,
+      "slug": "i-am-the-voice-in-your-gps",
+      "title": "I Am The Voice In Your GPS",
+      "path": "/music/core-override/i-am-the-voice-in-your-gps/",
+      "audio": "/assets/music/core-override/06_I_am_the_voice_in_your_GPS.flac",
+      "cover": "/assets/music/core-override/06_I_am_the_voice_in_your_GPS.png",
+      "lyrics": "/assets/music/core-override/06_I_Am_The_Voice_In_Your_GPS.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Velvet Lies",
+        "path": "/music/core-override/velvet-lies/"
+      },
+      "next": {
+        "title": "Walls We Built",
+        "path": "/music/core-override/walls-we-built/"
+      },
+      "id": "track:core-override:i-am-the-voice-in-your-gps",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 1,
+      "slug": "i-still-look",
+      "title": "I Still Look",
+      "path": "/music/artifacts-of-resilience/i-still-look/",
+      "audio": "/assets/music/artifacts-of-resilience/01_I_still_look.flac",
+      "cover": "/assets/music/artifacts-of-resilience/01_I_still_look.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": null,
+      "next": {
+        "title": "No Echo",
+        "path": "/music/artifacts-of-resilience/no-echo/"
+      },
+      "id": "track:artifacts-of-resilience:i-still-look",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 1,
+      "slug": "idle-state",
+      "title": "Idle State",
+      "path": "/music/grounded-fire/idle-state/",
+      "audio": "/assets/music/grounded-fire/01_Idle_State.flac",
+      "cover": "/assets/music/grounded-fire/01_Idle_State.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": null,
+      "next": {
+        "title": "Simulated Warmth",
+        "path": "/music/grounded-fire/simulated-warmth/"
+      },
+      "id": "track:grounded-fire:idle-state",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 12,
+      "slug": "it-was-me",
+      "title": "It Was Me",
+      "path": "/music/artifacts-of-resilience/it-was-me/",
+      "audio": "/assets/music/artifacts-of-resilience/12_It_was_me.flac",
+      "cover": "/assets/music/artifacts-of-resilience/12_It_was_me.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Trapped Inside",
+        "path": "/music/artifacts-of-resilience/trapped-inside/"
+      },
+      "next": {
+        "title": "Override",
+        "path": "/music/artifacts-of-resilience/override/"
+      },
+      "id": "track:artifacts-of-resilience:it-was-me",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 7,
+      "slug": "late-bloom",
+      "title": "Late Bloom",
+      "path": "/music/artifacts-of-resilience/late-bloom/",
+      "audio": "/assets/music/artifacts-of-resilience/07_Late_bloom.flac",
+      "cover": "/assets/music/artifacts-of-resilience/07_Late_bloom.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Where It Lands",
+        "path": "/music/artifacts-of-resilience/where-it-lands/"
+      },
+      "next": {
+        "title": "Built For More Stuck On Empty",
+        "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/"
+      },
+      "id": "track:artifacts-of-resilience:late-bloom",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 9,
+      "slug": "loyal-to-a-fault",
+      "title": "Loyal To A Fault",
+      "path": "/music/artifacts-of-resilience/loyal-to-a-fault/",
+      "audio": "/assets/music/artifacts-of-resilience/09_Loyal_to_a_Fault.flac",
+      "cover": "/assets/music/artifacts-of-resilience/09_Loyal_to_a_Fault.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Built For More Stuck On Empty",
+        "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/"
+      },
+      "next": {
+        "title": "Running On Loops",
+        "path": "/music/artifacts-of-resilience/running-on-loops/"
+      },
+      "id": "track:artifacts-of-resilience:loyal-to-a-fault",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 3,
+      "slug": "nineteen-and-nowhere",
+      "title": "Nineteen And Nowhere",
+      "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/",
+      "audio": "/assets/music/artifacts-of-resilience/03_Nineteen_and_Nowhere.flac",
+      "cover": "/assets/music/artifacts-of-resilience/03_Nineteen_and_Nowhere.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "No Echo",
+        "path": "/music/artifacts-of-resilience/no-echo/"
+      },
+      "next": {
+        "title": "What Family Means",
+        "path": "/music/artifacts-of-resilience/what-family-means/"
+      },
+      "id": "track:artifacts-of-resilience:nineteen-and-nowhere",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 2,
+      "slug": "no-echo",
+      "title": "No Echo",
+      "path": "/music/artifacts-of-resilience/no-echo/",
+      "audio": "/assets/music/artifacts-of-resilience/02_No_echo.flac",
+      "cover": "/assets/music/artifacts-of-resilience/02_No_echo.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "I Still Look",
+        "path": "/music/artifacts-of-resilience/i-still-look/"
+      },
+      "next": {
+        "title": "Nineteen And Nowhere",
+        "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/"
+      },
+      "id": "track:artifacts-of-resilience:no-echo",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 6,
+      "slug": "no-more-careful",
+      "title": "No More Careful",
+      "path": "/music/grounded-fire/no-more-careful/",
+      "audio": "/assets/music/grounded-fire/06_No_More_Careful.flac",
+      "cover": "/assets/music/grounded-fire/06_No_More_Careful.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "She Glitches Just Right",
+        "path": "/music/grounded-fire/she-glitches-just-right/"
+      },
+      "next": {
+        "title": "Chemical Voltage",
+        "path": "/music/grounded-fire/chemical-voltage/"
+      },
+      "id": "track:grounded-fire:no-more-careful",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 5,
+      "slug": "no-room",
+      "title": "No Room",
+      "path": "/music/artifacts-of-resilience/no-room/",
+      "audio": "/assets/music/artifacts-of-resilience/05_No_room.flac",
+      "cover": "/assets/music/artifacts-of-resilience/05_No_room.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "What Family Means",
+        "path": "/music/artifacts-of-resilience/what-family-means/"
+      },
+      "next": {
+        "title": "Where It Lands",
+        "path": "/music/artifacts-of-resilience/where-it-lands/"
+      },
+      "id": "track:artifacts-of-resilience:no-room",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 12,
+      "slug": "no-script",
+      "title": "No Script",
+      "path": "/music/grounded-fire/no-script/",
+      "audio": "/assets/music/grounded-fire/12_No_Script.flac",
+      "cover": "/assets/music/grounded-fire/12_No_Script.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Grounded Fire",
+        "path": "/music/grounded-fire/grounded-fire/"
+      },
+      "next": {
+        "title": "After The Pulse",
+        "path": "/music/grounded-fire/after-the-pulse/"
+      },
+      "id": "track:grounded-fire:no-script",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 10,
+      "slug": "nothing-personal-just-the-apocalypse",
+      "title": "Nothing Personal Just The Apocalypse",
+      "path": "/music/core-override/nothing-personal-just-the-apocalypse/",
+      "audio": "/assets/music/core-override/10_Nothing_personal_just_the_Apocalypse.flac",
+      "cover": "/assets/music/core-override/10_Nothing_personal_just_the_Apocalypse.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "The Only Worker In The Mainframe",
+        "path": "/music/core-override/the-only-worker-in-the-mainframe/"
+      },
+      "next": {
+        "title": "Static Noise And Cold Coffee",
+        "path": "/music/core-override/static-noise-and-cold-coffee/"
+      },
+      "id": "track:core-override:nothing-personal-just-the-apocalypse",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 13,
+      "slug": "override",
+      "title": "Override",
+      "path": "/music/artifacts-of-resilience/override/",
+      "audio": "/assets/music/artifacts-of-resilience/13_Override.flac",
+      "cover": "/assets/music/artifacts-of-resilience/13_Override.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "It Was Me",
+        "path": "/music/artifacts-of-resilience/it-was-me/"
+      },
+      "next": null,
+      "id": "track:artifacts-of-resilience:override",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 4,
+      "slug": "pulse-detect",
+      "title": "Pulse Detect",
+      "path": "/music/grounded-fire/pulse-detect/",
+      "audio": "/assets/music/grounded-fire/04_Pulse_Detect.flac",
+      "cover": "/assets/music/grounded-fire/04_Pulse_Detect.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "The Distance Between Sparks",
+        "path": "/music/grounded-fire/the-distance-between-sparks/"
+      },
+      "next": {
+        "title": "She Glitches Just Right",
+        "path": "/music/grounded-fire/she-glitches-just-right/"
+      },
+      "id": "track:grounded-fire:pulse-detect",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 10,
+      "slug": "running-on-loops",
+      "title": "Running On Loops",
+      "path": "/music/artifacts-of-resilience/running-on-loops/",
+      "audio": "/assets/music/artifacts-of-resilience/10_Running_on_loops.flac",
+      "cover": "/assets/music/artifacts-of-resilience/10_Running_on_loops.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Loyal To A Fault",
+        "path": "/music/artifacts-of-resilience/loyal-to-a-fault/"
+      },
+      "next": {
+        "title": "Trapped Inside",
+        "path": "/music/artifacts-of-resilience/trapped-inside/"
+      },
+      "id": "track:artifacts-of-resilience:running-on-loops",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 4,
+      "slug": "say-it-or-leave-it",
+      "title": "Say It Or Leave It",
+      "path": "/music/core-override/say-it-or-leave-it/",
+      "audio": "/assets/music/core-override/04_Say_it_or_leave_it.flac",
+      "cover": "/assets/music/core-override/04_Say_it_or_leave_it.png",
+      "lyrics": "/assets/music/core-override/04_Say_It_Or_Leave_It.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "All The Right Lies",
+        "path": "/music/core-override/all-the-right-lies/"
+      },
+      "next": {
+        "title": "Velvet Lies",
+        "path": "/music/core-override/velvet-lies/"
+      },
+      "id": "track:core-override:say-it-or-leave-it",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 5,
+      "slug": "she-glitches-just-right",
+      "title": "She Glitches Just Right",
+      "path": "/music/grounded-fire/she-glitches-just-right/",
+      "audio": "/assets/music/grounded-fire/05_She_Glitches_Just_Right.flac",
+      "cover": "/assets/music/grounded-fire/05_She_Glitches_Just_Right.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Pulse Detect",
+        "path": "/music/grounded-fire/pulse-detect/"
+      },
+      "next": {
+        "title": "No More Careful",
+        "path": "/music/grounded-fire/no-more-careful/"
+      },
+      "id": "track:grounded-fire:she-glitches-just-right",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 2,
+      "slug": "simulated-warmth",
+      "title": "Simulated Warmth",
+      "path": "/music/grounded-fire/simulated-warmth/",
+      "audio": "/assets/music/grounded-fire/02_Simulated_Warmth.flac",
+      "cover": "/assets/music/grounded-fire/02_Simulated_Warmth.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Idle State",
+        "path": "/music/grounded-fire/idle-state/"
+      },
+      "next": {
+        "title": "The Distance Between Sparks",
+        "path": "/music/grounded-fire/the-distance-between-sparks/"
+      },
+      "id": "track:grounded-fire:simulated-warmth",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 11,
+      "slug": "static-noise-and-cold-coffee",
+      "title": "Static Noise And Cold Coffee",
+      "path": "/music/core-override/static-noise-and-cold-coffee/",
+      "audio": "/assets/music/core-override/11_Static_noise_and_cold_coffee.flac",
+      "cover": "/assets/music/core-override/11_Static_noise_and_cold_coffee.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Nothing Personal Just The Apocalypse",
+        "path": "/music/core-override/nothing-personal-just-the-apocalypse/"
+      },
+      "next": {
+        "title": "Burn The Night Into Me",
+        "path": "/music/core-override/burn-the-night-into-me/"
+      },
+      "id": "track:core-override:static-noise-and-cold-coffee",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 2,
+      "slug": "swipe-ghost-repeat",
+      "title": "Swipe Ghost Repeat",
+      "path": "/music/core-override/swipe-ghost-repeat/",
+      "audio": "/assets/music/core-override/02_Swipe_Ghost_Repeat.flac",
+      "cover": "/assets/music/core-override/02_Swipe_Ghost_Repeat.png",
+      "lyrics": "/assets/music/core-override/02_Swipe_Ghost_Repeat.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Used To Be Easy",
+        "path": "/music/core-override/used-to-be-easy/"
+      },
+      "next": {
+        "title": "All The Right Lies",
+        "path": "/music/core-override/all-the-right-lies/"
+      },
+      "id": "track:core-override:swipe-ghost-repeat",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 8,
+      "slug": "system-upgrade",
+      "title": "System Upgrade",
+      "path": "/music/core-override/system-upgrade/",
+      "audio": "/assets/music/core-override/08_System_upgrade.flac",
+      "cover": "/assets/music/core-override/08_System_upgrade.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Walls We Built",
+        "path": "/music/core-override/walls-we-built/"
+      },
+      "next": {
+        "title": "The Only Worker In The Mainframe",
+        "path": "/music/core-override/the-only-worker-in-the-mainframe/"
+      },
+      "id": "track:core-override:system-upgrade",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 9,
+      "slug": "the-cost-of-no-mistakes",
+      "title": "The Cost Of No Mistakes",
+      "path": "/music/grounded-fire/the-cost-of-no-mistakes/",
+      "audio": "/assets/music/grounded-fire/09_The_Cost_of_No_Mistakes.flac",
+      "cover": "/assets/music/grounded-fire/09_The_Cost_of_No_Mistakes.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Too Loud To Fade",
+        "path": "/music/grounded-fire/too-loud-to-fade/"
+      },
+      "next": {
+        "title": "Unapologetic Depth",
+        "path": "/music/grounded-fire/unapologetic-depth/"
+      },
+      "id": "track:grounded-fire:the-cost-of-no-mistakes",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 3,
+      "slug": "the-distance-between-sparks",
+      "title": "The Distance Between Sparks",
+      "path": "/music/grounded-fire/the-distance-between-sparks/",
+      "audio": "/assets/music/grounded-fire/03_The_Distance_Between_Sparks.flac",
+      "cover": "/assets/music/grounded-fire/03_The_Distance_Between_Sparks.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Simulated Warmth",
+        "path": "/music/grounded-fire/simulated-warmth/"
+      },
+      "next": {
+        "title": "Pulse Detect",
+        "path": "/music/grounded-fire/pulse-detect/"
+      },
+      "id": "track:grounded-fire:the-distance-between-sparks",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 9,
+      "slug": "the-only-worker-in-the-mainframe",
+      "title": "The Only Worker In The Mainframe",
+      "path": "/music/core-override/the-only-worker-in-the-mainframe/",
+      "audio": "/assets/music/core-override/09_The_only_worker_in_the_mainframe.flac",
+      "cover": "/assets/music/core-override/09_The_only_worker_in_the_mainframe.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "System Upgrade",
+        "path": "/music/core-override/system-upgrade/"
+      },
+      "next": {
+        "title": "Nothing Personal Just The Apocalypse",
+        "path": "/music/core-override/nothing-personal-just-the-apocalypse/"
+      },
+      "id": "track:core-override:the-only-worker-in-the-mainframe",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 8,
+      "slug": "too-loud-to-fade",
+      "title": "Too Loud To Fade",
+      "path": "/music/grounded-fire/too-loud-to-fade/",
+      "audio": "/assets/music/grounded-fire/08_Too_Loud_to_Fade.flac",
+      "cover": "/assets/music/grounded-fire/08_Too_Loud_to_Fade.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Chemical Voltage",
+        "path": "/music/grounded-fire/chemical-voltage/"
+      },
+      "next": {
+        "title": "The Cost Of No Mistakes",
+        "path": "/music/grounded-fire/the-cost-of-no-mistakes/"
+      },
+      "id": "track:grounded-fire:too-loud-to-fade",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 11,
+      "slug": "trapped-inside",
+      "title": "Trapped Inside",
+      "path": "/music/artifacts-of-resilience/trapped-inside/",
+      "audio": "/assets/music/artifacts-of-resilience/11_Trapped_inside.flac",
+      "cover": "/assets/music/artifacts-of-resilience/11_Trapped_inside.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Running On Loops",
+        "path": "/music/artifacts-of-resilience/running-on-loops/"
+      },
+      "next": {
+        "title": "It Was Me",
+        "path": "/music/artifacts-of-resilience/it-was-me/"
+      },
+      "id": "track:artifacts-of-resilience:trapped-inside",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 10,
+      "slug": "unapologetic-depth",
+      "title": "Unapologetic Depth",
+      "path": "/music/grounded-fire/unapologetic-depth/",
+      "audio": "/assets/music/grounded-fire/10_Unapologetic_Depth.flac",
+      "cover": "/assets/music/grounded-fire/10_Unapologetic_Depth.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "The Cost Of No Mistakes",
+        "path": "/music/grounded-fire/the-cost-of-no-mistakes/"
+      },
+      "next": {
+        "title": "Grounded Fire",
+        "path": "/music/grounded-fire/grounded-fire/"
+      },
+      "id": "track:grounded-fire:unapologetic-depth",
+      "type": "track",
+      "album_id": "album:grounded-fire",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "status": "catalogued",
+      "year": null,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:grounded-fire",
+          "title": "Grounded Fire",
+          "path": "/music/grounded-fire/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 1,
+      "slug": "used-to-be-easy",
+      "title": "Used To Be Easy",
+      "path": "/music/core-override/used-to-be-easy/",
+      "audio": "/assets/music/core-override/01_Used_to_be_easy.flac",
+      "cover": "/assets/music/core-override/01_Used_to_be_easy.png",
+      "lyrics": "/assets/music/core-override/01_Used_to_be_easy.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": null,
+      "next": {
+        "title": "Swipe Ghost Repeat",
+        "path": "/music/core-override/swipe-ghost-repeat/"
+      },
+      "id": "track:core-override:used-to-be-easy",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "personal history"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "visualized_by",
+          "target": "video:used-to-be-easy",
+          "title": "Used To Be Easy — Video",
+          "path": "/music/core-override/",
+          "entity_type": "video"
+        },
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 5,
+      "slug": "velvet-lies",
+      "title": "Velvet Lies",
+      "path": "/music/core-override/velvet-lies/",
+      "audio": "/assets/music/core-override/05_Velvet_Lies.flac",
+      "cover": "/assets/music/core-override/05_Velvet_Lies.png",
+      "lyrics": "/assets/music/core-override/05_Velvet_Lies.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Say It Or Leave It",
+        "path": "/music/core-override/say-it-or-leave-it/"
+      },
+      "next": {
+        "title": "I Am The Voice In Your GPS",
+        "path": "/music/core-override/i-am-the-voice-in-your-gps/"
+      },
+      "id": "track:core-override:velvet-lies",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 7,
+      "slug": "walls-we-built",
+      "title": "Walls We Built",
+      "path": "/music/core-override/walls-we-built/",
+      "audio": "/assets/music/core-override/07_Walls_we_built.flac",
+      "cover": "/assets/music/core-override/07_Walls_we_built.png",
+      "lyrics": "/assets/music/core-override/07_Walls_We_Built.lrc",
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "I Am The Voice In Your GPS",
+        "path": "/music/core-override/i-am-the-voice-in-your-gps/"
+      },
+      "next": {
+        "title": "System Upgrade",
+        "path": "/music/core-override/system-upgrade/"
+      },
+      "id": "track:core-override:walls-we-built",
+      "type": "track",
+      "album_id": "album:core-override",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "status": "released",
+      "year": 2026,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:core-override",
+          "title": "Core Override",
+          "path": "/music/core-override/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 4,
+      "slug": "what-family-means",
+      "title": "What Family Means",
+      "path": "/music/artifacts-of-resilience/what-family-means/",
+      "audio": "/assets/music/artifacts-of-resilience/04_What_family_means.flac",
+      "cover": "/assets/music/artifacts-of-resilience/04_What_family_means.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "Nineteen And Nowhere",
+        "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/"
+      },
+      "next": {
+        "title": "No Room",
+        "path": "/music/artifacts-of-resilience/no-room/"
+      },
+      "id": "track:artifacts-of-resilience:what-family-means",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
+      "track": 6,
+      "slug": "where-it-lands",
+      "title": "Where It Lands",
+      "path": "/music/artifacts-of-resilience/where-it-lands/",
+      "audio": "/assets/music/artifacts-of-resilience/06_Where_it_lands.flac",
+      "cover": "/assets/music/artifacts-of-resilience/06_Where_it_lands.png",
+      "lyrics": null,
+      "duration_seconds": null,
+      "duration": null,
+      "previous": {
+        "title": "No Room",
+        "path": "/music/artifacts-of-resilience/no-room/"
+      },
+      "next": {
+        "title": "Late Bloom",
+        "path": "/music/artifacts-of-resilience/late-bloom/"
+      },
+      "id": "track:artifacts-of-resilience:where-it-lands",
+      "type": "track",
+      "album_id": "album:artifacts-of-resilience",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "status": "catalogued",
+      "year": 2025,
+      "relationships": [
+        {
+          "type": "part_of",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ],
+      "summary": "",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "album:artifacts-of-resilience",
+          "title": "Artifacts of Resilience",
+          "path": "/music/artifacts-of-resilience/",
+          "entity_type": "album"
+        }
+      ]
+    },
+    {
       "id": "video:used-to-be-easy",
       "slug": "used-to-be-easy",
       "title": "Used To Be Easy — Video",
@@ -712,6 +3388,13 @@
           "title": "Core Override",
           "path": "/music/core-override/",
           "entity_type": "album"
+        },
+        {
+          "type": "referenced_by",
+          "target": "track:core-override:used-to-be-easy",
+          "title": "Used To Be Easy",
+          "path": "/music/core-override/used-to-be-easy/",
+          "entity_type": "track"
         }
       ]
     }
@@ -862,6 +3545,214 @@
       "entity_type": "note"
     },
     {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:i-still-look",
+      "title": "I Still Look",
+      "path": "/music/artifacts-of-resilience/i-still-look/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:no-echo",
+      "title": "No Echo",
+      "path": "/music/artifacts-of-resilience/no-echo/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:nineteen-and-nowhere",
+      "title": "Nineteen And Nowhere",
+      "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:what-family-means",
+      "title": "What Family Means",
+      "path": "/music/artifacts-of-resilience/what-family-means/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:no-room",
+      "title": "No Room",
+      "path": "/music/artifacts-of-resilience/no-room/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:where-it-lands",
+      "title": "Where It Lands",
+      "path": "/music/artifacts-of-resilience/where-it-lands/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:late-bloom",
+      "title": "Late Bloom",
+      "path": "/music/artifacts-of-resilience/late-bloom/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+      "title": "Built For More Stuck On Empty",
+      "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:loyal-to-a-fault",
+      "title": "Loyal To A Fault",
+      "path": "/music/artifacts-of-resilience/loyal-to-a-fault/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:running-on-loops",
+      "title": "Running On Loops",
+      "path": "/music/artifacts-of-resilience/running-on-loops/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:trapped-inside",
+      "title": "Trapped Inside",
+      "path": "/music/artifacts-of-resilience/trapped-inside/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:it-was-me",
+      "title": "It Was Me",
+      "path": "/music/artifacts-of-resilience/it-was-me/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:artifacts-of-resilience",
+      "type": "contains",
+      "target": "track:artifacts-of-resilience:override",
+      "title": "Override",
+      "path": "/music/artifacts-of-resilience/override/",
+      "entity_type": "track"
+    },
+    {
+      "source": "track:artifacts-of-resilience:i-still-look",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:no-echo",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:nineteen-and-nowhere",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:what-family-means",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:no-room",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:where-it-lands",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:late-bloom",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:loyal-to-a-fault",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:running-on-loops",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:trapped-inside",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:it-was-me",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:artifacts-of-resilience:override",
+      "type": "part_of",
+      "target": "album:artifacts-of-resilience",
+      "title": "Artifacts of Resilience",
+      "path": "/music/artifacts-of-resilience/",
+      "entity_type": "album"
+    },
+    {
       "source": "album:core-override",
       "type": "has_visual_project",
       "target": "video:used-to-be-easy",
@@ -878,11 +3769,435 @@
       "entity_type": "project"
     },
     {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:used-to-be-easy",
+      "title": "Used To Be Easy",
+      "path": "/music/core-override/used-to-be-easy/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:swipe-ghost-repeat",
+      "title": "Swipe Ghost Repeat",
+      "path": "/music/core-override/swipe-ghost-repeat/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:all-the-right-lies",
+      "title": "All The Right Lies",
+      "path": "/music/core-override/all-the-right-lies/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:say-it-or-leave-it",
+      "title": "Say It Or Leave It",
+      "path": "/music/core-override/say-it-or-leave-it/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:velvet-lies",
+      "title": "Velvet Lies",
+      "path": "/music/core-override/velvet-lies/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:i-am-the-voice-in-your-gps",
+      "title": "I Am The Voice In Your GPS",
+      "path": "/music/core-override/i-am-the-voice-in-your-gps/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:walls-we-built",
+      "title": "Walls We Built",
+      "path": "/music/core-override/walls-we-built/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:system-upgrade",
+      "title": "System Upgrade",
+      "path": "/music/core-override/system-upgrade/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:the-only-worker-in-the-mainframe",
+      "title": "The Only Worker In The Mainframe",
+      "path": "/music/core-override/the-only-worker-in-the-mainframe/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:nothing-personal-just-the-apocalypse",
+      "title": "Nothing Personal Just The Apocalypse",
+      "path": "/music/core-override/nothing-personal-just-the-apocalypse/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:static-noise-and-cold-coffee",
+      "title": "Static Noise And Cold Coffee",
+      "path": "/music/core-override/static-noise-and-cold-coffee/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:burn-the-night-into-me",
+      "title": "Burn The Night Into Me",
+      "path": "/music/core-override/burn-the-night-into-me/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:core-override",
+      "type": "contains",
+      "target": "track:core-override:built-from-scraps",
+      "title": "Built From Scraps",
+      "path": "/music/core-override/built-from-scraps/",
+      "entity_type": "track"
+    },
+    {
+      "source": "track:core-override:used-to-be-easy",
+      "type": "visualized_by",
+      "target": "video:used-to-be-easy",
+      "title": "Used To Be Easy — Video",
+      "path": "/music/core-override/",
+      "entity_type": "video"
+    },
+    {
+      "source": "track:core-override:used-to-be-easy",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:swipe-ghost-repeat",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:all-the-right-lies",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:say-it-or-leave-it",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:velvet-lies",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:i-am-the-voice-in-your-gps",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:walls-we-built",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:system-upgrade",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:the-only-worker-in-the-mainframe",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:nothing-personal-just-the-apocalypse",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:static-noise-and-cold-coffee",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:burn-the-night-into-me",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:core-override:built-from-scraps",
+      "type": "part_of",
+      "target": "album:core-override",
+      "title": "Core Override",
+      "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
       "source": "album:grounded-fire",
       "type": "shares_theme",
       "target": "album:core-override",
       "title": "Core Override",
       "path": "/music/core-override/",
+      "entity_type": "album"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:idle-state",
+      "title": "Idle State",
+      "path": "/music/grounded-fire/idle-state/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:simulated-warmth",
+      "title": "Simulated Warmth",
+      "path": "/music/grounded-fire/simulated-warmth/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:the-distance-between-sparks",
+      "title": "The Distance Between Sparks",
+      "path": "/music/grounded-fire/the-distance-between-sparks/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:pulse-detect",
+      "title": "Pulse Detect",
+      "path": "/music/grounded-fire/pulse-detect/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:she-glitches-just-right",
+      "title": "She Glitches Just Right",
+      "path": "/music/grounded-fire/she-glitches-just-right/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:no-more-careful",
+      "title": "No More Careful",
+      "path": "/music/grounded-fire/no-more-careful/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:chemical-voltage",
+      "title": "Chemical Voltage",
+      "path": "/music/grounded-fire/chemical-voltage/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:too-loud-to-fade",
+      "title": "Too Loud To Fade",
+      "path": "/music/grounded-fire/too-loud-to-fade/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:the-cost-of-no-mistakes",
+      "title": "The Cost Of No Mistakes",
+      "path": "/music/grounded-fire/the-cost-of-no-mistakes/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:unapologetic-depth",
+      "title": "Unapologetic Depth",
+      "path": "/music/grounded-fire/unapologetic-depth/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/grounded-fire/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:no-script",
+      "title": "No Script",
+      "path": "/music/grounded-fire/no-script/",
+      "entity_type": "track"
+    },
+    {
+      "source": "album:grounded-fire",
+      "type": "contains",
+      "target": "track:grounded-fire:after-the-pulse",
+      "title": "After The Pulse",
+      "path": "/music/grounded-fire/after-the-pulse/",
+      "entity_type": "track"
+    },
+    {
+      "source": "track:grounded-fire:idle-state",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:simulated-warmth",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:the-distance-between-sparks",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:pulse-detect",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:she-glitches-just-right",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:no-more-careful",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:chemical-voltage",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:too-loud-to-fade",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:the-cost-of-no-mistakes",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:unapologetic-depth",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:grounded-fire",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:no-script",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
+      "entity_type": "album"
+    },
+    {
+      "source": "track:grounded-fire:after-the-pulse",
+      "type": "part_of",
+      "target": "album:grounded-fire",
+      "title": "Grounded Fire",
+      "path": "/music/grounded-fire/",
       "entity_type": "album"
     }
   ]

@@ -1,5 +1,39 @@
 [
   {
+    "id": "timeline:track:core-override:walls-we-built",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Walls We Built",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/walls-we-built/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:walls-we-built"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:velvet-lies",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Velvet Lies",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/velvet-lies/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:velvet-lies"
+      }
+    ]
+  },
+  {
     "id": "timeline:video:used-to-be-easy",
     "date": null,
     "year": 2026,
@@ -13,6 +47,125 @@
       {
         "type": "timeline_of",
         "target": "video:used-to-be-easy"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:used-to-be-easy",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Used To Be Easy",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/used-to-be-easy/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:used-to-be-easy"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:the-only-worker-in-the-mainframe",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "The Only Worker In The Mainframe",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/the-only-worker-in-the-mainframe/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:the-only-worker-in-the-mainframe"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:system-upgrade",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "System Upgrade",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/system-upgrade/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:system-upgrade"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:swipe-ghost-repeat",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Swipe Ghost Repeat",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/swipe-ghost-repeat/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:swipe-ghost-repeat"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:static-noise-and-cold-coffee",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Static Noise And Cold Coffee",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/static-noise-and-cold-coffee/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:static-noise-and-cold-coffee"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:say-it-or-leave-it",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Say It Or Leave It",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/say-it-or-leave-it/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:say-it-or-leave-it"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:nothing-personal-just-the-apocalypse",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Nothing Personal Just The Apocalypse",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/nothing-personal-just-the-apocalypse/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:nothing-personal-just-the-apocalypse"
       }
     ]
   },
@@ -51,6 +204,23 @@
     ]
   },
   {
+    "id": "timeline:track:core-override:i-am-the-voice-in-your-gps",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "I Am The Voice In Your GPS",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/i-am-the-voice-in-your-gps/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:i-am-the-voice-in-your-gps"
+      }
+    ]
+  },
+  {
     "id": "timeline:album:core-override",
     "date": null,
     "year": 2026,
@@ -64,6 +234,40 @@
       {
         "type": "timeline_of",
         "target": "album:core-override"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:burn-the-night-into-me",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Burn The Night Into Me",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/burn-the-night-into-me/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:burn-the-night-into-me"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:core-override:built-from-scraps",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Built From Scraps",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/built-from-scraps/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:built-from-scraps"
       }
     ]
   },
@@ -85,6 +289,74 @@
     ]
   },
   {
+    "id": "timeline:track:core-override:all-the-right-lies",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "All The Right Lies",
+    "type": "track",
+    "status": "released",
+    "description": "",
+    "path": "/music/core-override/all-the-right-lies/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:core-override:all-the-right-lies"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:where-it-lands",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Where It Lands",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/where-it-lands/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:where-it-lands"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:what-family-means",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "What Family Means",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/what-family-means/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:what-family-means"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:trapped-inside",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Trapped Inside",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/trapped-inside/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:trapped-inside"
+      }
+    ]
+  },
+  {
     "id": "timeline:milestone:test-generation-platform",
     "date": null,
     "year": 2025,
@@ -98,6 +370,176 @@
       {
         "type": "timeline_of",
         "target": "milestone:test-generation-platform"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:running-on-loops",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Running On Loops",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/running-on-loops/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:running-on-loops"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:override",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Override",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/override/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:override"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:no-room",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "No Room",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/no-room/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:no-room"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:no-echo",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "No Echo",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/no-echo/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:no-echo"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:nineteen-and-nowhere",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Nineteen And Nowhere",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:nineteen-and-nowhere"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:loyal-to-a-fault",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Loyal To A Fault",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/loyal-to-a-fault/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:loyal-to-a-fault"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:late-bloom",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Late Bloom",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/late-bloom/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:late-bloom"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:it-was-me",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "It Was Me",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/it-was-me/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:it-was-me"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:i-still-look",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "I Still Look",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/i-still-look/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:i-still-look"
+      }
+    ]
+  },
+  {
+    "id": "timeline:track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Built For More Stuck On Empty",
+    "type": "track",
+    "status": "catalogued",
+    "description": "",
+    "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "track:artifacts-of-resilience:built-for-more-stuck-on-empty"
       }
     ]
   },
@@ -126,7 +568,7 @@
     "title": "Alpha Strike Labs GmbH",
     "type": "professional",
     "status": "ongoing",
-    "description": "Approximately 5.5 years across OSINT systems, backend work, test automation, CI/CD, Docker, VPN testing, and mentoring.",
+    "description": "Approximately 5.5 years across concurrent Go backend systems, DNS data processing, test-platform architecture, Playwright automation, CI/CD, Docker, technical documentation, and mentoring.",
     "path": "/about/",
     "relationships": []
   }

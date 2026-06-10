@@ -11,10 +11,10 @@ const linkOrArticle = (item, content, className = '') => item.path
   ? `<a class="${className}" href="${item.path}">${content}</a>`
   : `<article class="${className}">${content}</article>`;
 
-function pageHero(eyebrow, title, intro, note = '') {
-  return `<section class="page-hero"><div class="wrap page-hero-grid"><div>
+function pageHero(eyebrow, title, intro, note = '', noteLabel = 'Context') {
+  return `<section class="page-hero"><div class="wrap page-hero-grid${note ? '' : ' page-hero-grid-solo'}"><div>
     <p class="eyebrow">${escapeHtml(eyebrow)}</p><h1>${title}</h1><p class="page-intro">${escapeHtml(intro)}</p>
-  </div>${note ? `<aside class="context-note"><span>Context</span><p>${escapeHtml(note)}</p></aside>` : ''}</div></section>`;
+  </div>${note ? `<aside class="context-note"><span>${escapeHtml(noteLabel)}</span><p>${escapeHtml(note)}</p></aside>` : ''}</div></section>`;
 }
 
 function sectionHead(title, description = '', link = '') {
@@ -93,7 +93,7 @@ function renderHome(data) {
 }
 
 function renderInMotion(data) {
-  return `${pageHero('Current state', 'In Motion', 'A record of present attention across engineering and creative work.', 'These are priorities, not promises. Future directions intentionally remain open.')}
+  return `${pageHero('Current state', 'In Motion', 'A record of present attention across engineering and creative work.')}
     <section class="section"><div class="wrap"><div class="record-list expanded">${data['in-motion'].map(motionRow).join('')}</div></div></section>
     <section class="section"><div class="wrap narrow"><h2>No rigid roadmap</h2><p class="large-copy">Long-running work changes when its assumptions change. This page records what currently has energy without turning exploration into a release schedule.</p></div></section>`;
 }
@@ -101,24 +101,40 @@ function renderInMotion(data) {
 function renderProjects(data) {
   const featured = data.projects.filter(item => item.featured);
   const repositories = [...featured, ...data.projects.filter(item => !item.featured)];
-  return `${pageHero('Software / automation / architecture', 'Projects', 'Documented systems and the current public GitHub record for it-timo.', 'Repository data is generated from GitHub. Forks and archived repositories are excluded; featured repositories are selected in data/project_featured.json.')}
+  return `${pageHero('Software / automation / architecture', 'Projects', 'Documented systems and the current public GitHub record for it-timo.', 'Repository data is generated from GitHub. Forks and archived repositories are excluded; featured repositories are selected in data/project_featured.json.', 'Public record')}
     <section class="section"><div class="wrap">${sectionHead('Engineering records', 'Long-running systems documented through purpose, constraints, and maintainability.')}<div class="archive-grid">${data.project_context.map(projectCard).join('')}</div></div></section>
     <section class="section"><div class="wrap">${sectionHead('GitHub repositories', 'Public, non-fork, non-archived repositories sorted by most recent update.')} ${repositories.length ? `<div class="repository-grid">${repositories.map(repositoryCard).join('')}</div>` : '<p class="empty-note">The GitHub catalog has not been generated in this checkout. Run <code>python3 tools/update_github.py</code> with network access.</p>'}</div></section>
     <section class="section"><div class="wrap">${sectionHead('Working principles')}<div class="principle-grid">${data.profile.principles.map((value, index) => `<div><span>0${index + 1}</span><p>${escapeHtml(value)}</p></div>`).join('')}</div></div></section>`;
 }
 
+function projectCaseStudySection(project) {
+  const groups = [
+    ['Architecture', project.architecture],
+    ['Engineering focus', project.engineeringFocus],
+    ['Public evidence', project.evidence]
+  ].filter(([, items]) => items?.length);
+  if (!project.ownership && !groups.length && !project.disclosure) return '';
+  return `<section class="section project-case-study"><div class="wrap">
+    ${sectionHead('Selected case study', 'A public-safe account of the system, its constraints, and the engineering work behind it.')}
+    ${project.ownership ? `<div class="case-study-intro"><p class="eyebrow">Ownership and authorship</p><p class="large-copy">${escapeHtml(project.ownership)}</p></div>` : ''}
+    ${groups.length ? `<div class="case-study-grid">${groups.map(([title, items]) => `<article><p class="eyebrow">${escapeHtml(title)}</p>${list(items, 'case-study-list')}</article>`).join('')}</div>` : ''}
+    ${project.disclosure ? `<p class="disclosure-note"><strong>Disclosure boundary.</strong> ${escapeHtml(project.disclosure)}</p>` : ''}
+  </div></section>`;
+}
+
 function renderProject(data, slug) {
   const project = data.project_context.find(item => item.slug === slug);
   if (!project) return renderNotFound();
-  return `${pageHero(project.kind, project.title, project.summary, project.purpose)}
+  return `${pageHero(project.kind, project.title, project.summary)}
     <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">Why it exists</p><p class="large-copy">${escapeHtml(project.purpose)}</p>${project.principle ? `<blockquote class="principle-quote">${escapeHtml(project.principle)}</blockquote>` : ''}</div><aside><span class="meta-label">State</span>${status(project.status)}<span class="meta-label">Technologies</span>${tagList(project.technologies)}${project.technologyNote ? `<p class="small-note">${escapeHtml(project.technologyNote)}</p>` : ''}</aside></div></section>
     <section class="section"><div class="wrap">${sectionHead('Known characteristics', 'Concrete facts currently preserved in the public record.')} ${project.facts.length ? list(project.facts, 'fact-grid') : '<p class="empty-note">This record will expand when stable public detail is available.</p>'}</div></section>
+    ${projectCaseStudySection(project)}
     <section class="section"><div class="wrap narrow"><p class="eyebrow">Recurring themes</p>${tagList(project.themes)}</div></section>${relationshipSection(data, project.id)}`;
 }
 
 function renderMusic(data) {
   const albums = data.music_catalog.albums;
-  return `${pageHero('Albums / tracks / lyrics', 'Music', 'The music archive is generated directly from assets/music. Album metadata lives beside the audio; numbered files define the tracklist.', 'Adding a numbered WAV, PNG, and LRC set makes a track appear after running the catalog builder. No tracklist is maintained in JavaScript or HTML.')}
+  return `${pageHero('Albums / tracks / lyrics', 'Music', 'The music archive is generated directly from assets/music. Album metadata lives beside the audio; numbered files define the tracklist.', 'Adding a numbered FLAC, PNG, and LRC set makes a track appear after running the catalog builder. No tracklist is maintained in JavaScript or HTML.', 'Catalog model')}
     <section class="section"><div class="wrap">${sectionHead('Album catalog', 'Track counts and runtime are derived from the media currently present in this checkout.')}<div class="album-grid">${albums.map(albumCard).join('')}</div></div></section>`;
 }
 
@@ -135,7 +151,7 @@ function renderAlbum(data, slug) {
   if (!album) return renderNotFound();
   const year = album.year || 'Not catalogued';
   return `<section class="album-hero"><div class="wrap album-hero-grid">${albumArtwork(album, 'album-signal large')}<div><p class="eyebrow">Album · ${escapeHtml(year)}</p><h1>${escapeHtml(album.title)}</h1><p class="page-intro">${escapeHtml(album.description)}</p>${status(album.status)}${tagList(album.themes)}<dl class="album-statistics"><div><dt>Tracks</dt><dd>${album.track_count}</dd></div><div><dt>Runtime</dt><dd>${escapeHtml(album.total_runtime || 'Pending audio')}</dd></div><div><dt>Year</dt><dd>${escapeHtml(year)}</dd></div></dl></div></div></section>
-    <section class="section"><div class="wrap">${sectionHead('Tracklist', 'Discovered from numbered files in the album directory.')} ${album.tracks.length ? `<div class="track-table">${album.tracks.map(trackRow).join('')}</div>` : '<p class="empty-note">No numbered track media is present in this checkout yet. Add files such as <code>01_Track_Title.wav</code>, <code>.png</code>, and <code>.lrc</code>, then rebuild the catalog.</p>'}</div></section>${relationshipSection(data, album.id)}`;
+    <section class="section"><div class="wrap">${sectionHead('Tracklist', 'Discovered from numbered files in the album directory.')} ${album.tracks.length ? `<div class="track-table">${album.tracks.map(trackRow).join('')}</div>` : '<p class="empty-note">No numbered track media is present in this checkout yet. Add files such as <code>01_Track_Title.flac</code>, <code>.png</code>, and <code>.lrc</code>, then rebuild the catalog.</p>'}</div></section>${relationshipSection(data, album.id)}`;
 }
 
 function findTrack(data, albumSlug, trackSlug) {
@@ -149,13 +165,13 @@ function renderTrack(data, albumSlug, trackSlug) {
   const artwork = track.cover
     ? `<img class="track-cover" src="${track.cover}" alt="Cover for ${escapeHtml(track.title)}">`
     : albumArtwork(album, 'album-signal large');
-  return `<section class="track-hero"><div class="wrap track-hero-grid"><div>${artwork}</div><div><p class="eyebrow">Track ${String(track.track).padStart(2, '0')} · ${escapeHtml(album.title)}</p><h1>${escapeHtml(track.title)}</h1><p class="track-runtime">${escapeHtml(track.duration || 'Runtime unavailable')}</p>${track.audio ? `<audio controls preload="metadata" src="${track.audio}">Your browser does not support HTML5 audio.</audio>` : '<p class="empty-note">The WAV file for this track is not present.</p>'}</div></div></section>
+  return `<section class="track-hero"><div class="wrap track-hero-grid"><div>${artwork}</div><div><p class="eyebrow">Track ${String(track.track).padStart(2, '0')} · ${escapeHtml(album.title)}</p><h1>${escapeHtml(track.title)}</h1><p class="track-runtime">${escapeHtml(track.duration || 'Runtime unavailable')}</p>${track.audio ? `<audio controls preload="metadata" src="${track.audio}">Your browser does not support HTML5 audio.</audio>` : '<p class="empty-note">The FLAC file for this track is not present.</p>'}</div></div></section>
     <section class="section"><div class="wrap narrow">${sectionHead('Lyrics', 'LRC is parsed into a plain lyric view; timestamps are retained for future synchronized playback.')}<div class="lyrics" ${track.lyrics ? `data-lyrics-url="${track.lyrics}"` : ''}>${track.lyrics ? '<p class="small-note">Loading lyrics…</p>' : '<p class="empty-note">No LRC file is present for this track.</p>'}</div></div></section>
     <nav class="track-navigation wrap" aria-label="Track navigation"><div>${track.previous ? `<span>Previous track</span><a href="${track.previous.path}">${escapeHtml(track.previous.title)}</a>` : ''}</div><a class="back-album" href="${album.path}">Back to album</a><div>${track.next ? `<span>Next track</span><a href="${track.next.path}">${escapeHtml(track.next.title)}</a>` : ''}</div></nav>${relationshipSection(data, track.id)}`;
 }
 
 function renderExperiments(data) {
-  return `${pageHero('Worldbuilding / simulation / narrative systems', 'Experiments', 'Ideas that may become games, simulations, stories, or something that does not yet have a category.', 'Exploration is allowed to remain exploratory. These records do not imply a production roadmap.')}
+  return `${pageHero('Worldbuilding / simulation / narrative systems', 'Experiments', 'Ideas that may become games, simulations, stories, or something that does not yet have a category.', 'Exploration is allowed to remain exploratory. These records do not imply a production roadmap.', 'Scope')}
     <section class="section"><div class="wrap experiment-stack">${data.experiments.map(item => `<article class="experiment-record"><div><span class="record-type">${escapeHtml(item.type)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.summary)}</p>${tagList(item.themes)}</div><aside>${status(item.status)}${list(item.structure)}</aside></article>`).join('')}</div></section>`;
 }
 
@@ -168,39 +184,40 @@ function renderLibrary(data, collectionSlug = '') {
   const entries = selected ? data.content_catalog.entries.filter(item => item.collection === collectionSlug) : data.content_catalog.entries;
   const title = selected?.title || 'Library';
   const intro = selected?.description || 'Markdown notes and articles, ingested into the same relationship graph as music, projects, videos, and experiments.';
-  return `${pageHero('Writing / documentation / context', title, intro, 'Source Markdown remains readable outside the website. The build adds routes, relationships, timeline entries, and search records.')}
+  return `${pageHero('Writing / documentation / context', title, intro, 'Source Markdown remains readable outside the website. The build adds routes, relationships, timeline entries, and search records.', 'Build model')}
     <section class="section"><div class="wrap">${!selected ? `<div class="library-grid">${data.library.collections.map(item => `<a class="library-record" href="/library/${item.slug}/"><span class="record-type">${escapeHtml(item.status)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.description)}</p><span class="entry-count">${data.content_catalog.entries.filter(entry => entry.collection === item.slug).length} entries</span></a>`).join('')}</div>` : `<a class="quiet-link back-link" href="/library/">← All library collections</a><div class="record-list">${entries.length ? entries.map(contentRow).join('') : '<p class="empty-note">No entries in this collection yet.</p>'}</div>`}</div></section>`;
 }
 
 function renderContent(data, collection, slug) {
   const item = data.content_catalog.entries.find(entry => entry.collection === collection && entry.slug === slug);
   if (!item) return renderNotFound();
-  return `${pageHero(`${item.collection} · ${item.status}`, item.title, item.summary, item.year ? `Catalogued ${item.year}` : 'Living archive entry')}
+  return `${pageHero(`${item.collection} · ${item.status}`, item.title, item.summary, item.year ? `Catalogued ${item.year}` : 'Living archive entry', 'Record state')}
     <article class="section"><div class="wrap article-layout"><div class="prose">${item.body.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}</div><aside><span class="meta-label">Themes</span>${tagList(item.themes)}<span class="meta-label">Source</span><code>${escapeHtml(item.source)}</code></aside></div></article>${relationshipSection(data, item.id)}`;
 }
 
 function renderSearch(data) {
-  return `${pageHero('Connected archive search', 'Search', 'Find records by title, summary, theme, type, or the names of connected entities.', 'Search is generated from the same validated entity graph that drives cross-links.')}
+  return `${pageHero('Connected archive search', 'Search', 'Find records by title, summary, theme, type, or the names of connected entities.', 'Search is generated from the same validated entity graph that drives cross-links.', 'Index source')}
     <section class="section"><div class="wrap"><label class="search-box"><span>Search the archive</span><input type="search" data-search-input placeholder="Try resilience, architecture, memory…" autocomplete="off"></label><p class="search-count" data-search-count>${data.search_index.records.length} records indexed</p><div class="search-results record-list" data-search-results></div></div></section>`;
 }
 
 function renderTimeline(data) {
   const periods = [...new Set(data.timeline.map(item => item.period))];
-  return `${pageHero('State / history / continuity', 'Timeline', 'A chronology where dates are known, and an honest state index where they are not.', 'The current knowledge base does not establish exact dates for most work. This page does not invent them.')}
+  return `${pageHero('State / history / continuity', 'Timeline', 'A chronology where dates are known, and an honest state index where they are not.', 'The current knowledge base does not establish exact dates for most work. This page does not invent them.', 'Date policy')}
     <section class="section"><div class="wrap timeline">${periods.map(period => `<section class="timeline-group"><h2>${escapeHtml(period)}</h2><div>${data.timeline.filter(item => item.period === period).map(item => `<a class="timeline-entry" href="${item.path}"><span class="timeline-node"></span><div><span class="record-type">${escapeHtml(item.type)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div>${status(item.status)}</a>`).join('')}</div></section>`).join('')}</div></section>`;
 }
 
 function renderAbout(data) {
-  return `${pageHero('Background / principles / recurring questions', 'About', data.site.statement, data.site.thread)}
-    <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">Professional background</p><h2 class="detail-title">${escapeHtml(data.profile.role)}</h2><p class="large-copy">Approximately 5.5 years at Alpha Strike Labs GmbH, working across OSINT systems, backend development, test automation, CI/CD, Docker environments, VPN testing, and mentoring interns.</p></div><aside><span class="meta-label">Primary disciplines</span>${list(data.profile.disciplines)}<span class="meta-label">Primary languages</span>${tagList(data.profile.languages)}</aside></div></section>
+  return `${pageHero('Background / principles / recurring questions', 'About', data.site.statement)}
+    <section class="section"><div class="wrap detail-grid"><div><p class="eyebrow">Professional background</p><h2 class="detail-title">${escapeHtml(data.profile.role)}</h2><p class="large-copy">${escapeHtml(data.profile.professionalSummary)}</p></div><aside><span class="meta-label">Primary disciplines</span>${list(data.profile.disciplines)}<span class="meta-label">Languages</span>${tagList(data.profile.languages)}<span class="meta-label">Technologies and platforms</span>${tagList(data.profile.technologies)}</aside></div></section>
+    <section class="section"><div class="wrap">${sectionHead('Engineering experience', 'Capabilities demonstrated through long-running production backend and quality-platform work.')}${list(data.profile.experience, 'fact-grid')}</div></section>
     <section class="section"><div class="wrap">${sectionHead('Engineering philosophy', 'Principles intended to survive changes in tools and trends.')}<div class="principle-grid">${data.profile.principles.map((value, index) => `<div><span>0${index + 1}</span><p>${escapeHtml(value)}</p></div>`).join('')}</div></div></section>
     <section class="section connective"><div class="wrap split"><div><p class="eyebrow">Across every medium</p><h2>Systems, stories, and experiments are different ways of approaching the same questions.</h2></div><div class="question-list">${data.profile.questions.map(question => `<p>${escapeHtml(question)}</p>`).join('')}</div></div></section>`;
 }
 
 function renderContact(data) {
   const email = data.site.email;
-  return `${pageHero('Contact', 'A quiet channel.', 'Contact details belong here when there is a verified public channel to publish.', 'The previous implementation used placeholder social links and an unverified email address. They have been removed rather than presented as real.')}
-    <section class="section"><div class="wrap narrow contact-copy">${email ? `<a class="email-link" href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a>` : '<p class="large-copy">No public contact address is listed yet.</p>'}<p>This page is intentionally complete without pretending that placeholder destinations are useful. A verified email or social profile can be added in <code>data/site.json</code> without changing the template.</p></div></section>`;
+  return `${pageHero('Contact', 'A quiet channel.', 'For professional inquiries, project discussions, or thoughtful exchanges about the work documented here.')}
+    <section class="section"><div class="wrap narrow contact-copy">${email ? `<a class="email-link" href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a>` : '<p class="large-copy">No public contact address is listed.</p>'}</div></section>`;
 }
 
 function renderNotFound() {

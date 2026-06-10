@@ -50,7 +50,19 @@ graph.edges.forEach(edge=>{
 unique(search.records,'path','search');
 search.records.forEach(record=>assert(entityIds.has(record.id),`search: unknown entity ${record.id}`));
 const linkedRoutes=[...site.navigation.map(item=>item.path),'/contact/',...context.map(item=>item.path).filter(Boolean),...music.albums.map(item=>item.path),...music.albums.flatMap(album=>album.tracks.map(track=>track.path)),...content.entries.map(item=>item.path),...experiments.map(item=>item.path).filter(Boolean)];
-for(const path of new Set(linkedRoutes))assert(existsSync(new URL(`../${routeFile(path)}`,import.meta.url)),`route: ${path} has no HTML entry point`);
+for(const path of new Set(linkedRoutes)){
+  const fileUrl=new URL(`../${routeFile(path)}`,import.meta.url);
+  assert(existsSync(fileUrl),`route: ${path} has no HTML entry point`);
+  if(!existsSync(fileUrl))continue;
+  const html=readFileSync(fileUrl,'utf8');
+  const cleanPath=path.split('#')[0];
+  const canonical=`https://dev-timo.com${cleanPath}`;
+  assert((html.match(/property="og:image"/g)||[]).length===1,`route: ${path} must contain exactly one og:image`);
+  assert(html.includes(`<link rel="canonical" href="${canonical}">`),`route: ${path} has an incorrect canonical URL`);
+  assert(/<meta name="description" content="[^"]+">/.test(html),`route: ${path} is missing a description`);
+  assert(/<meta property="og:title" content="[^"]+">/.test(html),`route: ${path} is missing an Open Graph title`);
+  assert(!html.includes('<title>Timo Schmidt — A digital ecosystem</title>'),`route: ${path} still uses the generic shell title`);
+}
 if(errors.length){console.error(errors.map(error=>`- ${error}`).join('\n'));process.exit(1)}
 const tracks=music.albums.reduce((total,album)=>total+album.track_count,0);
 console.log(`Content audit passed: ${graph.entities.length} entities, ${graph.edges.length} relationships, ${content.entries.length} Markdown entries, ${music.albums.length} albums, ${tracks} tracks.`);

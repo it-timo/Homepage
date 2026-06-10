@@ -12,9 +12,9 @@ const linkOrArticle = (item, content, className = '') => item.path
   : `<article class="${className}">${content}</article>`;
 
 function pageHero(eyebrow, title, intro, note = '') {
-  return `<section class="page-hero"><div class="wrap page-hero-grid"><div>
-    <p class="eyebrow">${escapeHtml(eyebrow)}</p><h1>${title}</h1><p class="page-intro">${escapeHtml(intro)}</p>
-  </div>${note ? `<aside class="context-note"><span>Context</span><p>${escapeHtml(note)}</p></aside>` : ''}</div></section>`;
+  return `<header class="page-hero"><div class="wrap page-hero-grid"><div>
+    <p class="eyebrow">${escapeHtml(eyebrow)}</p><h1>${escapeHtml(title)}</h1><p class="page-intro">${escapeHtml(intro)}</p>
+  </div>${note ? `<aside class="context-note"><span>Context</span><p>${escapeHtml(note)}</p></aside>` : ''}</div></header>`;
 }
 
 function sectionHead(title, description = '', link = '') {
@@ -26,7 +26,7 @@ function renderHeader(site) {
   const activePath = site.navigation.find(item => item.path !== '/' && path.startsWith(item.path))?.path || '/';
   document.querySelector('[data-header]').innerHTML = `
     <a class="brand" href="/" aria-label="Timo Schmidt home"><img src="/assets/orbit-logo.svg" alt=""><span><strong>${escapeHtml(site.name)}</strong><small>${escapeHtml(site.identity)}</small></span></a>
-    <nav class="nav" id="site-nav" aria-label="Primary navigation">${site.navigation.map(item => `<a class="${activePath === item.path ? 'active' : ''}" href="${item.path}">${escapeHtml(item.label)}</a>`).join('')}<a href="/contact/">Contact</a></nav>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">${site.navigation.map(item => `<a class="${activePath === item.path ? 'active' : ''}" href="${item.path}"${activePath === item.path ? ' aria-current="page"' : ''}>${escapeHtml(item.label)}</a>`).join('')}<a href="/contact/">Contact</a></nav>
     <button class="menu-button" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>`;
   const button = document.querySelector('.menu-button');
   button.addEventListener('click', () => {
@@ -49,7 +49,7 @@ function relationshipSection(data, entityId) {
   const relations = [...entity.relationships, ...entity.incoming_relationships]
     .filter((relation, index, all) => relation.target !== entity.id && relation.path && relation.path !== entity.path && all.findIndex(item => item.target === relation.target || item.path === relation.path) === index);
   if (!relations.length) return '';
-  return `<section class="section related-section"><div class="wrap">${sectionHead('Connected records', 'Follow the relationships around this record.')}<div class="relationship-grid">${relations.map(relation => `<a href="${relation.path}"><span class="record-type">${escapeHtml(relation.type.replaceAll('_', ' '))} · ${escapeHtml(relation.entity_type)}</span><h3>${escapeHtml(relation.title)}</h3><span class="quiet-link">Open connected record →</span></a>`).join('')}</div></div></section>`;
+  return `<section class="section related-section"><div class="wrap">${sectionHead('Connected records', 'Follow the relationships around this record.')}<div class="relationship-grid">${relations.map(relation => `<article><a href="${relation.path}"><span class="record-type">${escapeHtml(relation.type.replaceAll('_', ' '))} · ${escapeHtml(relation.entity_type)}</span><h3>${escapeHtml(relation.title)}</h3><span class="quiet-link">Open connected record →</span></a></article>`).join('')}</div></div></section>`;
 }
 
 function motionRow(item) {
@@ -119,11 +119,11 @@ function renderProjects(data) {
 function renderProject(data, slug) {
   const project = data.project_context.find(item => item.slug === slug);
   if (!project) return renderNotFound();
-  return `${pageHero(project.kind, project.title, project.summary, project.purpose)}
+  return `<article class="project-record">${pageHero(project.kind, project.title, project.summary, project.purpose)}
     <section class="section project-overview"><div class="wrap detail-grid"><div><p class="eyebrow">Project record</p>${project.overview.map(paragraph => `<p class="large-copy">${escapeHtml(paragraph)}</p>`).join('')}${project.principle ? `<blockquote class="principle-quote">${escapeHtml(project.principle)}</blockquote>` : ''}</div><aside><span class="meta-label">State</span>${status(project.status)}<span class="meta-label">Technologies</span>${tagList(project.technologies)}${project.technologyNote ? `<p class="small-note">${escapeHtml(project.technologyNote)}</p>` : ''}<span class="meta-label">Recurring themes</span>${tagList(project.themes)}</aside></div></section>
     <section class="section"><div class="wrap">${sectionHead('How the system is shaped', 'A durable view of responsibilities and boundaries, without pretending unfinished decisions are settled.')} ${architectureGrid(project.architecture)}</div></section>
     <section class="section"><div class="wrap project-evidence"><div>${sectionHead('Known characteristics', 'Concrete facts currently preserved in the public record.')} ${list(project.facts, 'fact-grid')}</div><aside><span class="meta-label">Engineering concerns</span>${list(project.concerns, 'concern-list')}</aside></div></section>
-    <section class="section project-meaning"><div class="wrap narrow"><p class="eyebrow">What this work represents</p><p class="large-copy">${escapeHtml(project.represents)}</p></div></section>${relationshipSection(data, project.id)}`;
+    <section class="section project-meaning"><div class="wrap narrow"><p class="eyebrow">What this work represents</p><p class="large-copy">${escapeHtml(project.represents)}</p></div></section>${relationshipSection(data, project.id)}</article>`;
 }
 
 function renderMusic(data) {
@@ -194,8 +194,8 @@ function renderLibrary(data, collectionSlug = '') {
 function renderContent(data, collection, slug) {
   const item = data.content_catalog.entries.find(entry => entry.collection === collection && entry.slug === slug);
   if (!item) return renderNotFound();
-  return `${pageHero(`${item.collection} · ${item.status}`, item.title, item.summary, item.year ? `Catalogued ${item.year}` : 'Living archive entry')}
-    <article class="section"><div class="wrap article-layout"><div class="prose">${item.body.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}</div><aside><span class="meta-label">Themes</span>${tagList(item.themes)}<span class="meta-label">Source</span><code>${escapeHtml(item.source)}</code></aside></div></article>${relationshipSection(data, item.id)}`;
+  return `<article class="content-record">${pageHero(`${item.collection} · ${item.status}`, item.title, item.summary, item.year ? `Catalogued ${item.year}` : 'Living archive entry')}
+    <section class="section"><div class="wrap article-layout"><div class="prose">${item.body.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}</div><aside><span class="meta-label">Themes</span>${tagList(item.themes)}<span class="meta-label">Source</span><code>${escapeHtml(item.source)}</code></aside></div></section>${relationshipSection(data, item.id)}</article>`;
 }
 
 function renderSearch(data) {
@@ -250,7 +250,7 @@ function route(data) {
   return renderNotFound();
 }
 
-function updateDocumentTitle(data) {
+function updateDocumentMetadata(data) {
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const albums = data.music_catalog.albums;
   const tracks = albums.flatMap(album => album.tracks);
@@ -258,7 +258,22 @@ function updateDocumentTitle(data) {
   const record = records.find(item => item.path === path);
   const navigationItem = data.site.navigation.find(item => item.path === path);
   const title = record?.title || navigationItem?.label || (path === '/contact/' ? 'Contact' : data.site.name);
-  document.title = `${title} — ${data.site.name}`;
+  const fullTitle = path === '/' ? `${data.site.name} — ${data.site.identity.replaceAll(' · ', ', ')}` : `${title} — ${data.site.name}`;
+  const description = record?.summary || record?.description || document.querySelector('meta[name="description"]')?.content || data.site.thread;
+  document.title = fullTitle;
+  const values = {
+    'meta[name="description"]': description,
+    'meta[property="og:title"]': fullTitle,
+    'meta[property="og:description"]': description,
+    'meta[property="og:url"]': window.location.href.split('#')[0],
+    'meta[name="twitter:title"]': fullTitle,
+    'meta[name="twitter:description"]': description,
+  };
+  for (const [selector, content] of Object.entries(values)) {
+    const element = document.querySelector(selector);
+    if (element) element.setAttribute('content', content);
+  }
+  document.querySelector('link[rel="canonical"]')?.setAttribute('href', window.location.href.split('#')[0]);
 }
 
 function parseLrc(source) {
@@ -441,7 +456,7 @@ async function initialize() {
   }));
   const data = Object.fromEntries(entries);
   renderHeader(data.site);
-  updateDocumentTitle(data);
+  updateDocumentMetadata(data);
   document.querySelector('[data-page]').innerHTML = route(data);
   renderFooter(data.site);
   initializeLyrics();

@@ -17,7 +17,7 @@ def main():
     args=parser.parse_args(); python=sys.executable
     if not args.skip_github and not run([python,'tools/update_github.py'],required=False):
         print('warning: GitHub refresh failed; retaining the existing data/projects.json',file=sys.stderr)
-    for script in ['tools/build_music_catalog.py','tools/enrich_music.py','tools/build_content_catalog.py','tools/build_relationships.py','tools/build_timeline.py','tools/build_search.py']:
+    for script in ['tools/build_music_catalog.py','tools/enrich_music.py','tools/build_content_catalog.py','tools/build_relationships.py','tools/build_timeline.py','tools/build_search.py','tools/build_page_shells.py']:
         run([python,script])
     run(['node','scripts/audit-content.mjs'])
     print('\nArchive build complete.')

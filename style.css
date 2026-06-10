@@ -409,3 +409,5 @@ audio { width: min(100%, 680px); margin-top: 30px; accent-color: var(--accent); 
   .architecture-grid, .project-evidence { grid-template-columns: 1fr; }
   .project-evidence { gap: 40px; }
 }
+
+.relationship-grid > article > a { height: 100%; }

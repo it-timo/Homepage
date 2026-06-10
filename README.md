@@ -23,7 +23,8 @@ The pipeline runs, in dependency order:
 5. Relationship graph generation and reference validation
 6. Timeline generation
 7. Search-index generation
-8. Full content audit
+8. Route-aware HTML metadata generation
+9. Full content audit
 
 Serve the result with `python3 -m http.server 8000`.
 
@@ -105,6 +106,10 @@ Set `GITHUB_TOKEN` for higher API limits.
 `tools/build_timeline.py` combines dated albums, tracks, projects, repositories, milestones, articles, notes, videos, and experiments with `data/timeline_manual.json`. Project milestone sources live in `data/milestones.json`. Exact dates are used when known; year-only records remain year-only.
 
 `tools/build_search.py` indexes titles, summaries, themes, entity types, and connected-record titles. Search therefore returns records through both direct metadata and their relationships.
+
+## HTML metadata and social sharing
+
+`tools/build_page_shells.py` writes route-aware HTML entry points after the catalogs are generated. Each shell receives a specific title, static description, canonical URL, Open Graph type/title/description/URL, one shared `og:image`, and matching Twitter summary metadata. This keeps metadata useful before the client renderer runs and prevents every route from presenting itself as the homepage.
 
 ## Validation
 

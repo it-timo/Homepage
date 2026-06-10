@@ -1,6 +1,57 @@
 {
   "records": [
     {
+      "id": "experiment:more-powerful-passenger",
+      "type": "Civilization-scale god simulation",
+      "title": "More Powerful Passenger",
+      "summary": "The player acts as a limited god. Faith is scarce, civilizations evolve autonomously, and influence is always indirect.",
+      "path": "/experiments/#more-powerful-passenger",
+      "themes": [
+        "emergence",
+        "belief",
+        "interpretation",
+        "responsibility",
+        "indirect influence"
+      ],
+      "related": [
+        "Narrative Simulation"
+      ],
+      "search_text": "more powerful passenger the player acts as a limited god. faith is scarce, civilizations evolve autonomously, and influence is always indirect. emergence belief interpretation responsibility indirect influence narrative simulation"
+    },
+    {
+      "id": "experiment:manhwa-concepts",
+      "type": "Long-term creative exploration",
+      "title": "Manhwa Concepts",
+      "summary": "A developing body of character, system, worldbuilding, and narrative-structure work.",
+      "path": "/experiments/#manhwa-concepts",
+      "themes": [
+        "identity",
+        "worldbuilding",
+        "story structure"
+      ],
+      "related": [
+        "Narrative Simulation"
+      ],
+      "search_text": "manhwa concepts a developing body of character, system, worldbuilding, and narrative-structure work. identity worldbuilding story structure narrative simulation"
+    },
+    {
+      "id": "experiment:narrative-simulation",
+      "type": "Story systems",
+      "title": "Narrative Simulation",
+      "summary": "An ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences.",
+      "path": "/experiments/#narrative-simulation",
+      "themes": [
+        "emergence",
+        "narrative",
+        "simulation"
+      ],
+      "related": [
+        "Manhwa Concepts",
+        "More Powerful Passenger"
+      ],
+      "search_text": "narrative simulation an ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences. emergence narrative simulation manhwa concepts more powerful passenger"
+    },
+    {
       "id": "album:artifacts-of-resilience",
       "type": "album",
       "title": "Artifacts of Resilience",

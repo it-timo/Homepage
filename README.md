@@ -57,7 +57,7 @@ produces URLs ending in `.flac`, `.png`, and `.lrc`, plus the song route and pre
 
 Manual themes, years, statuses, and relationships belong in `metadata/music.json`, never in `data/music_catalog.json`. `tools/enrich_music.py` merges them after catalog generation.
 
-LRC parsing retains both plain text and timestamps. Current pages render plain lyrics with timestamp attributes ready for future synchronized playback. Audio uses native HTML5 controls and never autoplays.
+LRC parsing supports metadata, multiple timestamps per line, and the standard millisecond `offset` tag. Timestamped lyrics follow the native audio player, highlight the active line, keep it visible, and let a visitor seek by selecting a line without forcing playback. Files without timestamps remain a simple plain-text lyric view. Audio never autoplays.
 
 ## Markdown knowledge base
 

@@ -149,14 +149,23 @@ function renderTrack(data, albumSlug, trackSlug) {
   const artwork = track.cover
     ? `<img class="track-cover" src="${track.cover}" alt="Cover for ${escapeHtml(track.title)}">`
     : albumArtwork(album, 'album-signal large');
-  return `<section class="track-hero"><div class="wrap track-hero-grid"><div>${artwork}</div><div><p class="eyebrow">Track ${String(track.track).padStart(2, '0')} · ${escapeHtml(album.title)}</p><h1>${escapeHtml(track.title)}</h1><p class="track-runtime" data-runtime-value>${escapeHtml(track.duration || 'Reading FLAC metadata…')}</p>${track.audio ? `<audio controls preload="metadata" src="${track.audio}" data-runtime-audio>Your browser does not support HTML5 audio.</audio>` : '<p class="empty-note">No deployed FLAC path is catalogued for this track.</p>'}</div></div></section>
-    <section class="section"><div class="wrap narrow">${sectionHead('Lyrics', 'LRC is parsed into a plain lyric view; timestamps are retained for future synchronized playback.')}<div class="lyrics" ${track.lyrics ? `data-lyrics-url="${track.lyrics}"` : ''}>${track.lyrics ? '<p class="small-note">Loading lyrics…</p>' : '<p class="empty-note">No LRC file is present for this track.</p>'}</div></div></section>
+  return `<section class="track-hero"><div class="wrap track-hero-grid"><div>${artwork}</div><div><p class="eyebrow">Track ${String(track.track).padStart(2, '0')} · ${escapeHtml(album.title)}</p><h1>${escapeHtml(track.title)}</h1><p class="track-runtime" data-runtime-value>${escapeHtml(track.duration || 'Reading FLAC metadata…')}</p>${track.audio ? `<audio controls preload="metadata" src="${track.audio}" data-runtime-audio data-lyric-audio>Your browser does not support HTML5 audio.</audio>` : '<p class="empty-note">No deployed FLAC path is catalogued for this track.</p>'}</div></div></section>
+    <section class="section"><div class="wrap narrow">${sectionHead('Lyrics', 'Timestamped lines follow the music and remain readable; select a line to seek without forcing playback.')}<div class="lyrics-shell"><p class="lyric-mode small-note" data-lyric-mode aria-live="polite">${track.lyrics ? 'Loading lyrics…' : 'Lyrics unavailable'}</p><div class="lyrics" ${track.lyrics ? `data-lyrics-url="${track.lyrics}"` : ''}>${track.lyrics ? '<p class="small-note">Preparing lyric view…</p>' : '<p class="empty-note">No LRC file is present for this track.</p>'}</div></div></div></section>
     <nav class="track-navigation wrap" aria-label="Track navigation"><div>${track.previous ? `<span>Previous track</span><a href="${track.previous.path}">${escapeHtml(track.previous.title)}</a>` : ''}</div><a class="back-album" href="${album.path}">Back to album</a><div>${track.next ? `<span>Next track</span><a href="${track.next.path}">${escapeHtml(track.next.title)}</a>` : ''}</div></nav>${relationshipSection(data, track.id)}`;
+}
+
+function experimentConnections(data, entityId) {
+  const entity = data.entities.entities.find(item => item.id === entityId);
+  if (!entity) return '';
+  const relations = [...entity.relationships, ...entity.incoming_relationships]
+    .filter((relation, index, all) => relation.path && relation.target !== entityId && all.findIndex(item => item.target === relation.target) === index);
+  if (!relations.length) return '';
+  return `<div class="experiment-connections"><span class="meta-label">Connected ideas</span>${relations.map(relation => `<a href="${relation.path}">${escapeHtml(relation.title)} →</a>`).join('')}</div>`;
 }
 
 function renderExperiments(data) {
   return `${pageHero('Worldbuilding / simulation / narrative systems', 'Experiments', 'Ideas that may become games, simulations, stories, or something that does not yet have a category.', 'Exploration is allowed to remain exploratory. These records do not imply a production roadmap.')}
-    <section class="section"><div class="wrap experiment-stack">${data.experiments.map(item => `<article class="experiment-record"><div><span class="record-type">${escapeHtml(item.type)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.summary)}</p>${tagList(item.themes)}</div><aside>${status(item.status)}${list(item.structure)}</aside></article>`).join('')}</div></section>`;
+    <section class="section"><div class="wrap experiment-stack">${data.experiments.map(item => `<article class="experiment-record" id="${escapeHtml(item.slug)}"><div><span class="record-type">${escapeHtml(item.type)}</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.summary)}</p>${tagList(item.themes)}</div><aside>${status(item.status)}${list(item.structure)}${experimentConnections(data, item.id)}</aside></article>`).join('')}</div></section>`;
 }
 
 function contentRow(item) {
@@ -246,40 +255,123 @@ function parseLrc(source) {
   const metadata = {};
   const synced = [];
   const plain = [];
+  const timestampPattern = /\[(\d{1,3}):(\d{2})(?:[.:](\d{1,3}))?\]/g;
   for (const rawLine of source.replace(/\r/g, '').split('\n')) {
     const line = rawLine.trim();
     if (!line) continue;
     const metadataMatch = line.match(/^\[([a-z]+):([^\]]*)\]$/i);
-    if (metadataMatch && !/^\d+$/.test(metadataMatch[1])) {
+    if (metadataMatch) {
       metadata[metadataMatch[1].toLowerCase()] = metadataMatch[2].trim();
       continue;
     }
-    const timestamps = [...line.matchAll(/\[(\d{1,3}):(\d{2})(?:[.:](\d{1,3}))?\]/g)];
-    const text = line.replace(/\[(?:\d{1,3}):(?:\d{2})(?:[.:]\d{1,3})?\]/g, '').trim();
+    const timestamps = [...line.matchAll(timestampPattern)];
+    const text = line.replace(timestampPattern, '').trim();
     if (text) plain.push(text);
     for (const match of timestamps) {
+      if (!text) continue;
       const fraction = match[3] ? Number(`0.${match[3]}`) : 0;
       synced.push({ time: Number(match[1]) * 60 + Number(match[2]) + fraction, text });
     }
   }
+  const parsedOffset = Number(metadata.offset || 0);
+  const offset = Number.isFinite(parsedOffset) ? parsedOffset / 1000 : 0;
+  synced.forEach(line => { line.time = Math.max(0, line.time + offset); });
   synced.sort((a, b) => a.time - b.time);
   return { metadata, plain, synced };
+}
+
+function findActiveLyricIndex(lines, playbackTime) {
+  let low = 0;
+  let high = lines.length - 1;
+  let active = -1;
+  while (low <= high) {
+    const middle = Math.floor((low + high) / 2);
+    if (lines[middle].time <= playbackTime) {
+      active = middle;
+      low = middle + 1;
+    } else {
+      high = middle - 1;
+    }
+  }
+  return active;
+}
+
+function keepLyricVisible(container, line) {
+  const lineTop = line.offsetTop;
+  const lineBottom = lineTop + line.offsetHeight;
+  const safeTop = container.scrollTop + container.clientHeight * 0.25;
+  const safeBottom = container.scrollTop + container.clientHeight * 0.75;
+  if (lineTop >= safeTop && lineBottom <= safeBottom) return;
+  container.scrollTo({
+    top: Math.max(0, lineTop - container.clientHeight / 2 + line.offsetHeight / 2),
+    behavior: typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+  });
 }
 
 async function initializeLyrics() {
   const container = document.querySelector('[data-lyrics-url]');
   if (!container) return;
+  const mode = document.querySelector('[data-lyric-mode]');
+  const player = document.querySelector('[data-lyric-audio]');
   try {
     const response = await fetch(container.dataset.lyricsUrl);
     if (!response.ok) throw new Error('Lyrics could not be loaded.');
     const lyrics = parseLrc(await response.text());
-    const lines = lyrics.synced.length
-      ? lyrics.synced
-      : lyrics.plain.map(text => ({ time: null, text }));
-    container.innerHTML = lines.length
-      ? lines.map(line => `<p${line.time === null ? '' : ` data-time="${line.time}"`}>${escapeHtml(line.text)}</p>`).join('')
-      : '<p class="empty-note">The LRC file contains no lyric lines.</p>';
+    if (!lyrics.synced.length) {
+      container.classList.add('lyrics-plain');
+      container.innerHTML = lyrics.plain.length
+        ? lyrics.plain.map(text => `<p>${escapeHtml(text)}</p>`).join('')
+        : '<p class="empty-note">The LRC file contains no lyric lines.</p>';
+      if (mode) mode.textContent = 'Plain lyrics · timestamps are not available for this track';
+      return;
+    }
+
+    container.classList.add('lyrics-synced');
+    container.setAttribute('aria-label', 'Synchronized lyrics');
+    container.innerHTML = lyrics.synced.map((line, index) => `
+      <button class="lyric-line" type="button" data-lyric-index="${index}" data-time="${line.time}" aria-label="Seek to ${formatRuntime(line.time)}: ${escapeHtml(line.text)}">
+        <span class="lyric-time" aria-hidden="true">${formatRuntime(line.time)}</span>
+        <span>${escapeHtml(line.text)}</span>
+      </button>`).join('');
+    if (mode) mode.textContent = player
+      ? 'Synchronized lyrics · select any line to seek'
+      : 'Timestamped lyrics · audio player unavailable';
+    if (!player) return;
+
+    const lineElements = [...container.querySelectorAll('[data-lyric-index]')];
+    let activeIndex = -1;
+    const updateActiveLine = () => {
+      const nextIndex = findActiveLyricIndex(lyrics.synced, player.currentTime);
+      if (nextIndex === activeIndex) return;
+      if (activeIndex >= 0) {
+        lineElements[activeIndex].classList.remove('is-active');
+        lineElements[activeIndex].removeAttribute('aria-current');
+      }
+      activeIndex = nextIndex;
+      if (activeIndex < 0) return;
+      const activeLine = lineElements[activeIndex];
+      activeLine.classList.add('is-active');
+      activeLine.setAttribute('aria-current', 'true');
+      keepLyricVisible(container, activeLine);
+    };
+    container.addEventListener('click', event => {
+      const line = event.target.closest('[data-time]');
+      if (!line || !container.contains(line)) return;
+      const seekTime = Number(line.dataset.time);
+      if (player.readyState) {
+        player.currentTime = seekTime;
+        updateActiveLine();
+      } else {
+        player.addEventListener('loadedmetadata', () => { player.currentTime = seekTime; updateActiveLine(); }, { once: true });
+      }
+    });
+    player.addEventListener('timeupdate', updateActiveLine);
+    player.addEventListener('seeking', updateActiveLine);
+    player.addEventListener('play', updateActiveLine);
+    player.addEventListener('loadedmetadata', updateActiveLine);
+    updateActiveLine();
   } catch (error) {
+    if (mode) mode.textContent = 'Lyrics unavailable';
     container.innerHTML = `<p class="empty-note">${escapeHtml(error.message)}</p>`;
   }
 }
@@ -345,9 +437,14 @@ async function initialize() {
   initializeLyrics();
   initializeAudioMetadata();
   initializeSearch(data);
+  if (window.location.hash) requestAnimationFrame(() => document.getElementById(decodeURIComponent(window.location.hash.slice(1)))?.scrollIntoView({ block: 'start' }));
 }
 
-initialize().catch(error => {
-  console.error(error);
-  document.querySelector('[data-page]').innerHTML = `<section class="error-state wrap"><h1>The archive could not be assembled.</h1><p>${escapeHtml(error.message)}</p></section>`;
-});
+if (typeof document !== 'undefined') {
+  initialize().catch(error => {
+    console.error(error);
+    document.querySelector('[data-page]').innerHTML = `<section class="error-state wrap"><h1>The archive could not be assembled.</h1><p>${escapeHtml(error.message)}</p></section>`;
+  });
+}
+
+if (typeof module !== 'undefined') module.exports = { parseLrc, findActiveLyricIndex, formatRuntime };

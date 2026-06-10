@@ -364,3 +364,28 @@ audio { width: min(100%, 680px); margin-top: 30px; accent-color: var(--accent); 
 .search-count { margin: 20px 0 45px; color: var(--faint); font: 10px var(--mono); text-transform: uppercase; }
 @media (max-width: 850px) { .relationship-grid { grid-template-columns: repeat(2, 1fr); } .article-layout { grid-template-columns: 1fr; gap: 45px; } .article-layout aside { padding: 25px 0 0; border: 0; border-top: 1px solid var(--line); } }
 @media (max-width: 620px) { .relationship-grid { grid-template-columns: 1fr; } }
+
+/* Synchronized lyrics stay calm and readable rather than imitating karaoke. */
+.lyrics-shell { position: relative; }
+.lyric-mode { margin: 0 0 18px; }
+.lyrics-synced { max-height: min(62vh, 680px); padding: 8px 18px 34vh 0; overflow-y: auto; overscroll-behavior: contain; scroll-behavior: smooth; scrollbar-color: var(--line-strong) transparent; }
+.lyric-line { width: 100%; margin: 0; padding: 10px 14px; border: 0; border-left: 2px solid transparent; border-radius: 0; display: grid; grid-template-columns: 52px 1fr; gap: 14px; color: #8f8981; background: transparent; font: inherit; font-size: clamp(17px, 2vw, 21px); line-height: 1.55; text-align: left; cursor: pointer; transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.lyric-line:hover { color: #d5cec4; background: rgba(255, 255, 255, .025); }
+.lyric-line:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
+.lyric-line.is-active { border-left-color: var(--accent); color: #fff8ee; background: linear-gradient(90deg, rgba(224, 112, 54, .11), transparent 72%); transform: translateX(5px); }
+.lyric-time { padding-top: 5px; color: var(--faint); font: 9px var(--mono); letter-spacing: .04em; }
+.lyric-line.is-active .lyric-time { color: var(--accent); }
+.lyrics-plain p { max-width: 720px; }
+@media (prefers-reduced-motion: reduce) {
+  .lyrics-synced { scroll-behavior: auto; }
+  .lyric-line { transition: none; }
+}
+@media (max-width: 620px) {
+  .lyrics-synced { max-height: 58vh; padding-right: 0; }
+  .lyric-line { grid-template-columns: 42px 1fr; padding-inline: 8px; }
+}
+.experiment-record { scroll-margin-top: 100px; }
+.experiment-connections { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); }
+.experiment-connections .meta-label { display: block; margin-bottom: 9px; }
+.experiment-connections a { display: block; padding: 4px 0; color: var(--muted); font-size: 12px; }
+.experiment-connections a:hover { color: var(--accent); }

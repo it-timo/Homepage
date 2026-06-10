@@ -20,8 +20,16 @@
         "indirect influence"
       ],
       "id": "experiment:more-powerful-passenger",
-      "relationships": [],
-      "path": "",
+      "relationships": [
+        {
+          "type": "explores_through",
+          "target": "experiment:narrative-simulation",
+          "title": "Narrative Simulation",
+          "path": "/experiments/#narrative-simulation",
+          "entity_type": "Story systems"
+        }
+      ],
+      "path": "/experiments/#more-powerful-passenger",
       "incoming_relationships": []
     },
     {
@@ -42,9 +50,25 @@
         "story structure"
       ],
       "id": "experiment:manhwa-concepts",
-      "relationships": [],
-      "path": "",
-      "incoming_relationships": []
+      "relationships": [
+        {
+          "type": "uses",
+          "target": "experiment:narrative-simulation",
+          "title": "Narrative Simulation",
+          "path": "/experiments/#narrative-simulation",
+          "entity_type": "Story systems"
+        }
+      ],
+      "path": "/experiments/#manhwa-concepts",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "experiment:narrative-simulation",
+          "title": "Narrative Simulation",
+          "path": "/experiments/#narrative-simulation",
+          "entity_type": "Story systems"
+        }
+      ]
     },
     {
       "slug": "narrative-simulation",
@@ -63,9 +87,32 @@
         "simulation"
       ],
       "id": "experiment:narrative-simulation",
-      "relationships": [],
-      "path": "",
-      "incoming_relationships": []
+      "relationships": [
+        {
+          "type": "informs",
+          "target": "experiment:manhwa-concepts",
+          "title": "Manhwa Concepts",
+          "path": "/experiments/#manhwa-concepts",
+          "entity_type": "Long-term creative exploration"
+        }
+      ],
+      "path": "/experiments/#narrative-simulation",
+      "incoming_relationships": [
+        {
+          "type": "referenced_by",
+          "target": "experiment:more-powerful-passenger",
+          "title": "More Powerful Passenger",
+          "path": "/experiments/#more-powerful-passenger",
+          "entity_type": "Civilization-scale god simulation"
+        },
+        {
+          "type": "referenced_by",
+          "target": "experiment:manhwa-concepts",
+          "title": "Manhwa Concepts",
+          "path": "/experiments/#manhwa-concepts",
+          "entity_type": "Long-term creative exploration"
+        }
+      ]
     },
     {
       "slug": "artifacts-of-resilience",
@@ -3392,6 +3439,13 @@
       "incoming_relationships": [
         {
           "type": "referenced_by",
+          "target": "video:used-to-be-easy",
+          "title": "Used To Be Easy — Video",
+          "path": "/music/core-override/",
+          "entity_type": "video"
+        },
+        {
+          "type": "referenced_by",
           "target": "album:core-override",
           "title": "Core Override",
           "path": "/music/core-override/",
@@ -3626,6 +3680,13 @@
           "title": "Core Override",
           "path": "/music/core-override/",
           "entity_type": "album"
+        },
+        {
+          "type": "visualizes",
+          "target": "track:core-override:used-to-be-easy",
+          "title": "Used To Be Easy",
+          "path": "/music/core-override/used-to-be-easy/",
+          "entity_type": "track"
         }
       ],
       "incoming_relationships": [
@@ -3727,12 +3788,44 @@
       "entity_type": "album"
     },
     {
+      "source": "experiment:more-powerful-passenger",
+      "type": "explores_through",
+      "target": "experiment:narrative-simulation",
+      "title": "Narrative Simulation",
+      "path": "/experiments/#narrative-simulation",
+      "entity_type": "Story systems"
+    },
+    {
+      "source": "experiment:narrative-simulation",
+      "type": "informs",
+      "target": "experiment:manhwa-concepts",
+      "title": "Manhwa Concepts",
+      "path": "/experiments/#manhwa-concepts",
+      "entity_type": "Long-term creative exploration"
+    },
+    {
+      "source": "experiment:manhwa-concepts",
+      "type": "uses",
+      "target": "experiment:narrative-simulation",
+      "title": "Narrative Simulation",
+      "path": "/experiments/#narrative-simulation",
+      "entity_type": "Story systems"
+    },
+    {
       "source": "video:used-to-be-easy",
       "type": "part_of",
       "target": "album:core-override",
       "title": "Core Override",
       "path": "/music/core-override/",
       "entity_type": "album"
+    },
+    {
+      "source": "video:used-to-be-easy",
+      "type": "visualizes",
+      "target": "track:core-override:used-to-be-easy",
+      "title": "Used To Be Easy",
+      "path": "/music/core-override/used-to-be-easy/",
+      "entity_type": "track"
     },
     {
       "source": "milestone:jarvis-alpha",

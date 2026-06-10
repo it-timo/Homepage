@@ -7,7 +7,7 @@ const errors=[];
 const assert=(condition,message)=>{if(!condition)errors.push(message)};
 const required=(record,fields,collection)=>fields.forEach(field=>assert(record[field]!==undefined,`${collection}/${record.slug||record.name||record.title}: missing ${field}`));
 const unique=(records,field,collection)=>{const values=records.map(record=>record[field]).filter(Boolean);assert(new Set(values).size===values.length,`${collection}: duplicate ${field}`)};
-const routeFile=path=>path.endsWith('/')?`${path.slice(1)}index.html`:path.slice(1);
+const routeFile=path=>{const clean=path.split('#')[0];return clean.endsWith('/')?`${clean.slice(1)}index.html`:clean.slice(1)};
 
 context.forEach(record=>required(record,['id','slug','title','status','kind','summary','purpose','technologies','themes','relationships'],'project_context'));
 repositories.forEach(record=>required(record,['id','name','description','language','languages','topics','updated_at','url','readme_excerpt','featured','metrics','relationships'],'projects'));
@@ -49,7 +49,7 @@ graph.edges.forEach(edge=>{
 });
 unique(search.records,'path','search');
 search.records.forEach(record=>assert(entityIds.has(record.id),`search: unknown entity ${record.id}`));
-const linkedRoutes=[...site.navigation.map(item=>item.path),'/contact/',...context.map(item=>item.path).filter(Boolean),...music.albums.map(item=>item.path),...music.albums.flatMap(album=>album.tracks.map(track=>track.path)),...content.entries.map(item=>item.path)];
+const linkedRoutes=[...site.navigation.map(item=>item.path),'/contact/',...context.map(item=>item.path).filter(Boolean),...music.albums.map(item=>item.path),...music.albums.flatMap(album=>album.tracks.map(track=>track.path)),...content.entries.map(item=>item.path),...experiments.map(item=>item.path).filter(Boolean)];
 for(const path of new Set(linkedRoutes))assert(existsSync(new URL(`../${routeFile(path)}`,import.meta.url)),`route: ${path} has no HTML entry point`);
 if(errors.length){console.error(errors.map(error=>`- ${error}`).join('\n'));process.exit(1)}
 const tracks=music.albums.reduce((total,album)=>total+album.track_count,0);

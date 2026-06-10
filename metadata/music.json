@@ -1,0 +1,34 @@
+{
+  "albums": {
+    "core-override": {
+      "themes": ["technology", "identity", "routine", "digital relationships", "personal agency"],
+      "relationships": [
+        {"type": "has_visual_project", "target": "video:used-to-be-easy"},
+        {"type": "shares_theme", "target": "project:jarvis"}
+      ]
+    },
+    "artifacts-of-resilience": {
+      "themes": ["resilience", "responsibility", "persistence", "recovery"],
+      "relationships": [
+        {"type": "shares_theme", "target": "note:maintainability-over-hype"}
+      ]
+    },
+    "grounded-fire": {
+      "themes": ["reconnection", "technology", "intensity", "self-respect"],
+      "relationships": [
+        {"type": "shares_theme", "target": "album:core-override"}
+      ]
+    }
+  },
+  "tracks": {
+    "core-override:used-to-be-easy": {
+      "status": "released",
+      "year": 2026,
+      "themes": ["memory", "nostalgia", "distance", "connection", "personal history"],
+      "relationships": [
+        {"type": "visualized_by", "target": "video:used-to-be-easy"},
+        {"type": "part_of", "target": "album:core-override"}
+      ]
+    }
+  }
+}

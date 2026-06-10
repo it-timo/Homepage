@@ -1,0 +1,269 @@
+[
+  {
+    "id": "timeline:video:used-to-be-easy",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Used To Be Easy — Video",
+    "type": "video",
+    "status": "in production",
+    "description": "A visual project about memory, nostalgia, distance, connection, and personal history, centered on The Walker and warm memory silhouettes.",
+    "path": "/music/core-override/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "video:used-to-be-easy"
+      }
+    ]
+  },
+  {
+    "id": "timeline:note:quality-is-designed",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Quality Is Designed, Not Inspected",
+    "type": "note",
+    "status": "living note",
+    "description": "Quality begins in architecture, interfaces, feedback loops, and documentation—before a final test run can inspect the result.",
+    "path": "/library/notes/quality-is-designed/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "note:quality-is-designed"
+      }
+    ]
+  },
+  {
+    "id": "timeline:note:maintainability-over-hype",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Maintainability Over Hype",
+    "type": "note",
+    "status": "living note",
+    "description": "New tools are useful when they make a system easier to understand, operate, or change—not merely newer.",
+    "path": "/library/notes/maintainability-over-hype/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "note:maintainability-over-hype"
+      }
+    ]
+  },
+  {
+    "id": "timeline:milestone:jarvis-alpha",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "JARVIS Alpha",
+    "type": "milestone",
+    "status": "alpha",
+    "description": "JARVIS reaches its alpha state as a personal orchestration platform.",
+    "path": "/projects/jarvis.html",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "milestone:jarvis-alpha"
+      }
+    ]
+  },
+  {
+    "id": "timeline:music-commentary:grounded-fire-three-acts",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Grounded Fire in Three Acts",
+    "type": "music-commentary",
+    "status": "album commentary",
+    "description": "Grounded Fire moves from disconnection through reactivation toward self-respect expressed with intensity rather than apology.",
+    "path": "/library/music-commentary/grounded-fire-three-acts/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "music-commentary:grounded-fire-three-acts"
+      }
+    ]
+  },
+  {
+    "id": "timeline:album:grounded-fire",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Grounded Fire",
+    "type": "album",
+    "status": "released",
+    "description": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
+    "path": "/music/grounded-fire/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "album:grounded-fire"
+      }
+    ]
+  },
+  {
+    "id": "timeline:project-journal:test-cases-to-playwright",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "From Human Test Cases to Playwright",
+    "type": "project-journal",
+    "status": "active project record",
+    "description": "The Test Generation Platform explores how human-readable KiwiTCMS cases can become executable Playwright automation without losing their intent.",
+    "path": "/library/project-journals/test-cases-to-playwright/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "project-journal:test-cases-to-playwright"
+      }
+    ]
+  },
+  {
+    "id": "timeline:project-journal:dns-database-lifecycle-design",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "DNS Database and Lifecycle-Focused Design",
+    "type": "project-journal",
+    "status": "project record",
+    "description": "What a large Go backend taught me about tests, documentation, storage lifecycles, and engineering for the person who returns later.",
+    "path": "/library/project-journals/dns-database-lifecycle-design/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "project-journal:dns-database-lifecycle-design"
+      }
+    ]
+  },
+  {
+    "id": "timeline:music-commentary:core-override-digital-life",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Core Override — Identity in Digital Life",
+    "type": "music-commentary",
+    "status": "album commentary",
+    "description": "Core Override follows technology, routine, communication, and personal agency through songs about modern connection and rebuilding.",
+    "path": "/library/music-commentary/core-override-digital-life/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "music-commentary:core-override-digital-life"
+      }
+    ]
+  },
+  {
+    "id": "timeline:album:core-override",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Core Override",
+    "type": "album",
+    "status": "released",
+    "description": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
+    "path": "/music/core-override/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "album:core-override"
+      }
+    ]
+  },
+  {
+    "id": "timeline:project-journal:autonomous-until-the-gate",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Autonomous Until the Gate",
+    "type": "project-journal",
+    "status": "alpha principle",
+    "description": "JARVIS should reduce context switching and carry work forward autonomously, while preserving explicit human gates for consequential decisions.",
+    "path": "/library/project-journals/autonomous-until-the-gate/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "project-journal:autonomous-until-the-gate"
+      }
+    ]
+  },
+  {
+    "id": "timeline:music-commentary:artifacts-of-resilience-endurance",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Artifacts of Resilience — Endurance as a Record",
+    "type": "music-commentary",
+    "status": "album commentary",
+    "description": "Artifacts of Resilience treats persistence, responsibility, recovery, and the cost of continuing as one connected body of work.",
+    "path": "/library/music-commentary/artifacts-of-resilience-endurance/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "music-commentary:artifacts-of-resilience-endurance"
+      }
+    ]
+  },
+  {
+    "id": "timeline:album:artifacts-of-resilience",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Artifacts of Resilience",
+    "type": "album",
+    "status": "released",
+    "description": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
+    "path": "/music/artifacts-of-resilience/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "album:artifacts-of-resilience"
+      }
+    ]
+  },
+  {
+    "id": "timeline:article:architecture-is-communication",
+    "date": null,
+    "year": 2026,
+    "period": "2026",
+    "title": "Architecture Is Communication",
+    "type": "article",
+    "status": "living note",
+    "description": "Architecture matters when it helps the next person understand why a system is shaped the way it is.",
+    "path": "/library/articles/architecture-is-communication/",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "article:architecture-is-communication"
+      }
+    ]
+  },
+  {
+    "id": "timeline:milestone:test-generation-platform",
+    "date": null,
+    "year": 2025,
+    "period": "2025",
+    "title": "Test Generation Platform",
+    "type": "milestone",
+    "status": "active",
+    "description": "Human-readable test cases begin moving through a repeatable path into Playwright automation.",
+    "path": "/projects/test-generation-platform.html",
+    "relationships": [
+      {
+        "type": "timeline_of",
+        "target": "milestone:test-generation-platform"
+      }
+    ]
+  },
+  {
+    "id": "timeline:professional-alpha-strike-labs",
+    "date": null,
+    "year": null,
+    "period": "Long-running",
+    "title": "Alpha Strike Labs GmbH",
+    "type": "professional",
+    "status": "ongoing",
+    "description": "Approximately 5.5 years across OSINT systems, backend work, test automation, CI/CD, Docker, VPN testing, and mentoring.",
+    "path": "/about/",
+    "relationships": []
+  }
+]

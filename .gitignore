@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+
+# Music media is deployed directly to the website; only metadata is versioned.
+assets/music/**/*.flac
+assets/music/**/*.png
+assets/music/**/*.lrc

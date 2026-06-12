@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "more-powerful-passenger",
+    "title": "More Powerful Passenger",
+    "type": "Civilization-scale god simulation",
+    "status": "EXPLORING",
+    "summary": "The player acts as a limited god. Faith is scarce, civilizations evolve autonomously, and influence is always indirect.",
+    "structure": [
+      "No victory condition",
+      "Civilizations evolve autonomously",
+      "Faith is a scarce resource",
+      "The player is powerful but limited"
+    ],
+    "themes": [
+      "emergence",
+      "belief",
+      "interpretation",
+      "responsibility",
+      "indirect influence"
+    ],
+    "id": "experiment:more-powerful-passenger",
+    "relationships": [
+      {
+        "type": "explores_through",
+        "target": "experiment:narrative-simulation"
+      }
+    ],
+    "path": "/experiments/#more-powerful-passenger"
+  },
+  {
+    "slug": "narrative-simulation",
+    "title": "Narrative Simulation",
+    "type": "Story systems",
+    "status": "EXPLORATORY",
+    "summary": "An ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences.",
+    "structure": [
+      "Story systems",
+      "Emergent narratives",
+      "Simulation"
+    ],
+    "themes": [
+      "emergence",
+      "narrative",
+      "simulation"
+    ],
+    "id": "experiment:narrative-simulation",
+    "relationships": [
+      {
+        "type": "informs",
+        "target": "experiment:manhwa-concepts"
+      }
+    ],
+    "path": "/experiments/#narrative-simulation"
+  },
+  {
+    "slug": "manhwa-concepts",
+    "title": "Manhwa Concepts",
+    "type": "Long-term creative exploration",
+    "status": "EXPLORATORY",
+    "summary": "A developing body of character, system, worldbuilding, and narrative-structure work.",
+    "structure": [
+      "Characters",
+      "Systems",
+      "Worldbuilding",
+      "Narrative structures"
+    ],
+    "themes": [
+      "identity",
+      "worldbuilding",
+      "story structure"
+    ],
+    "id": "experiment:manhwa-concepts",
+    "relationships": [
+      {
+        "type": "uses",
+        "target": "experiment:narrative-simulation"
+      }
+    ],
+    "path": "/experiments/#manhwa-concepts"
+  }
+]

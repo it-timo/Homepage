@@ -1,0 +1,29 @@
+{
+  "collections": [
+    {
+      "slug": "notes",
+      "title": "Notes",
+      "description": "Short, durable observations about quality, maintainability, architecture, and the questions that recur across the work.",
+      "status": "LIVING COLLECTION"
+    },
+    {
+      "slug": "articles",
+      "title": "Articles",
+      "description": "Long-form writing about systems, software quality, creative practice, and why understandable structures matter.",
+      "status": "LIVING COLLECTION"
+    },
+    {
+      "slug": "project-journals",
+      "title": "Project Journals",
+      "description": "The decisions, constraints, and evolving ideas behind DNS Database, test automation, JARVIS, and future systems.",
+      "status": "LIVING COLLECTION"
+    },
+    {
+      "slug": "music-commentary",
+      "title": "Music Commentary",
+      "description": "Album structures, recurring themes, visual ideas, and the connections between music, identity, technology, and resilience.",
+      "status": "LIVING COLLECTION"
+    }
+  ],
+  "entries": []
+}

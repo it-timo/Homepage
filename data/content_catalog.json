@@ -1,0 +1,443 @@
+{
+  "entries": [
+    {
+      "title": "Architecture Is Communication",
+      "slug": "architecture-is-communication",
+      "collection": "articles",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "Architecture matters when it helps the next person understand why a system is shaped the way it is.",
+      "themes": [
+        "architecture",
+        "documentation",
+        "maintainability"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database"
+        },
+        {
+          "type": "related_to",
+          "target": "project:jarvis"
+        }
+      ],
+      "id": "article:architecture-is-communication",
+      "type": "article",
+      "path": "/library/articles/architecture-is-communication/",
+      "source": "content/articles/architecture-is-communication.md",
+      "body": [
+        "Architecture is not only the arrangement of components. It is the record of what a system believes about change.",
+        "A boundary explains which decisions belong together. A lifecycle explains when a thing may exist. A test explains which behavior the system is unwilling to lose. Documentation explains why those choices were made when the code can only show what they became.",
+        "The useful question is not whether an architecture looks sophisticated. It is whether someone can return years later, understand the constraints, and change the system without first reconstructing its history from accidents."
+      ]
+    },
+    {
+      "title": "Systems, Stories, and the Same Curiosity",
+      "slug": "systems-stories-and-the-same-curiosity",
+      "collection": "articles",
+      "status": "living essay",
+      "year": 2026,
+      "date": null,
+      "summary": "Software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection.",
+      "themes": [
+        "systems",
+        "stories",
+        "emergence",
+        "identity",
+        "connection"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:jarvis"
+        },
+        {
+          "type": "related_to",
+          "target": "album:grounded-fire"
+        },
+        {
+          "type": "related_to",
+          "target": "experiment:more-powerful-passenger"
+        },
+        {
+          "type": "related_to",
+          "target": "experiment:narrative-simulation"
+        }
+      ],
+      "id": "article:systems-stories-and-the-same-curiosity",
+      "type": "article",
+      "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+      "source": "content/articles/systems-stories-and-the-same-curiosity.md",
+      "body": [
+        "Software, music, and worldbuilding can look like unrelated bodies of work when they are arranged by medium. The connection becomes clearer when they are arranged by question.",
+        "How do complex things emerge from simple rules? How does identity persist while a system changes? What does responsibility mean when influence is indirect? How do people and systems retain context, recover from disruption, and reconnect?",
+        "DNS Database approaches persistence through storage lifecycles, tests, and documentation. JARVIS approaches it through memory and orchestration. More Powerful Passenger turns emergence and indirect responsibility into a civilization-scale simulation. Grounded Fire explores reconnection after emotional and technological distance.",
+        "The mediums are different because the questions need different forms. The archive exists to preserve those connections rather than flattening the work into one category."
+      ]
+    },
+    {
+      "title": "Artifacts of Resilience — Endurance as a Record",
+      "slug": "artifacts-of-resilience-endurance",
+      "collection": "music-commentary",
+      "status": "album commentary",
+      "year": 2026,
+      "date": null,
+      "summary": "Artifacts of Resilience treats persistence, responsibility, recovery, and the cost of continuing as one connected body of work.",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "album:artifacts-of-resilience"
+        },
+        {
+          "type": "related_to",
+          "target": "note:maintainability-over-hype"
+        }
+      ],
+      "id": "music-commentary:artifacts-of-resilience-endurance",
+      "type": "music-commentary",
+      "path": "/library/music-commentary/artifacts-of-resilience-endurance/",
+      "source": "content/music-commentary/artifacts-of-resilience-endurance.md",
+      "body": [
+        "Artifacts of Resilience is organized around endurance through difficult periods. Its thirteen tracks move through responsibility, emptiness, loyalty, repetition, self-recognition, and the decision to continue.",
+        "The album belongs beside the engineering archive rather than outside it. Both are concerned with what survives pressure, what has to be rebuilt, and what remains when persistence stops being abstract and becomes a daily practice."
+      ]
+    },
+    {
+      "title": "Core Override — Identity in Digital Life",
+      "slug": "core-override-digital-life",
+      "collection": "music-commentary",
+      "status": "album commentary",
+      "year": 2026,
+      "date": null,
+      "summary": "Core Override follows technology, routine, communication, and personal agency through songs about modern connection and rebuilding.",
+      "themes": [
+        "technology",
+        "identity",
+        "digital relationships",
+        "personal agency"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "album:core-override"
+        },
+        {
+          "type": "related_to",
+          "target": "video:used-to-be-easy"
+        },
+        {
+          "type": "related_to",
+          "target": "project:jarvis"
+        }
+      ],
+      "id": "music-commentary:core-override-digital-life",
+      "type": "music-commentary",
+      "path": "/library/music-commentary/core-override-digital-life/",
+      "source": "content/music-commentary/core-override-digital-life.md",
+      "body": [
+        "Core Override is about technology and identity, but not technology as spectacle. The album looks at routine, digital relationships, modern communication, self-awareness, and the work of taking agency back.",
+        "Used To Be Easy opens that exploration through memory, nostalgia, distance, and connection. Its video project centers on the Walker and uses warm memory silhouettes to represent remembered human connection—not ghosts, and not a generic science-fiction effect."
+      ]
+    },
+    {
+      "title": "Grounded Fire in Three Acts",
+      "slug": "grounded-fire-three-acts",
+      "collection": "music-commentary",
+      "status": "album commentary",
+      "year": 2026,
+      "date": null,
+      "summary": "Grounded Fire moves from disconnection through reactivation toward self-respect expressed with intensity rather than apology.",
+      "themes": [
+        "reconnection",
+        "disconnection",
+        "intensity",
+        "self-respect"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "album:grounded-fire"
+        },
+        {
+          "type": "related_to",
+          "target": "album:core-override"
+        }
+      ],
+      "id": "music-commentary:grounded-fire-three-acts",
+      "type": "music-commentary",
+      "path": "/library/music-commentary/grounded-fire-three-acts/",
+      "source": "content/music-commentary/grounded-fire-three-acts.md",
+      "body": [
+        "Grounded Fire is a thirteen-track concept album structured in three acts: Disconnection, Reactivation, and Self Respect Through Intensity.",
+        "The sequence begins in an idle state and moves through simulated warmth, distance, pulse, voltage, and the cost of refusing mistakes. By the title track and No Script, reconnection is no longer passive. It becomes a choice to be present without reducing depth to make it easier for someone else to accept."
+      ]
+    },
+    {
+      "title": "Used To Be Easy — Memory, Not Ghosts",
+      "slug": "used-to-be-easy-memory-not-ghosts",
+      "collection": "music-commentary",
+      "status": "video commentary",
+      "year": 2026,
+      "date": null,
+      "summary": "The Walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect.",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "visual language"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "track:core-override:used-to-be-easy"
+        },
+        {
+          "type": "related_to",
+          "target": "video:used-to-be-easy"
+        },
+        {
+          "type": "related_to",
+          "target": "album:core-override"
+        }
+      ],
+      "id": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "music-commentary",
+      "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+      "source": "content/music-commentary/used-to-be-easy-memory-not-ghosts.md",
+      "body": [
+        "Used To Be Easy centers on the Walker: a 36-year-old man with dark hair, light stubble, and an emotionally restrained presence. The character carries memory through observation rather than performance.",
+        "The warm silhouettes around him are memories of human connection. They are not ghosts. That distinction matters because the visual idea is about distance from a lived relationship, not a supernatural visitation.",
+        "Warmth belongs to remembered connection; restraint belongs to the present. The contrast gives nostalgia a physical language without making it sentimental or visually loud."
+      ]
+    },
+    {
+      "title": "Maintainability Over Hype",
+      "slug": "maintainability-over-hype",
+      "collection": "notes",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "New tools are useful when they make a system easier to understand, operate, or change—not merely newer.",
+      "themes": [
+        "maintainability",
+        "long-term thinking",
+        "engineering"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "album:artifacts-of-resilience"
+        }
+      ],
+      "id": "note:maintainability-over-hype",
+      "type": "note",
+      "path": "/library/notes/maintainability-over-hype/",
+      "source": "content/notes/maintainability-over-hype.md",
+      "body": [
+        "A system accumulates history whether that history is documented or not.",
+        "Choosing maintainability over hype does not mean refusing new tools. It means asking what remains understandable after the novelty has gone: interfaces, failure modes, ownership, tests, and the reasons behind irreversible decisions."
+      ]
+    },
+    {
+      "title": "Quality Is Designed, Not Inspected",
+      "slug": "quality-is-designed",
+      "collection": "notes",
+      "status": "living note",
+      "year": 2026,
+      "date": null,
+      "summary": "Quality begins in architecture, interfaces, feedback loops, and documentation—before a final test run can inspect the result.",
+      "themes": [
+        "software quality",
+        "test automation",
+        "architecture",
+        "maintainability"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "project:dns-database"
+        }
+      ],
+      "id": "note:quality-is-designed",
+      "type": "note",
+      "path": "/library/notes/quality-is-designed/",
+      "source": "content/notes/quality-is-designed.md",
+      "body": [
+        "Inspection can reveal a defect. It cannot retroactively make a system understandable.",
+        "Quality is designed through explicit boundaries, useful feedback, testable behavior, and documentation that preserves why the system works the way it does. Testing remains essential, but it is strongest when the architecture has made reliable behavior possible rather than accidental."
+      ]
+    },
+    {
+      "title": "Autonomous Until the Gate",
+      "slug": "autonomous-until-the-gate",
+      "collection": "project-journals",
+      "status": "alpha principle",
+      "year": 2026,
+      "date": null,
+      "summary": "JARVIS should reduce context switching and carry work forward autonomously, while preserving explicit human gates for consequential decisions.",
+      "themes": [
+        "orchestration",
+        "memory",
+        "automation",
+        "human agency"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:jarvis"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "article:architecture-is-communication"
+        }
+      ],
+      "id": "project-journal:autonomous-until-the-gate",
+      "type": "project-journal",
+      "path": "/library/project-journals/autonomous-until-the-gate/",
+      "source": "content/project-journals/autonomous-until-the-gate.md",
+      "body": [
+        "JARVIS is a personal orchestration platform intended to connect projects, memory, documentation, automation, and creative work. The unifying principle is Autonomous Until the Gate.",
+        "Automation should be able to gather context, prepare work, and advance routine processes. Consequential choices still need visible boundaries where human judgment takes responsibility. The gate is not a failure of autonomy; it is the architecture that makes autonomy trustworthy."
+      ]
+    },
+    {
+      "title": "DNS Database and Lifecycle-Focused Design",
+      "slug": "dns-database-lifecycle-design",
+      "collection": "project-journals",
+      "status": "project record",
+      "year": 2026,
+      "date": null,
+      "summary": "What a large Go backend taught me about tests, documentation, storage lifecycles, and engineering for the person who returns later.",
+      "themes": [
+        "Go",
+        "lifecycle design",
+        "testing",
+        "documentation",
+        "long-term engineering"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:dns-database"
+        },
+        {
+          "type": "related_to",
+          "target": "article:architecture-is-communication"
+        },
+        {
+          "type": "related_to",
+          "target": "note:maintainability-over-hype"
+        }
+      ],
+      "id": "project-journal:dns-database-lifecycle-design",
+      "type": "project-journal",
+      "path": "/library/project-journals/dns-database-lifecycle-design/",
+      "source": "content/project-journals/dns-database-lifecycle-design.md",
+      "body": [
+        "DNS Database is a large Go backend built around RocksDB storage, extensive documentation, and roughly ninety percent test coverage. Its importance in this archive is not the line count alone. It is the sustained attention paid to the lifecycle of data and to making the system understandable after the initial implementation period.",
+        "The project represents a recurring engineering standard: architecture should communicate intent, tests should preserve behavior, and documentation should reduce the amount of history a future maintainer has to reconstruct."
+      ]
+    },
+    {
+      "title": "External Repositories in a Testing Ecosystem",
+      "slug": "external-repositories-in-a-testing-ecosystem",
+      "collection": "project-journals",
+      "status": "project record",
+      "year": 2026,
+      "date": null,
+      "summary": "The External Playwright Adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove.",
+      "themes": [
+        "Playwright",
+        "integration",
+        "repository boundaries",
+        "test automation"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:external-playwright-adapter"
+        },
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "note:quality-is-designed"
+        }
+      ],
+      "id": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "project-journal",
+      "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+      "source": "content/project-journals/external-repositories-in-a-testing-ecosystem.md",
+      "body": [
+        "A shared testing ecosystem does not require every test to live in one repository. External codebases have their own ownership, release rhythm, and context. An integration is more useful when it acknowledges those boundaries instead of hiding them.",
+        "The External Playwright Adapter gives independent repositories a way to participate in the broader automation system. Its role is intentionally pragmatic: connect external Playwright work to shared execution and reporting while allowing tests to remain close to the code and people responsible for them.",
+        "This is also a quality decision. A boundary that remains explicit is easier to document, test, and change than an integration that relies on invisible coupling."
+      ]
+    },
+    {
+      "title": "From Human Test Cases to Playwright",
+      "slug": "test-cases-to-playwright",
+      "collection": "project-journals",
+      "status": "active project record",
+      "year": 2026,
+      "date": null,
+      "summary": "The Test Generation Platform explores how human-readable KiwiTCMS cases can become executable Playwright automation without losing their intent.",
+      "themes": [
+        "test automation",
+        "Playwright",
+        "KiwiTCMS",
+        "Python",
+        "TypeScript"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "project:test-generation-platform"
+        },
+        {
+          "type": "related_to",
+          "target": "project:external-playwright-adapter"
+        },
+        {
+          "type": "related_to",
+          "target": "note:quality-is-designed"
+        }
+      ],
+      "id": "project-journal:test-cases-to-playwright",
+      "type": "project-journal",
+      "path": "/library/project-journals/test-cases-to-playwright/",
+      "source": "content/project-journals/test-cases-to-playwright.md",
+      "body": [
+        "The Test Generation Platform connects human-written test cases with executable Playwright automation. KiwiTCMS remains the human-readable source; Python, TypeScript, Docker, and Jinja2 form the path toward repeatable execution.",
+        "The difficult part is not simply emitting code. It is preserving intent while moving between representations, and allowing external repositories to participate without forcing every codebase into the same shape. The External Playwright Adapter exists as the pragmatic integration point for that larger testing ecosystem."
+      ]
+    }
+  ]
+}

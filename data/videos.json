@@ -1,0 +1,29 @@
+[
+  {
+    "id": "video:used-to-be-easy",
+    "slug": "used-to-be-easy",
+    "title": "Used To Be Easy — Video",
+    "type": "video",
+    "status": "in production",
+    "year": 2026,
+    "date": null,
+    "path": "/music/core-override/",
+    "summary": "A visual project about memory, nostalgia, distance, connection, and personal history, centered on The Walker and warm memory silhouettes.",
+    "themes": [
+      "memory",
+      "nostalgia",
+      "distance",
+      "connection"
+    ],
+    "relationships": [
+      {
+        "type": "part_of",
+        "target": "album:core-override"
+      },
+      {
+        "type": "visualizes",
+        "target": "track:core-override:used-to-be-easy"
+      }
+    ]
+  }
+]

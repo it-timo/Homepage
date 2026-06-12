@@ -1,0 +1,1159 @@
+{
+  "records": [
+    {
+      "id": "experiment:more-powerful-passenger",
+      "type": "Civilization-scale god simulation",
+      "title": "More Powerful Passenger",
+      "summary": "The player acts as a limited god. Faith is scarce, civilizations evolve autonomously, and influence is always indirect.",
+      "path": "/experiments/#more-powerful-passenger",
+      "themes": [
+        "emergence",
+        "belief",
+        "interpretation",
+        "responsibility",
+        "indirect influence"
+      ],
+      "related": [
+        "Narrative Simulation",
+        "Systems, Stories, and the Same Curiosity"
+      ],
+      "search_text": "more powerful passenger the player acts as a limited god. faith is scarce, civilizations evolve autonomously, and influence is always indirect. emergence belief interpretation responsibility indirect influence narrative simulation systems, stories, and the same curiosity"
+    },
+    {
+      "id": "experiment:manhwa-concepts",
+      "type": "Long-term creative exploration",
+      "title": "Manhwa Concepts",
+      "summary": "A developing body of character, system, worldbuilding, and narrative-structure work.",
+      "path": "/experiments/#manhwa-concepts",
+      "themes": [
+        "identity",
+        "worldbuilding",
+        "story structure"
+      ],
+      "related": [
+        "Narrative Simulation"
+      ],
+      "search_text": "manhwa concepts a developing body of character, system, worldbuilding, and narrative-structure work. identity worldbuilding story structure narrative simulation"
+    },
+    {
+      "id": "experiment:narrative-simulation",
+      "type": "Story systems",
+      "title": "Narrative Simulation",
+      "summary": "An ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences.",
+      "path": "/experiments/#narrative-simulation",
+      "themes": [
+        "emergence",
+        "narrative",
+        "simulation"
+      ],
+      "related": [
+        "Manhwa Concepts",
+        "More Powerful Passenger",
+        "Systems, Stories, and the Same Curiosity"
+      ],
+      "search_text": "narrative simulation an ongoing exploration of emergent narratives: stories produced by interacting systems rather than fixed sequences. emergence narrative simulation manhwa concepts more powerful passenger systems, stories, and the same curiosity"
+    },
+    {
+      "id": "album:artifacts-of-resilience",
+      "type": "album",
+      "title": "Artifacts of Resilience",
+      "summary": "An album about endurance through difficult periods: resilience, responsibility, persistence, and recovery.",
+      "path": "/music/artifacts-of-resilience/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Maintainability Over Hype",
+        "I Still Look",
+        "No Echo",
+        "Nineteen And Nowhere",
+        "What Family Means",
+        "No Room",
+        "Where It Lands",
+        "Late Bloom",
+        "Built For More Stuck On Empty",
+        "Loyal To A Fault",
+        "Running On Loops",
+        "Trapped Inside",
+        "It Was Me",
+        "Override",
+        "Artifacts of Resilience — Endurance as a Record"
+      ],
+      "search_text": "artifacts of resilience an album about endurance through difficult periods: resilience, responsibility, persistence, and recovery. resilience responsibility persistence recovery maintainability over hype i still look no echo nineteen and nowhere what family means no room where it lands late bloom built for more stuck on empty loyal to a fault running on loops trapped inside it was me override artifacts of resilience — endurance as a record"
+    },
+    {
+      "id": "album:core-override",
+      "type": "album",
+      "title": "Core Override",
+      "summary": "An album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency.",
+      "path": "/music/core-override/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "JARVIS",
+        "Used To Be Easy",
+        "Swipe Ghost Repeat",
+        "All The Right Lies",
+        "Say It Or Leave It",
+        "Velvet Lies",
+        "I Am The Voice In Your GPS",
+        "Walls We Built",
+        "System Upgrade",
+        "The Only Worker In The Mainframe",
+        "Nothing Personal Just The Apocalypse",
+        "Static Noise And Cold Coffee",
+        "Burn The Night Into Me",
+        "Built From Scraps",
+        "Core Override — Identity in Digital Life",
+        "Grounded Fire in Three Acts",
+        "Used To Be Easy — Memory, Not Ghosts",
+        "Grounded Fire"
+      ],
+      "search_text": "core override an album about technology, identity, routine, digital relationships, self-awareness, rebuilding, and personal agency. technology identity digital life personal agency routine digital relationships jarvis used to be easy swipe ghost repeat all the right lies say it or leave it velvet lies i am the voice in your gps walls we built system upgrade the only worker in the mainframe nothing personal just the apocalypse static noise and cold coffee burn the night into me built from scraps core override — identity in digital life grounded fire in three acts used to be easy — memory, not ghosts grounded fire"
+    },
+    {
+      "id": "album:grounded-fire",
+      "type": "album",
+      "title": "Grounded Fire",
+      "summary": "A concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity.",
+      "path": "/music/grounded-fire/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Core Override",
+        "Idle State",
+        "Simulated Warmth",
+        "The Distance Between Sparks",
+        "Pulse Detect",
+        "She Glitches Just Right",
+        "No More Careful",
+        "Chemical Voltage",
+        "Too Loud To Fade",
+        "The Cost Of No Mistakes",
+        "Unapologetic Depth",
+        "Grounded Fire",
+        "No Script",
+        "After The Pulse",
+        "Systems, Stories, and the Same Curiosity",
+        "Grounded Fire in Three Acts"
+      ],
+      "search_text": "grounded fire a concept album about reconnection after emotional and technological disconnection, moving through disconnection, reactivation, and self-respect through intensity. reconnection technology intensity self-respect core override idle state simulated warmth the distance between sparks pulse detect she glitches just right no more careful chemical voltage too loud to fade the cost of no mistakes unapologetic depth grounded fire no script after the pulse systems, stories, and the same curiosity grounded fire in three acts"
+    },
+    {
+      "id": "article:architecture-is-communication",
+      "type": "article",
+      "title": "Architecture Is Communication",
+      "summary": "Architecture matters when it helps the next person understand why a system is shaped the way it is.",
+      "path": "/library/articles/architecture-is-communication/",
+      "themes": [
+        "architecture",
+        "documentation",
+        "maintainability"
+      ],
+      "related": [
+        "DNS Database",
+        "JARVIS",
+        "Autonomous Until the Gate",
+        "DNS Database and Lifecycle-Focused Design"
+      ],
+      "search_text": "architecture is communication architecture matters when it helps the next person understand why a system is shaped the way it is. architecture documentation maintainability dns database jarvis autonomous until the gate dns database and lifecycle-focused design"
+    },
+    {
+      "id": "article:systems-stories-and-the-same-curiosity",
+      "type": "article",
+      "title": "Systems, Stories, and the Same Curiosity",
+      "summary": "Software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection.",
+      "path": "/library/articles/systems-stories-and-the-same-curiosity/",
+      "themes": [
+        "systems",
+        "stories",
+        "emergence",
+        "identity",
+        "connection"
+      ],
+      "related": [
+        "JARVIS",
+        "Grounded Fire",
+        "More Powerful Passenger",
+        "Narrative Simulation"
+      ],
+      "search_text": "systems, stories, and the same curiosity software, music, and worldbuilding use different materials, but repeatedly return to emergence, persistence, identity, responsibility, and connection. systems stories emergence identity connection jarvis grounded fire more powerful passenger narrative simulation"
+    },
+    {
+      "id": "music-commentary:artifacts-of-resilience-endurance",
+      "type": "music-commentary",
+      "title": "Artifacts of Resilience — Endurance as a Record",
+      "summary": "Artifacts of Resilience treats persistence, responsibility, recovery, and the cost of continuing as one connected body of work.",
+      "path": "/library/music-commentary/artifacts-of-resilience-endurance/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience",
+        "Maintainability Over Hype"
+      ],
+      "search_text": "artifacts of resilience — endurance as a record artifacts of resilience treats persistence, responsibility, recovery, and the cost of continuing as one connected body of work. resilience responsibility persistence recovery artifacts of resilience maintainability over hype"
+    },
+    {
+      "id": "music-commentary:core-override-digital-life",
+      "type": "music-commentary",
+      "title": "Core Override — Identity in Digital Life",
+      "summary": "Core Override follows technology, routine, communication, and personal agency through songs about modern connection and rebuilding.",
+      "path": "/library/music-commentary/core-override-digital-life/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital relationships",
+        "personal agency"
+      ],
+      "related": [
+        "Core Override",
+        "Used To Be Easy — Video",
+        "JARVIS"
+      ],
+      "search_text": "core override — identity in digital life core override follows technology, routine, communication, and personal agency through songs about modern connection and rebuilding. technology identity digital relationships personal agency core override used to be easy — video jarvis"
+    },
+    {
+      "id": "music-commentary:grounded-fire-three-acts",
+      "type": "music-commentary",
+      "title": "Grounded Fire in Three Acts",
+      "summary": "Grounded Fire moves from disconnection through reactivation toward self-respect expressed with intensity rather than apology.",
+      "path": "/library/music-commentary/grounded-fire-three-acts/",
+      "themes": [
+        "reconnection",
+        "disconnection",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire",
+        "Core Override"
+      ],
+      "search_text": "grounded fire in three acts grounded fire moves from disconnection through reactivation toward self-respect expressed with intensity rather than apology. reconnection disconnection intensity self-respect grounded fire core override"
+    },
+    {
+      "id": "music-commentary:used-to-be-easy-memory-not-ghosts",
+      "type": "music-commentary",
+      "title": "Used To Be Easy — Memory, Not Ghosts",
+      "summary": "The Walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect.",
+      "path": "/library/music-commentary/used-to-be-easy-memory-not-ghosts/",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "visual language"
+      ],
+      "related": [
+        "Used To Be Easy",
+        "Used To Be Easy — Video",
+        "Core Override"
+      ],
+      "search_text": "used to be easy — memory, not ghosts the walker and the warm memory silhouettes frame remembered connection without turning memory into a supernatural effect. memory nostalgia distance connection visual language used to be easy used to be easy — video core override"
+    },
+    {
+      "id": "note:maintainability-over-hype",
+      "type": "note",
+      "title": "Maintainability Over Hype",
+      "summary": "New tools are useful when they make a system easier to understand, operate, or change—not merely newer.",
+      "path": "/library/notes/maintainability-over-hype/",
+      "themes": [
+        "maintainability",
+        "long-term thinking",
+        "engineering"
+      ],
+      "related": [
+        "DNS Database",
+        "Test Generation Platform",
+        "Artifacts of Resilience",
+        "Artifacts of Resilience — Endurance as a Record",
+        "DNS Database and Lifecycle-Focused Design"
+      ],
+      "search_text": "maintainability over hype new tools are useful when they make a system easier to understand, operate, or change—not merely newer. maintainability long-term thinking engineering dns database test generation platform artifacts of resilience artifacts of resilience — endurance as a record dns database and lifecycle-focused design"
+    },
+    {
+      "id": "note:quality-is-designed",
+      "type": "note",
+      "title": "Quality Is Designed, Not Inspected",
+      "summary": "Quality begins in architecture, interfaces, feedback loops, and documentation—before a final test run can inspect the result.",
+      "path": "/library/notes/quality-is-designed/",
+      "themes": [
+        "software quality",
+        "test automation",
+        "architecture",
+        "maintainability"
+      ],
+      "related": [
+        "Test Generation Platform",
+        "DNS Database",
+        "External Repositories in a Testing Ecosystem",
+        "From Human Test Cases to Playwright"
+      ],
+      "search_text": "quality is designed, not inspected quality begins in architecture, interfaces, feedback loops, and documentation—before a final test run can inspect the result. software quality test automation architecture maintainability test generation platform dns database external repositories in a testing ecosystem from human test cases to playwright"
+    },
+    {
+      "id": "project:dns-database",
+      "type": "project",
+      "title": "DNS Database",
+      "summary": "A large Go backend shaped around lifecycle design, documentation, and the belief that software should remain understandable years later.",
+      "path": "/projects/dns-database.html",
+      "themes": [
+        "maintainability",
+        "lifecycles",
+        "documentation"
+      ],
+      "related": [
+        "Architecture Is Communication",
+        "Maintainability Over Hype",
+        "Quality Is Designed, Not Inspected",
+        "DNS Database and Lifecycle-Focused Design"
+      ],
+      "search_text": "dns database a large go backend shaped around lifecycle design, documentation, and the belief that software should remain understandable years later. maintainability lifecycles documentation architecture is communication maintainability over hype quality is designed, not inspected dns database and lifecycle-focused design"
+    },
+    {
+      "id": "project:external-playwright-adapter",
+      "type": "project",
+      "title": "External Playwright Adapter",
+      "summary": "Allows external repositories to participate in a larger testing ecosystem.",
+      "path": "/projects/external-playwright-adapter.html",
+      "themes": [
+        "integration",
+        "boundaries",
+        "pragmatism"
+      ],
+      "related": [
+        "Test Generation Platform",
+        "External Repositories in a Testing Ecosystem",
+        "From Human Test Cases to Playwright"
+      ],
+      "search_text": "external playwright adapter allows external repositories to participate in a larger testing ecosystem. integration boundaries pragmatism test generation platform external repositories in a testing ecosystem from human test cases to playwright"
+    },
+    {
+      "id": "project:jarvis",
+      "type": "project",
+      "title": "JARVIS",
+      "summary": "A personal system for reducing context switching across projects, memory, documentation, automation, and creative work.",
+      "path": "/projects/jarvis.html",
+      "themes": [
+        "memory",
+        "orchestration",
+        "human agency"
+      ],
+      "related": [
+        "Test Generation Platform",
+        "Architecture Is Communication",
+        "Core Override",
+        "Systems, Stories, and the Same Curiosity",
+        "Core Override — Identity in Digital Life",
+        "Autonomous Until the Gate"
+      ],
+      "search_text": "jarvis a personal system for reducing context switching across projects, memory, documentation, automation, and creative work. memory orchestration human agency test generation platform architecture is communication core override systems, stories, and the same curiosity core override — identity in digital life autonomous until the gate"
+    },
+    {
+      "id": "project:test-generation-platform",
+      "type": "project",
+      "title": "Test Generation Platform",
+      "summary": "Transforms human-written test cases into executable Playwright automation.",
+      "path": "/projects/test-generation-platform.html",
+      "themes": [
+        "quality",
+        "translation",
+        "automation"
+      ],
+      "related": [
+        "External Playwright Adapter",
+        "Maintainability Over Hype",
+        "JARVIS",
+        "Quality Is Designed, Not Inspected",
+        "Autonomous Until the Gate",
+        "External Repositories in a Testing Ecosystem",
+        "From Human Test Cases to Playwright"
+      ],
+      "search_text": "test generation platform transforms human-written test cases into executable playwright automation. quality translation automation external playwright adapter maintainability over hype jarvis quality is designed, not inspected autonomous until the gate external repositories in a testing ecosystem from human test cases to playwright"
+    },
+    {
+      "id": "project-journal:autonomous-until-the-gate",
+      "type": "project-journal",
+      "title": "Autonomous Until the Gate",
+      "summary": "JARVIS should reduce context switching and carry work forward autonomously, while preserving explicit human gates for consequential decisions.",
+      "path": "/library/project-journals/autonomous-until-the-gate/",
+      "themes": [
+        "orchestration",
+        "memory",
+        "automation",
+        "human agency"
+      ],
+      "related": [
+        "JARVIS",
+        "Test Generation Platform",
+        "Architecture Is Communication"
+      ],
+      "search_text": "autonomous until the gate jarvis should reduce context switching and carry work forward autonomously, while preserving explicit human gates for consequential decisions. orchestration memory automation human agency jarvis test generation platform architecture is communication"
+    },
+    {
+      "id": "project-journal:dns-database-lifecycle-design",
+      "type": "project-journal",
+      "title": "DNS Database and Lifecycle-Focused Design",
+      "summary": "What a large Go backend taught me about tests, documentation, storage lifecycles, and engineering for the person who returns later.",
+      "path": "/library/project-journals/dns-database-lifecycle-design/",
+      "themes": [
+        "Go",
+        "lifecycle design",
+        "testing",
+        "documentation",
+        "long-term engineering"
+      ],
+      "related": [
+        "DNS Database",
+        "Architecture Is Communication",
+        "Maintainability Over Hype"
+      ],
+      "search_text": "dns database and lifecycle-focused design what a large go backend taught me about tests, documentation, storage lifecycles, and engineering for the person who returns later. go lifecycle design testing documentation long-term engineering dns database architecture is communication maintainability over hype"
+    },
+    {
+      "id": "project-journal:external-repositories-in-a-testing-ecosystem",
+      "type": "project-journal",
+      "title": "External Repositories in a Testing Ecosystem",
+      "summary": "The External Playwright Adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove.",
+      "path": "/library/project-journals/external-repositories-in-a-testing-ecosystem/",
+      "themes": [
+        "Playwright",
+        "integration",
+        "repository boundaries",
+        "test automation"
+      ],
+      "related": [
+        "External Playwright Adapter",
+        "Test Generation Platform",
+        "Quality Is Designed, Not Inspected"
+      ],
+      "search_text": "external repositories in a testing ecosystem the external playwright adapter treats repository ownership as an architectural boundary instead of an inconvenience to remove. playwright integration repository boundaries test automation external playwright adapter test generation platform quality is designed, not inspected"
+    },
+    {
+      "id": "project-journal:test-cases-to-playwright",
+      "type": "project-journal",
+      "title": "From Human Test Cases to Playwright",
+      "summary": "The Test Generation Platform explores how human-readable KiwiTCMS cases can become executable Playwright automation without losing their intent.",
+      "path": "/library/project-journals/test-cases-to-playwright/",
+      "themes": [
+        "test automation",
+        "Playwright",
+        "KiwiTCMS",
+        "Python",
+        "TypeScript"
+      ],
+      "related": [
+        "Test Generation Platform",
+        "External Playwright Adapter",
+        "Quality Is Designed, Not Inspected"
+      ],
+      "search_text": "from human test cases to playwright the test generation platform explores how human-readable kiwitcms cases can become executable playwright automation without losing their intent. test automation playwright kiwitcms python typescript test generation platform external playwright adapter quality is designed, not inspected"
+    },
+    {
+      "id": "track:grounded-fire:after-the-pulse",
+      "type": "track",
+      "title": "After The Pulse",
+      "summary": "",
+      "path": "/music/grounded-fire/after-the-pulse/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "after the pulse  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:core-override:all-the-right-lies",
+      "type": "track",
+      "title": "All The Right Lies",
+      "summary": "",
+      "path": "/music/core-override/all-the-right-lies/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "all the right lies  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:artifacts-of-resilience:built-for-more-stuck-on-empty",
+      "type": "track",
+      "title": "Built For More Stuck On Empty",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/built-for-more-stuck-on-empty/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "built for more stuck on empty  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:core-override:built-from-scraps",
+      "type": "track",
+      "title": "Built From Scraps",
+      "summary": "",
+      "path": "/music/core-override/built-from-scraps/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "built from scraps  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:core-override:burn-the-night-into-me",
+      "type": "track",
+      "title": "Burn The Night Into Me",
+      "summary": "",
+      "path": "/music/core-override/burn-the-night-into-me/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "burn the night into me  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:grounded-fire:chemical-voltage",
+      "type": "track",
+      "title": "Chemical Voltage",
+      "summary": "",
+      "path": "/music/grounded-fire/chemical-voltage/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "chemical voltage  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:grounded-fire:grounded-fire",
+      "type": "track",
+      "title": "Grounded Fire",
+      "summary": "",
+      "path": "/music/grounded-fire/grounded-fire/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "grounded fire  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:core-override:i-am-the-voice-in-your-gps",
+      "type": "track",
+      "title": "I Am The Voice In Your GPS",
+      "summary": "",
+      "path": "/music/core-override/i-am-the-voice-in-your-gps/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "i am the voice in your gps  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:artifacts-of-resilience:i-still-look",
+      "type": "track",
+      "title": "I Still Look",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/i-still-look/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "i still look  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:grounded-fire:idle-state",
+      "type": "track",
+      "title": "Idle State",
+      "summary": "",
+      "path": "/music/grounded-fire/idle-state/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "idle state  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:artifacts-of-resilience:it-was-me",
+      "type": "track",
+      "title": "It Was Me",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/it-was-me/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "it was me  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:artifacts-of-resilience:late-bloom",
+      "type": "track",
+      "title": "Late Bloom",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/late-bloom/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "late bloom  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:artifacts-of-resilience:loyal-to-a-fault",
+      "type": "track",
+      "title": "Loyal To A Fault",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/loyal-to-a-fault/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "loyal to a fault  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:artifacts-of-resilience:nineteen-and-nowhere",
+      "type": "track",
+      "title": "Nineteen And Nowhere",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/nineteen-and-nowhere/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "nineteen and nowhere  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:artifacts-of-resilience:no-echo",
+      "type": "track",
+      "title": "No Echo",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/no-echo/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "no echo  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:grounded-fire:no-more-careful",
+      "type": "track",
+      "title": "No More Careful",
+      "summary": "",
+      "path": "/music/grounded-fire/no-more-careful/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "no more careful  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:artifacts-of-resilience:no-room",
+      "type": "track",
+      "title": "No Room",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/no-room/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "no room  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:grounded-fire:no-script",
+      "type": "track",
+      "title": "No Script",
+      "summary": "",
+      "path": "/music/grounded-fire/no-script/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "no script  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:core-override:nothing-personal-just-the-apocalypse",
+      "type": "track",
+      "title": "Nothing Personal Just The Apocalypse",
+      "summary": "",
+      "path": "/music/core-override/nothing-personal-just-the-apocalypse/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "nothing personal just the apocalypse  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:artifacts-of-resilience:override",
+      "type": "track",
+      "title": "Override",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/override/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "override  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:grounded-fire:pulse-detect",
+      "type": "track",
+      "title": "Pulse Detect",
+      "summary": "",
+      "path": "/music/grounded-fire/pulse-detect/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "pulse detect  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:artifacts-of-resilience:running-on-loops",
+      "type": "track",
+      "title": "Running On Loops",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/running-on-loops/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "running on loops  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:core-override:say-it-or-leave-it",
+      "type": "track",
+      "title": "Say It Or Leave It",
+      "summary": "",
+      "path": "/music/core-override/say-it-or-leave-it/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "say it or leave it  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:grounded-fire:she-glitches-just-right",
+      "type": "track",
+      "title": "She Glitches Just Right",
+      "summary": "",
+      "path": "/music/grounded-fire/she-glitches-just-right/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "she glitches just right  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:grounded-fire:simulated-warmth",
+      "type": "track",
+      "title": "Simulated Warmth",
+      "summary": "",
+      "path": "/music/grounded-fire/simulated-warmth/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "simulated warmth  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:core-override:static-noise-and-cold-coffee",
+      "type": "track",
+      "title": "Static Noise And Cold Coffee",
+      "summary": "",
+      "path": "/music/core-override/static-noise-and-cold-coffee/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "static noise and cold coffee  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:core-override:swipe-ghost-repeat",
+      "type": "track",
+      "title": "Swipe Ghost Repeat",
+      "summary": "",
+      "path": "/music/core-override/swipe-ghost-repeat/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "swipe ghost repeat  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:core-override:system-upgrade",
+      "type": "track",
+      "title": "System Upgrade",
+      "summary": "",
+      "path": "/music/core-override/system-upgrade/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "system upgrade  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:grounded-fire:the-cost-of-no-mistakes",
+      "type": "track",
+      "title": "The Cost Of No Mistakes",
+      "summary": "",
+      "path": "/music/grounded-fire/the-cost-of-no-mistakes/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "the cost of no mistakes  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:grounded-fire:the-distance-between-sparks",
+      "type": "track",
+      "title": "The Distance Between Sparks",
+      "summary": "",
+      "path": "/music/grounded-fire/the-distance-between-sparks/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "the distance between sparks  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:core-override:the-only-worker-in-the-mainframe",
+      "type": "track",
+      "title": "The Only Worker In The Mainframe",
+      "summary": "",
+      "path": "/music/core-override/the-only-worker-in-the-mainframe/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "the only worker in the mainframe  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:grounded-fire:too-loud-to-fade",
+      "type": "track",
+      "title": "Too Loud To Fade",
+      "summary": "",
+      "path": "/music/grounded-fire/too-loud-to-fade/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "too loud to fade  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:artifacts-of-resilience:trapped-inside",
+      "type": "track",
+      "title": "Trapped Inside",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/trapped-inside/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "trapped inside  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:grounded-fire:unapologetic-depth",
+      "type": "track",
+      "title": "Unapologetic Depth",
+      "summary": "",
+      "path": "/music/grounded-fire/unapologetic-depth/",
+      "themes": [
+        "reconnection",
+        "technology",
+        "intensity",
+        "self-respect"
+      ],
+      "related": [
+        "Grounded Fire"
+      ],
+      "search_text": "unapologetic depth  reconnection technology intensity self-respect grounded fire"
+    },
+    {
+      "id": "track:core-override:used-to-be-easy",
+      "type": "track",
+      "title": "Used To Be Easy",
+      "summary": "",
+      "path": "/music/core-override/used-to-be-easy/",
+      "themes": [
+        "memory",
+        "nostalgia",
+        "distance",
+        "connection",
+        "personal history"
+      ],
+      "related": [
+        "Used To Be Easy — Video",
+        "Core Override",
+        "Used To Be Easy — Memory, Not Ghosts"
+      ],
+      "search_text": "used to be easy  memory nostalgia distance connection personal history used to be easy — video core override used to be easy — memory, not ghosts"
+    },
+    {
+      "id": "track:core-override:velvet-lies",
+      "type": "track",
+      "title": "Velvet Lies",
+      "summary": "",
+      "path": "/music/core-override/velvet-lies/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "velvet lies  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:core-override:walls-we-built",
+      "type": "track",
+      "title": "Walls We Built",
+      "summary": "",
+      "path": "/music/core-override/walls-we-built/",
+      "themes": [
+        "technology",
+        "identity",
+        "digital life",
+        "personal agency",
+        "routine",
+        "digital relationships"
+      ],
+      "related": [
+        "Core Override"
+      ],
+      "search_text": "walls we built  technology identity digital life personal agency routine digital relationships core override"
+    },
+    {
+      "id": "track:artifacts-of-resilience:what-family-means",
+      "type": "track",
+      "title": "What Family Means",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/what-family-means/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "what family means  resilience responsibility persistence recovery artifacts of resilience"
+    },
+    {
+      "id": "track:artifacts-of-resilience:where-it-lands",
+      "type": "track",
+      "title": "Where It Lands",
+      "summary": "",
+      "path": "/music/artifacts-of-resilience/where-it-lands/",
+      "themes": [
+        "resilience",
+        "responsibility",
+        "persistence",
+        "recovery"
+      ],
+      "related": [
+        "Artifacts of Resilience"
+      ],
+      "search_text": "where it lands  resilience responsibility persistence recovery artifacts of resilience"
+    }
+  ]
+}
